@@ -167,12 +167,14 @@ def main():
         verdict = analyze_with_ai(config, previous_buses, current_buses)
         if verdict is None:
             print("No Verdict")
+            send_android_alert(config, "verdict is NONE")
             return
         if verdict != "NO_DROP":
             send_android_alert(config, verdict)
             print("Alert sent:\n", verdict)
         else:
             print("No genuine price drop detected.")
+            send_android_alert(config, verdict)
     else:
         print("New trip baseline saved. Will compare on the next run.")
 
