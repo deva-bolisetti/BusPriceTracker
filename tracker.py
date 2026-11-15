@@ -93,6 +93,7 @@ def analyze_with_ai(config, previous_buses, current_buses):
                 contents=prompt,
             )
             verdict = (response.text or "").strip()
+            print("Raw Response from AI: ",response)
             print("Response from AI: ",verdict)
             if not verdict:
                 raise ValueError("The model returned an empty response.")
@@ -100,6 +101,7 @@ def analyze_with_ai(config, previous_buses, current_buses):
             return verdict
         except Exception as error:
             print(f"AI model {model} failed: {error}")
+            continue
 
     print("AI analysis failed for all configured models; keeping the previous history for a retry.")
     return None
