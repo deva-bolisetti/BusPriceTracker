@@ -87,11 +87,13 @@ def analyze_with_ai(config, previous_buses, current_buses):
 
     for model in AI_MODELS:
         try:
+            print("Trying with model: ",model)
             response = client.models.generate_content(
                 model=model,
                 contents=prompt,
             )
             verdict = (response.text or "").strip()
+            print("Response from AI: ",verdict)
             if not verdict:
                 raise ValueError("The model returned an empty response.")
             print(f"AI analysis completed with {model}.")
@@ -162,6 +164,7 @@ def main():
     if previous_buses and current_buses:
         verdict = analyze_with_ai(config, previous_buses, current_buses)
         if verdict is None:
+            print("No Verdict")
             return
         if verdict != "NO_DROP":
             send_android_alert(config, verdict)
