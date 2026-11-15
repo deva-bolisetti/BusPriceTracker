@@ -2,7 +2,7 @@ name: Custom Bus Fare Drop Tracker
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
