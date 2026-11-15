@@ -3,9 +3,20 @@ import os
 import requests
 from google import genai
 
-APIFY_TOKEN = os.environ["APIFY_TOKEN"]
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-NTFY_TOPIC = os.environ["NTFY_TOPIC"]
+APIFY_TOKEN = os.environ.get("APIFY_TOKEN")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC")
+APIFY_API_URL = (os.environ.get("APIFY_API_URL") or "https://api.apify.com").rstrip("/")
+APIFY_ACTOR_ID = os.environ.get("APIFY_ACTOR_ID")
+
+if not APIFY_TOKEN:
+    raise RuntimeError("APIFY_TOKEN is not set. Use the raw token only, not a URL.")
+if not APIFY_ACTOR_ID:
+    raise RuntimeError("APIFY_ACTOR_ID is not set. Add the Apify actor ID.")
+if not GEMINI_API_KEY:
+    raise RuntimeError("GEMINI_API_KEY is not set.")
+if not NTFY_TOPIC:
+    raise RuntimeError("NTFY_TOPIC is not set.")
 
 CONFIG_FILE = "config.json"
 HISTORY_FILE = "history.json"
@@ -19,15 +30,28 @@ def load_json(filepath, default):
 
 
 def fetch_latest_buses(source, destination, date):
-    url = f"https://apify.com{APIFY_TOKEN}"
+    url = f"{APIFY_API_URL}/v2/acts/{APIFY_ACTOR_ID}/run-sync-get-dataset-items"
+
     payload = {
         "source": source,
         "destination": destination,
         "departureDate": date
     }
-    response = requests.post(url, json=payload, timeout=120)
+
+    response = requests.post(
+        url,
+        headers={"Authorization": f"Bearer {APIFY_TOKEN}"},
+        json=payload,
+        timeout=120,
+    )
     response.raise_for_status()
-    return response.json()
+    data = response.json()
+
+    if isinstance(data, dict) and "items" in data:
+        return data["items"]
+    if isinstance(data, list):
+        return data
+    return data
 
 
 def analyze_with_ai(config, previous_buses, current_buses):
@@ -48,10 +72,10 @@ def analyze_with_ai(config, previous_buses, current_buses):
        - Operator & Bus Type
        - Departure Time
        - Seat Type & Old Fare -> New Fare
-
+    
     PREVIOUS_FARES:
     {json.dumps(previous_buses)}
-
+    
     CURRENT_FARES:
     {json.dumps(current_buses)}
     """
@@ -63,8 +87,9 @@ def analyze_with_ai(config, previous_buses, current_buses):
 
 
 def send_android_alert(config, message):
+    ntfy_url = NTFY_TOPIC if NTFY_TOPIC.startswith("http") else f"https://ntfy.sh/{NTFY_TOPIC}"
     requests.post(
-        f"https://ntfy.sh{NTFY_TOPIC}",
+        ntfy_url,
         data=message.encode("utf-8"),
         headers={
             "Title": f"Bus Drop ({config['seat_type']}): {config['source']} to {config['destination']}",
@@ -82,8 +107,6 @@ def main():
         return
 
     history = load_json(HISTORY_FILE, {})
-
-    # Create a signature of current search settings to detect when you change trips
     search_signature = f"{config['source']}|{config['destination']}|{config['date']}|{config['bus_ac_type']}|{config['seat_type']}"
 
     previous_buses = history.get("buses", []) if history.get("signature") == search_signature else []
