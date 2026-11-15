@@ -329,10 +329,10 @@
       "droppingPointCount": 1,
       "fareList": [
         690,
-        1930
+        1030
       ],
       "minFare": 690,
-      "maxFare": 1930,
+      "maxFare": 1030,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -343,7 +343,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1930,
+            "originalPrice": 1030,
             "count": 3
           }
         ]
@@ -1132,7 +1132,7 @@
       "boardingPointId": 79232,
       "droppingPoint": "Bus Stand",
       "droppingPointId": 66355,
-      "boardingPointCount": 21,
+      "boardingPointCount": 19,
       "droppingPointCount": 1,
       "fareList": [
         769,
@@ -1186,9 +1186,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Madinaguda",
+        "sourceBp": "Chanda Nagar",
         "destinationDp": "Bus Stand",
-        "bpId": 19500771,
+        "bpId": 21077140,
         "dpId": 19821815
       },
       "boReqParams": [
@@ -1245,35 +1245,27 @@
       "boardingPointCount": 33,
       "droppingPointCount": 1,
       "fareList": [
-        659,
-        1049
+        649
       ],
-      "minFare": 659,
-      "maxFare": 1049,
+      "minFare": 649,
+      "maxFare": 649,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 659,
-            "discountedPrice": 577,
-            "count": 2
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1049,
-            "discountedPrice": 918,
+            "originalPrice": 649,
+            "discountedPrice": 568,
             "count": 1
           }
         ]
       },
-      "availableSeats": 3,
+      "availableSeats": 1,
       "totalSeats": 37,
-      "availableWindowSeats": 1,
-      "availableSingleSeats": 1,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
       "availableAisleSeats": 1,
-      "availableUpperSeats": 2,
-      "availableLowerSeats": 1,
+      "availableUpperSeats": 1,
+      "availableLowerSeats": null,
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "144",
@@ -1291,7 +1283,7 @@
           "campaignCode": "MULC_547b9a80",
           "description": "Get 13 % Extra OFF",
           "type": "PERCENT",
-          "discount": 82,
+          "discount": 81,
           "maxDiscount": 12.5,
           "dealType": "REDDEAL"
         }
@@ -2128,29 +2120,26 @@
       "boardingPointCount": 27,
       "droppingPointCount": 1,
       "fareList": [
-        709,
-        729,
-        759,
-        869
+        759
       ],
-      "minFare": 709,
-      "maxFare": 869,
+      "minFare": 759,
+      "maxFare": 759,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 709,
-            "count": 5
+            "originalPrice": 759,
+            "count": 1
           }
         ]
       },
-      "availableSeats": 5,
+      "availableSeats": 1,
       "totalSeats": 37,
-      "availableWindowSeats": 1,
-      "availableSingleSeats": 1,
-      "availableAisleSeats": 3,
-      "availableUpperSeats": 3,
-      "availableLowerSeats": 2,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": 1,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 1,
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "164",
@@ -2225,7 +2214,7 @@
       "boardingPointId": 201481,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 47,
+      "boardingPointCount": 46,
       "droppingPointCount": 1,
       "fareList": [
         1449
@@ -2266,9 +2255,9 @@
       "rs555": true,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Paradise",
+        "sourceBp": "Secunderabad",
         "destinationDp": "Tuni",
-        "bpId": 28345746,
+        "bpId": 28345744,
         "dpId": 25973969
       },
       "boReqParams": [
@@ -2315,16 +2304,16 @@
       "inventoryTags": [
         "OTG_ADDON"
       ],
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:00:00",
       "arrivalTime": "2026-11-16 05:00:00",
-      "journeyDurationMin": 670,
+      "journeyDurationMin": 660,
       "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 17:50:00",
-      "boardingPoint": "Nagole",
-      "boardingPointId": 85278,
+      "firstBpTime": "2026-11-15 18:00:00",
+      "boardingPoint": "LB Nagar",
+      "boardingPointId": 79232,
       "droppingPoint": "Bus Stand",
       "droppingPointId": 66355,
-      "boardingPointCount": 8,
+      "boardingPointCount": 7,
       "droppingPointCount": 1,
       "fareList": [
         590,
@@ -2386,9 +2375,9 @@
       "rs555": true,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Nagole",
+        "sourceBp": "LB Nagar",
         "destinationDp": "Bus Stand",
-        "bpId": 18188499,
+        "bpId": 18121487,
         "dpId": 18129775
       },
       "boReqParams": [
@@ -2718,16 +2707,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:45:00",
       "arrivalTime": "2026-11-16 02:35:00",
-      "journeyDurationMin": 525,
+      "journeyDurationMin": 470,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 17:00:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
+      "boardingPoint": "Narketpally",
+      "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 2,
+      "boardingPointCount": 1,
       "droppingPointCount": 1,
       "fareList": [
         690,
@@ -2771,9 +2760,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Choutuppal",
+        "sourceBp": "Narketpally",
         "destinationDp": "Tuni",
-        "bpId": 30259499,
+        "bpId": 30280530,
         "dpId": 30259504
       },
       "boReqParams": [
@@ -2855,17 +2844,17 @@
           {
             "originalPrice": 749,
             "discountedPrice": 674,
-            "count": 8
+            "count": 7
           }
         ]
       },
-      "availableSeats": 27,
+      "availableSeats": 26,
       "totalSeats": 48,
-      "availableWindowSeats": 15,
-      "availableSingleSeats": 8,
-      "availableAisleSeats": 9,
+      "availableWindowSeats": 13,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 10,
       "availableUpperSeats": 9,
-      "availableLowerSeats": 18,
+      "availableLowerSeats": 17,
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "122",
@@ -2942,16 +2931,16 @@
         "LUG": "3,2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 17:51:00",
       "arrivalTime": "2026-11-16 04:20:00",
-      "journeyDurationMin": 630,
+      "journeyDurationMin": 629,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 18:00:00",
-      "boardingPoint": "Lakdikapul",
-      "boardingPointId": 66026,
+      "boardingPoint": "Nampally",
+      "boardingPointId": 66061,
       "droppingPoint": "Tuni By Pass",
       "droppingPointId": null,
-      "boardingPointCount": 18,
+      "boardingPointCount": 17,
       "droppingPointCount": 1,
       "fareList": [
         860,
@@ -2996,9 +2985,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Lakdikapul",
+        "sourceBp": "Nampally",
         "destinationDp": "Tuni By Pass",
-        "bpId": 23114847,
+        "bpId": 23115511,
         "dpId": 29566160
       },
       "boReqParams": [
@@ -3283,7 +3272,7 @@
       "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 27,
+      "boardingPointCount": 26,
       "droppingPointCount": 1,
       "fareList": [
         880,
@@ -3336,7 +3325,7 @@
         "isExactMatch": true,
         "sourceBp": "Chanda Nagar",
         "destinationDp": "Tuni",
-        "bpId": 29719217,
+        "bpId": 29719184,
         "dpId": 29718543
       },
       "boReqParams": [
@@ -3774,16 +3763,16 @@
       "inventoryTags": [
         "OTG_ADDON"
       ],
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:00:00",
       "arrivalTime": "2026-11-16 05:00:00",
-      "journeyDurationMin": 670,
+      "journeyDurationMin": 660,
       "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 17:50:00",
-      "boardingPoint": "Nagole",
-      "boardingPointId": 85278,
+      "firstBpTime": "2026-11-15 18:00:00",
+      "boardingPoint": "LB Nagar",
+      "boardingPointId": 79232,
       "droppingPoint": "Bus Stand",
       "droppingPointId": 66355,
-      "boardingPointCount": 8,
+      "boardingPointCount": 7,
       "droppingPointCount": 1,
       "fareList": [
         549,
@@ -3838,9 +3827,9 @@
       "rs555": true,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Nagole",
+        "sourceBp": "LB Nagar",
         "destinationDp": "Bus Stand",
-        "bpId": 18188499,
+        "bpId": 18121487,
         "dpId": 18129775
       },
       "boReqParams": [
@@ -4220,12 +4209,12 @@
       "arrivalTime": "2026-11-16 06:15:00",
       "journeyDurationMin": 645,
       "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 17:47:00",
+      "firstBpTime": "2026-11-15 17:53:00",
       "boardingPoint": "Nagole",
       "boardingPointId": 85278,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 31,
+      "boardingPointCount": 29,
       "droppingPointCount": 1,
       "fareList": [
         700
@@ -4262,9 +4251,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Hydernagar",
+        "sourceBp": "Miyapur",
         "destinationDp": "Tuni",
-        "bpId": 21265618,
+        "bpId": 21247980,
         "dpId": 21265638
       },
       "boReqParams": [
@@ -4414,7 +4403,7 @@
       "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 8,
+      "boardingPointCount": 7,
       "droppingPointCount": 1,
       "fareList": [
         880,
@@ -4465,9 +4454,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Kothapet",
+        "sourceBp": "LB Nagar",
         "destinationDp": "Tuni",
-        "bpId": 28306164,
+        "bpId": 28306155,
         "dpId": 28305974
       },
       "boReqParams": [
@@ -5306,12 +5295,12 @@
       "arrivalTime": "2026-11-16 06:15:00",
       "journeyDurationMin": 645,
       "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 17:50:00",
+      "firstBpTime": "2026-11-15 17:55:00",
       "boardingPoint": "Nagole",
       "boardingPointId": 85278,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 29,
+      "boardingPointCount": 28,
       "droppingPointCount": 1,
       "fareList": [
         1000
@@ -5348,9 +5337,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Miyapur",
+        "sourceBp": "Punjagutta",
         "destinationDp": "Tuni",
-        "bpId": 21247982,
+        "bpId": 21247990,
         "dpId": 21265638
       },
       "boReqParams": [
@@ -5627,12 +5616,13 @@
       "droppingPointCount": 1,
       "fareList": [
         799,
-        859,
-        959,
-        1059
+        849,
+        919,
+        1019,
+        1119
       ],
       "minFare": 799,
-      "maxFare": 1059,
+      "maxFare": 1119,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
@@ -5643,7 +5633,7 @@
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1059,
+            "originalPrice": 1119,
             "count": 3
           }
         ]
@@ -5718,16 +5708,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:30:00",
       "arrivalTime": "2026-11-16 03:55:00",
-      "journeyDurationMin": 605,
+      "journeyDurationMin": 565,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 16:00:00",
-      "boardingPoint": "Nagole",
-      "boardingPointId": 85278,
+      "boardingPoint": "Malaka pet near yosodha hospital",
+      "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 17,
+      "boardingPointCount": 16,
       "droppingPointCount": 1,
       "fareList": [
         1320
@@ -5764,9 +5754,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Nagole",
+        "sourceBp": "Malaka pet near yosodha hospital",
         "destinationDp": "Tuni",
-        "bpId": 27865659,
+        "bpId": 28245222,
         "dpId": 27867560
       },
       "boReqParams": [
@@ -5814,7 +5804,7 @@
       "boardingPointId": 66026,
       "droppingPoint": "Near Thandava Bridge",
       "droppingPointId": null,
-      "boardingPointCount": 22,
+      "boardingPointCount": 21,
       "droppingPointCount": 1,
       "fareList": [
         860,
@@ -5827,7 +5817,7 @@
         "SEATER": [
           {
             "originalPrice": 860,
-            "count": 11
+            "count": 15
           }
         ],
         "SLEEPER": [
@@ -5837,13 +5827,13 @@
           }
         ]
       },
-      "availableSeats": 26,
+      "availableSeats": 30,
       "totalSeats": 49,
-      "availableWindowSeats": 13,
+      "availableWindowSeats": 14,
       "availableSingleSeats": 6,
-      "availableAisleSeats": 12,
-      "availableUpperSeats": 12,
-      "availableLowerSeats": 14,
+      "availableAisleSeats": 15,
+      "availableUpperSeats": 11,
+      "availableLowerSeats": 19,
       "isSeatLayoutAvailable": true,
       "rating": 2.4,
       "numberOfReviews": "8",
@@ -5858,9 +5848,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Nizampet",
+        "sourceBp": "Kukatpally",
         "destinationDp": "Near Thandava Bridge",
-        "bpId": 26767050,
+        "bpId": 26767071,
         "dpId": 26767028
       },
       "boReqParams": [
@@ -6100,16 +6090,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:30:00",
       "arrivalTime": "2026-11-16 03:05:00",
-      "journeyDurationMin": 555,
+      "journeyDurationMin": 515,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 14:00:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
+      "boardingPoint": "chityala",
+      "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 2,
+      "boardingPointCount": 1,
       "droppingPointCount": 1,
       "fareList": [
         690,
@@ -6153,9 +6143,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Choutuppal",
+        "sourceBp": "chityala",
         "destinationDp": "Tuni",
-        "bpId": 29975414,
+        "bpId": 29975345,
         "dpId": 29975347
       },
       "boReqParams": [
@@ -6295,16 +6285,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 18:00:00",
+      "departureTime": "2026-11-15 18:30:00",
       "arrivalTime": "2026-11-16 02:40:00",
-      "journeyDurationMin": 520,
+      "journeyDurationMin": 490,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 15:00:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
+      "boardingPoint": "Nakrekal",
+      "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 3,
+      "boardingPointCount": 2,
       "droppingPointCount": 1,
       "fareList": [
         690
@@ -6322,9 +6312,9 @@
       },
       "availableSeats": 8,
       "totalSeats": 43,
-      "availableWindowSeats": 1,
+      "availableWindowSeats": null,
       "availableSingleSeats": null,
-      "availableAisleSeats": 7,
+      "availableAisleSeats": null,
       "availableUpperSeats": null,
       "availableLowerSeats": 8,
       "isSeatLayoutAvailable": true,
@@ -6341,9 +6331,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Choutuppal",
+        "sourceBp": "Nakrekal",
         "destinationDp": "Tuni",
-        "bpId": 30097552,
+        "bpId": 30097551,
         "dpId": 29461604
       },
       "boReqParams": [
@@ -6993,16 +6983,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 18:30:00",
       "arrivalTime": "2026-11-16 03:05:00",
-      "journeyDurationMin": 555,
+      "journeyDurationMin": 515,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 14:00:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
+      "boardingPoint": "chityala",
+      "boardingPointId": null,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 2,
+      "boardingPointCount": 1,
       "droppingPointCount": 1,
       "fareList": [
         790,
@@ -7053,9 +7043,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Choutuppal",
+        "sourceBp": "chityala",
         "destinationDp": "Tuni",
-        "bpId": 27011495,
+        "bpId": 27011465,
         "dpId": 27011463
       },
       "boReqParams": [
@@ -7486,7 +7476,7 @@
       "boardingPointId": 66667,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 5,
+      "boardingPointCount": 4,
       "droppingPointCount": 1,
       "fareList": [
         920,
@@ -7530,9 +7520,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "LB Nagar",
+        "sourceBp": "Vanasthalipuram",
         "destinationDp": "Tuni",
-        "bpId": 21496184,
+        "bpId": 21496183,
         "dpId": 21500320
       },
       "boReqParams": [
@@ -7679,7 +7669,7 @@
       "boardingPointId": 79232,
       "droppingPoint": "TUNI BYPASS",
       "droppingPointId": null,
-      "boardingPointCount": 14,
+      "boardingPointCount": 13,
       "droppingPointCount": 1,
       "fareList": [
         860,
@@ -7723,114 +7713,15 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Tarnaka",
+        "sourceBp": "Habsiguda",
         "destinationDp": "TUNI BYPASS",
-        "bpId": 27049498,
+        "bpId": 27049766,
         "dpId": 25636289
       },
       "boReqParams": [
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-15 18:30:00"
-        }
-      ],
-      "source": "Hyderabad",
-      "destination": "Tuni"
-    },
-    {
-      "id": 55800762,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 55800762,
-      "serviceId": "182",
-      "serviceName": "HYDERABAD TO PATHAPATNAM (HADOBANGI)",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Seater / Sleeper (2+1)",
-      "busTypeId": 4,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        9,
-        86,
-        26,
-        10
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-15 18:00:00",
-      "arrivalTime": "2026-11-16 02:15:00",
-      "journeyDurationMin": 495,
-      "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 16:30:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
-      "droppingPoint": "TUNI BYPASS",
-      "droppingPointId": null,
-      "boardingPointCount": 6,
-      "droppingPointCount": 1,
-      "fareList": [
-        860,
-        1320
-      ],
-      "minFare": 860,
-      "maxFare": 1320,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 860,
-            "count": 16
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1320,
-            "count": 8
-          }
-        ]
-      },
-      "availableSeats": 24,
-      "totalSeats": 43,
-      "availableWindowSeats": 10,
-      "availableSingleSeats": null,
-      "availableAisleSeats": 12,
-      "availableUpperSeats": 8,
-      "availableLowerSeats": 16,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.5068194602124164,
-      "perzScore": 0.5068194602124164,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": null,
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Choutuppal",
-        "destinationDp": "TUNI BYPASS",
-        "bpId": 25636521,
-        "dpId": 25636289
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-15 16:30:00"
         }
       ],
       "source": "Hyderabad",
@@ -7933,6 +7824,105 @@
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:0:0",
           "serviceStartTime": "2026-11-15 22:30:00"
+        }
+      ],
+      "source": "Hyderabad",
+      "destination": "Tuni"
+    },
+    {
+      "id": 55800762,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 55800762,
+      "serviceId": "182",
+      "serviceName": "HYDERABAD TO PATHAPATNAM (HADOBANGI)",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Seater / Sleeper (2+1)",
+      "busTypeId": 4,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        9,
+        86,
+        26,
+        10
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-15 18:00:00",
+      "arrivalTime": "2026-11-16 02:15:00",
+      "journeyDurationMin": 495,
+      "dateOfJourney": "2026-11-15",
+      "firstBpTime": "2026-11-15 16:30:00",
+      "boardingPoint": "Choutuppal",
+      "boardingPointId": 95358,
+      "droppingPoint": "TUNI BYPASS",
+      "droppingPointId": null,
+      "boardingPointCount": 6,
+      "droppingPointCount": 1,
+      "fareList": [
+        860,
+        1320
+      ],
+      "minFare": 860,
+      "maxFare": 1320,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 860,
+            "count": 16
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1320,
+            "count": 8
+          }
+        ]
+      },
+      "availableSeats": 24,
+      "totalSeats": 43,
+      "availableWindowSeats": 10,
+      "availableSingleSeats": null,
+      "availableAisleSeats": 12,
+      "availableUpperSeats": 8,
+      "availableLowerSeats": 16,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.5068194602124164,
+      "perzScore": 0.5068194602124164,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": null,
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Choutuppal",
+        "destinationDp": "TUNI BYPASS",
+        "bpId": 25636521,
+        "dpId": 25636289
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-15 16:30:00"
         }
       ],
       "source": "Hyderabad",
@@ -8561,6 +8551,129 @@
       "destination": "Tuni"
     },
     {
+      "id": 59240008,
+      "operatorId": 25166,
+      "travelsName": "Mahi Trans Solutions",
+      "routeId": 59240008,
+      "serviceId": "SCH178469H",
+      "serviceName": "MTS-111",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/25166.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": null,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        10,
+        26,
+        7,
+        9,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-15 22:00:00",
+      "arrivalTime": "2026-11-16 09:30:00",
+      "journeyDurationMin": 690,
+      "dateOfJourney": "2026-11-15",
+      "firstBpTime": "2026-11-15 22:00:00",
+      "boardingPoint": "Bharat Nagar",
+      "boardingPointId": 79228,
+      "droppingPoint": "Tuni",
+      "droppingPointId": null,
+      "boardingPointCount": 42,
+      "droppingPointCount": 1,
+      "fareList": [
+        449,
+        599,
+        699,
+        799
+      ],
+      "minFare": 449,
+      "maxFare": 799,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 449,
+            "discountedPrice": 404,
+            "count": 14
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 599,
+            "discountedPrice": 539,
+            "count": 2
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 699,
+            "discountedPrice": 629,
+            "count": 5
+          }
+        ]
+      },
+      "availableSeats": 21,
+      "totalSeats": 41,
+      "availableWindowSeats": 10,
+      "availableSingleSeats": 5,
+      "availableAisleSeats": 8,
+      "availableUpperSeats": 5,
+      "availableLowerSeats": 16,
+      "isSeatLayoutAvailable": true,
+      "rating": 3,
+      "numberOfReviews": "0",
+      "busScore": 0.2656474650752979,
+      "perzScore": 0.2656474650752979,
+      "isRescheduled": null,
+      "rescheduleTime": 7,
+      "campaignType": [
+        999901,
+        4,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "ALLF_c654630",
+          "description": "Get 11 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 45,
+          "maxDiscount": 10.02,
+          "dealType": "DISCOVERY"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Ramachandra Puram",
+        "destinationDp": "Tuni",
+        "bpId": 30288754,
+        "dpId": 23942721
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "7:-1:0:0",
+          "serviceStartTime": "2026-11-15 22:00:00"
+        }
+      ],
+      "source": "Hyderabad",
+      "destination": "Tuni"
+    },
+    {
       "id": 57548049,
       "operatorId": 25166,
       "travelsName": "Mahi Trans Solutions",
@@ -8685,129 +8798,6 @@
       "destination": "Tuni"
     },
     {
-      "id": 59240008,
-      "operatorId": 25166,
-      "travelsName": "Mahi Trans Solutions",
-      "routeId": 59240008,
-      "serviceId": "SCH178469H",
-      "serviceName": "MTS-111",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/25166.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": null,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        10,
-        26,
-        7,
-        9,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-15 22:00:00",
-      "arrivalTime": "2026-11-16 09:30:00",
-      "journeyDurationMin": 690,
-      "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 22:00:00",
-      "boardingPoint": "Bharat Nagar",
-      "boardingPointId": 79228,
-      "droppingPoint": "Tuni",
-      "droppingPointId": null,
-      "boardingPointCount": 42,
-      "droppingPointCount": 1,
-      "fareList": [
-        449,
-        599,
-        699,
-        799
-      ],
-      "minFare": 449,
-      "maxFare": 799,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 449,
-            "discountedPrice": 404,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 599,
-            "discountedPrice": 539,
-            "count": 2
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 699,
-            "discountedPrice": 629,
-            "count": 5
-          }
-        ]
-      },
-      "availableSeats": 21,
-      "totalSeats": 41,
-      "availableWindowSeats": 10,
-      "availableSingleSeats": 5,
-      "availableAisleSeats": 8,
-      "availableUpperSeats": 5,
-      "availableLowerSeats": 16,
-      "isSeatLayoutAvailable": true,
-      "rating": 3,
-      "numberOfReviews": "0",
-      "busScore": 0.2656474650752979,
-      "perzScore": 0.2656474650752979,
-      "isRescheduled": null,
-      "rescheduleTime": 7,
-      "campaignType": [
-        999901,
-        4,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLF_c654630",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 45,
-          "maxDiscount": 10.02,
-          "dealType": "DISCOVERY"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Ramachandra Puram",
-        "destinationDp": "Tuni",
-        "bpId": 30288754,
-        "dpId": 23942721
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "7:-1:0:0",
-          "serviceStartTime": "2026-11-15 22:00:00"
-        }
-      ],
-      "source": "Hyderabad",
-      "destination": "Tuni"
-    },
-    {
       "id": 58946009,
       "operatorId": 35511,
       "travelsName": "Bhargav sai Travels",
@@ -8917,114 +8907,6 @@
       "destination": "Tuni"
     },
     {
-      "id": 26584526,
-      "operatorId": 27540,
-      "travelsName": "PCR Travels",
-      "routeId": 26584526,
-      "serviceId": "3",
-      "serviceName": "Hyderabad - Pathapatnam ",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/27540.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": null,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        7
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
-      "arrivalTime": "2026-11-16 03:30:00",
-      "journeyDurationMin": 580,
-      "dateOfJourney": "2026-11-15",
-      "firstBpTime": "2026-11-15 17:30:00",
-      "boardingPoint": "Choutuppal",
-      "boardingPointId": 95358,
-      "droppingPoint": "Tuni By Pass",
-      "droppingPointId": null,
-      "boardingPointCount": 3,
-      "droppingPointCount": 1,
-      "fareList": [
-        2000,
-        3000
-      ],
-      "minFare": 2000,
-      "maxFare": 3000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2000,
-            "discountedPrice": 1900,
-            "count": 21
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "discountedPrice": 2850,
-            "count": 12
-          }
-        ]
-      },
-      "availableSeats": 33,
-      "totalSeats": 52,
-      "availableWindowSeats": 18,
-      "availableSingleSeats": 9,
-      "availableAisleSeats": 10,
-      "availableUpperSeats": 12,
-      "availableLowerSeats": 21,
-      "isSeatLayoutAvailable": true,
-      "rating": 2.9,
-      "numberOfReviews": "0",
-      "busScore": 0.16785606587001664,
-      "perzScore": 0.16785606587001664,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_1bef18b7",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 100,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Choutuppal",
-        "destinationDp": "Tuni By Pass",
-        "bpId": 24178115,
-        "dpId": 24178113
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-15 17:30:00"
-        }
-      ],
-      "source": "Hyderabad",
-      "destination": "Tuni"
-    },
-    {
       "id": 58436004,
       "operatorId": 31679,
       "travelsName": "SUNRISE TOUR AND TRAVELS",
@@ -9104,6 +8986,114 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-15 22:00:00"
+        }
+      ],
+      "source": "Hyderabad",
+      "destination": "Tuni"
+    },
+    {
+      "id": 26584526,
+      "operatorId": 27540,
+      "travelsName": "PCR Travels",
+      "routeId": 26584526,
+      "serviceId": "3",
+      "serviceName": "Hyderabad - Pathapatnam ",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/27540.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": null,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        7
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-15 18:20:00",
+      "arrivalTime": "2026-11-16 03:30:00",
+      "journeyDurationMin": 550,
+      "dateOfJourney": "2026-11-15",
+      "firstBpTime": "2026-11-15 17:30:00",
+      "boardingPoint": "Chintal",
+      "boardingPointId": 66791,
+      "droppingPoint": "Tuni By Pass",
+      "droppingPointId": null,
+      "boardingPointCount": 2,
+      "droppingPointCount": 1,
+      "fareList": [
+        2000,
+        3000
+      ],
+      "minFare": 2000,
+      "maxFare": 3000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 2000,
+            "discountedPrice": 1900,
+            "count": 21
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 3000,
+            "discountedPrice": 2850,
+            "count": 12
+          }
+        ]
+      },
+      "availableSeats": 33,
+      "totalSeats": 52,
+      "availableWindowSeats": 18,
+      "availableSingleSeats": 9,
+      "availableAisleSeats": 10,
+      "availableUpperSeats": 12,
+      "availableLowerSeats": 21,
+      "isSeatLayoutAvailable": true,
+      "rating": 2.9,
+      "numberOfReviews": "0",
+      "busScore": 0.16785606587001664,
+      "perzScore": 0.16785606587001664,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        999901,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "ALLC_1bef18b7",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 100,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Chintal",
+        "destinationDp": "Tuni By Pass",
+        "bpId": 24260317,
+        "dpId": 24178113
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-15 17:30:00"
         }
       ],
       "source": "Hyderabad",
@@ -9320,16 +9310,16 @@
         "LUG": "2,1"
       },
       "inventoryTags": null,
-      "departureTime": "2026-11-15 17:50:00",
+      "departureTime": "2026-11-15 17:51:00",
       "arrivalTime": "2026-11-16 04:20:00",
-      "journeyDurationMin": 630,
+      "journeyDurationMin": 629,
       "dateOfJourney": "2026-11-15",
       "firstBpTime": "2026-11-15 18:00:00",
-      "boardingPoint": "Lakdikapul",
-      "boardingPointId": 66026,
+      "boardingPoint": "Nampally",
+      "boardingPointId": 66061,
       "droppingPoint": "Tuni",
       "droppingPointId": null,
-      "boardingPointCount": 33,
+      "boardingPointCount": 32,
       "droppingPointCount": 1,
       "fareList": [
         799
@@ -9366,9 +9356,9 @@
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
-        "sourceBp": "Lakdikapul",
+        "sourceBp": "Nampally",
         "destinationDp": "Tuni",
-        "bpId": 27856104,
+        "bpId": 30313966,
         "dpId": 27867560
       },
       "boReqParams": [
