@@ -26,9 +26,12 @@ jobs:
       - name: Run price tracker
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          APIFY_API_URL: ${{ secrets.APIFY_API_URL || 'https://api.apify.com' }}
+          APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python tracker.py
+      
 
       - name: Commit updated fare history
         run: |
