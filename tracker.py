@@ -9,15 +9,6 @@ NTFY_TOPIC = os.environ.get("NTFY_TOPIC")
 APIFY_API_URL = (os.environ.get("APIFY_API_URL") or "https://api.apify.com").rstrip("/")
 APIFY_ACTOR_ID = os.environ.get("APIFY_ACTOR_ID")
 
-if not APIFY_TOKEN:
-    raise RuntimeError("APIFY_TOKEN is not set. Use the raw token only, not a URL.")
-if not APIFY_ACTOR_ID:
-    raise RuntimeError("APIFY_ACTOR_ID is not set. Add the Apify actor ID.")
-if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY is not set.")
-if not NTFY_TOPIC:
-    raise RuntimeError("NTFY_TOPIC is not set.")
-
 CONFIG_FILE = "config.json"
 HISTORY_FILE = "history.json"
 
@@ -30,7 +21,7 @@ def load_json(filepath, default):
 
 
 def scraper_input(config):
-    """Build the actor input, accepting both its native names and legacy config keys."""
+    """Build the actor input, accepting both the scraper schema and old config keys."""
     return {
         "source": config["source"],
         "destination": config["destination"],
@@ -38,9 +29,7 @@ def scraper_input(config):
         "pageSize": config.get("pageSize", 20),
         "maxItems": config.get("maxItems", 100),
         "country": config.get("country", "india"),
-        "proxyConfiguration": config.get(
-            "proxyConfiguration", {"useApifyProxy": True}
-        ),
+        "proxyConfiguration": config.get("proxyConfiguration", {"useApifyProxy": True}),
     }
 
 
@@ -108,9 +97,9 @@ def send_android_alert(config, message):
         headers={
             "Title": f"Bus Drop ({seat_type}): {config['source']} to {config['destination']}",
             "Priority": "high",
-            "Tags": "bus,money_with_wings"
+            "Tags": "bus,money_with_wings",
         },
-        timeout=15
+        timeout=15,
     )
 
 
@@ -118,6 +107,24 @@ def main():
     config = load_json(CONFIG_FILE, {})
     if not config.get("active", True):
         print("Tracker is paused in config.json. Exiting.")
+        return
+
+    missing = [
+        name
+        for name, value in {
+            "APIFY_TOKEN": APIFY_TOKEN,
+            "APIFY_ACTOR_ID": APIFY_ACTOR_ID,
+            "GEMINI_API_KEY": GEMINI_API_KEY,
+            "NTFY_TOPIC": NTFY_TOPIC,
+        }.items()
+        if not value
+    ]
+    if missing:
+        print(
+            "Skipping tracker run because required secret(s) are missing: "
+            + ", ".join(missing)
+            + ". Add them in GitHub repository secrets to enable live tracking."
+        )
         return
 
     if not config.get("source") or not config.get("destination"):
