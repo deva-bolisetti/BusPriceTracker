@@ -12,6 +12,9 @@ APIFY_ACTOR_ID = os.environ.get("APIFY_ACTOR_ID")
 CONFIG_FILE = "config.json"
 HISTORY_FILE = "history.json"
 
+# Try the lowest-cost model first, then fall back to the existing general-purpose model.
+AI_MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash")
+
 
 def load_json(filepath, default):
     if os.path.exists(filepath):
@@ -81,11 +84,23 @@ def analyze_with_ai(config, previous_buses, current_buses):
     CURRENT_FARES:
     {json.dumps(current_buses)}
     """
-    response = client.models.generate_content(
-        model="gemini-3.8-flash",
-        contents=prompt,
-    )
-    return response.text.strip()
+
+    for model in AI_MODELS:
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=prompt,
+            )
+            verdict = (response.text or "").strip()
+            if not verdict:
+                raise ValueError("The model returned an empty response.")
+            print(f"AI analysis completed with {model}.")
+            return verdict
+        except Exception as error:
+            print(f"AI model {model} failed: {error}")
+
+    print("AI analysis failed for all configured models; keeping the previous history for a retry.")
+    return None
 
 
 def send_android_alert(config, message):
@@ -146,6 +161,8 @@ def main():
 
     if previous_buses and current_buses:
         verdict = analyze_with_ai(config, previous_buses, current_buses)
+        if verdict is None:
+            return
         if verdict != "NO_DROP":
             send_android_alert(config, verdict)
             print("Alert sent:\n", verdict)
