@@ -1,9 +1,9 @@
 {
-  "active": false,
+  "active": true,
   "source": "Hyderabad",
   "destination": "Tuni",
-  "date": "2026-11-16",
+  "date": "2026-11-15",
   "bus_ac_type": "AC",
   "seat_type": "Single Sleeper",
-  "min_drop_amount": 50
+  "min_drop_amount": 
 }
