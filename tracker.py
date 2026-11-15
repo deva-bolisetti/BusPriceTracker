@@ -29,19 +29,28 @@ def load_json(filepath, default):
     return default
 
 
-def fetch_latest_buses(source, destination, date):
-    url = f"{APIFY_API_URL}/v2/acts/{APIFY_ACTOR_ID}/run-sync-get-dataset-items"
-
-    payload = {
-        "source": source,
-        "destination": destination,
-        "departureDate": date
+def scraper_input(config):
+    """Build the actor input, accepting both its native names and legacy config keys."""
+    return {
+        "source": config["source"],
+        "destination": config["destination"],
+        "dateOfJourney": config.get("dateOfJourney", config.get("date", "")),
+        "pageSize": config.get("pageSize", 20),
+        "maxItems": config.get("maxItems", 100),
+        "country": config.get("country", "india"),
+        "proxyConfiguration": config.get(
+            "proxyConfiguration", {"useApifyProxy": True}
+        ),
     }
+
+
+def fetch_latest_buses(actor_input):
+    url = f"{APIFY_API_URL}/v2/acts/{APIFY_ACTOR_ID}/run-sync-get-dataset-items"
 
     response = requests.post(
         url,
         headers={"Authorization": f"Bearer {APIFY_TOKEN}"},
-        json=payload,
+        json=actor_input,
         timeout=120,
     )
     response.raise_for_status()
@@ -56,26 +65,30 @@ def fetch_latest_buses(source, destination, date):
 
 def analyze_with_ai(config, previous_buses, current_buses):
     client = genai.Client(api_key=GEMINI_API_KEY)
+    journey_date = config.get("dateOfJourney", config.get("date", "")) or "unspecified"
+    bus_ac_type = config.get("bus_ac_type", "Any")
+    seat_type = config.get("seat_type", "Any")
+    min_drop_amount = config.get("min_drop_amount", 50)
     prompt = f"""
-    You are a bus fare analyst tracking {config['source']} to {config['destination']} on {config['date']}.
-    
+    You are a bus fare analyst tracking {config['source']} to {config['destination']} on {journey_date}.
+
     STRICT FILTERS (Apply these first):
-    - Bus AC Preference: {config['bus_ac_type']} (Only include buses matching this preference; if 'Any', include both AC and Non-AC).
-    - Seat Type Preference: {config['seat_type']} (Only evaluate fares for this exact seat tier; if 'Any', evaluate all tiers separately).
-    
+    - Bus AC Preference: {bus_ac_type} (Only include buses matching this preference; if 'Any', include both AC and Non-AC).
+    - Seat Type Preference: {seat_type} (Only evaluate fares for this exact seat tier; if 'Any', evaluate all tiers separately).
+
     COMPARISON RULES:
     1. Match buses across PREVIOUS_FARES and CURRENT_FARES by Operator Name, Bus Type, and Departure Time.
     2. Ignore cases where a lower price appears simply because a higher-priced tier sold out and only a cheaper tier remains.
-    3. Only flag a GENUINE price drop if the matching seat tier dropped in fare by at least ₹{config['min_drop_amount']}.
+    3. Only flag a GENUINE price drop if the matching seat tier dropped in fare by at least ₹{min_drop_amount}.
     4. If there is NO genuine drop matching the filters, reply with exact text: NO_DROP
     5. If there IS a genuine drop, reply with a concise alert showing:
        - Operator & Bus Type
        - Departure Time
        - Seat Type & Old Fare -> New Fare
-    
+
     PREVIOUS_FARES:
     {json.dumps(previous_buses)}
-    
+
     CURRENT_FARES:
     {json.dumps(current_buses)}
     """
@@ -88,11 +101,12 @@ def analyze_with_ai(config, previous_buses, current_buses):
 
 def send_android_alert(config, message):
     ntfy_url = NTFY_TOPIC if NTFY_TOPIC.startswith("http") else f"https://ntfy.sh/{NTFY_TOPIC}"
+    seat_type = config.get("seat_type", "Any")
     requests.post(
         ntfy_url,
         data=message.encode("utf-8"),
         headers={
-            "Title": f"Bus Drop ({config['seat_type']}): {config['source']} to {config['destination']}",
+            "Title": f"Bus Drop ({seat_type}): {config['source']} to {config['destination']}",
             "Priority": "high",
             "Tags": "bus,money_with_wings"
         },
@@ -106,11 +120,22 @@ def main():
         print("Tracker is paused in config.json. Exiting.")
         return
 
-    history = load_json(HISTORY_FILE, {})
-    search_signature = f"{config['source']}|{config['destination']}|{config['date']}|{config['bus_ac_type']}|{config['seat_type']}"
+    if not config.get("source") or not config.get("destination"):
+        raise ValueError("config.json must include non-empty source and destination values.")
 
+    actor_input = scraper_input(config)
+    search_signature = json.dumps(
+        {
+            **actor_input,
+            "bus_ac_type": config.get("bus_ac_type", "Any"),
+            "seat_type": config.get("seat_type", "Any"),
+        },
+        sort_keys=True,
+    )
+
+    history = load_json(HISTORY_FILE, {})
     previous_buses = history.get("buses", []) if history.get("signature") == search_signature else []
-    current_buses = fetch_latest_buses(config["source"], config["destination"], config["date"])
+    current_buses = fetch_latest_buses(actor_input)
 
     if previous_buses and current_buses:
         verdict = analyze_with_ai(config, previous_buses, current_buses)
