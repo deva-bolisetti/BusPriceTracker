@@ -329,10 +329,10 @@
       "droppingPointCount": 1,
       "fareList": [
         690,
-        1030
+        1930
       ],
       "minFare": 690,
-      "maxFare": 1030,
+      "maxFare": 1930,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -343,7 +343,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1030,
+            "originalPrice": 1930,
             "count": 3
           }
         ]
