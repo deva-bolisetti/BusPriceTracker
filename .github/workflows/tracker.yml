@@ -13,30 +13,69 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
+        id: checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
+        id: setup-python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests google-genai
+        id: install-dependencies
+        run: |
+          echo "Installing Python dependencies..."
+          pip install requests google-genai
+          echo "Dependency installation completed."
 
       - name: Run price tracker
+        id: tracker
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           APIFY_API_URL: ${{ secrets.APIFY_API_URL || 'https://api.apify.com' }}
           APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python tracker.py
-      
+        run: python -u tracker.py
 
       - name: Commit updated fare history
+        id: commit-history
         run: |
+          echo "Checking whether fare history changed..."
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add history.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update fare history"
-          git push
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No fare-history changes to commit."
+          else
+            git commit -m "Update fare history"
+            git push
+            echo "Fare history committed and pushed."
+          fi
+
+      - name: Add run summary
+        if: always()
+        env:
+          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
+          SETUP_OUTCOME: ${{ steps.setup-python.outcome }}
+          INSTALL_OUTCOME: ${{ steps.install-dependencies.outcome }}
+          TRACKER_OUTCOME: ${{ steps.tracker.outcome }}
+          HISTORY_OUTCOME: ${{ steps.commit-history.outcome }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          {
+            echo "## Bus fare tracker workflow"
+            echo
+            echo "**Overall result:** ${JOB_STATUS}"
+            echo
+            echo "| Step | Result |"
+            echo "| --- | --- |"
+            echo "| Checkout repository | ${CHECKOUT_OUTCOME:-not run} |"
+            echo "| Set up Python | ${SETUP_OUTCOME:-not run} |"
+            echo "| Install dependencies | ${INSTALL_OUTCOME:-not run} |"
+            echo "| Run price tracker | ${TRACKER_OUTCOME:-not run} |"
+            echo "| Commit fare history | ${HISTORY_OUTCOME:-not run} |"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "GitHub Actions run summary written."
