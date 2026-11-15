@@ -13,7 +13,7 @@ CONFIG_FILE = "config.json"
 HISTORY_FILE = "history.json"
 
 # Try the lowest-cost model first, then fall back to the existing general-purpose model.
-AI_MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash")
+AI_MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.1-flash-lite")
 
 
 def load_json(filepath, default):
