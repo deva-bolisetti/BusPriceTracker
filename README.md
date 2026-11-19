@@ -12,12 +12,12 @@ Trip settings live in `config.json`, so you can change them from the GitHub mobi
 GitHub Actions (every 15 min)
    → read config.json          which trip to track
    → fetch fares from redBus   free JSON API
-   → compare with history.json yesterday's/previous snapshot
+   → compare with data/history.json   the previous snapshot
    → if a fare dropped ≥ your threshold → ntfy push to your phone
-   → commit history.json       becomes the next baseline
+   → commit data/history.json    becomes the next baseline
 ```
 
-- The first run for a trip saves a baseline in `history.json`; comparison starts on the run after that.
+- The first run for a trip saves a baseline in `data/history.json`; comparison starts on the run after that.
 - A run with no qualifying drop sends **no notification** — you only get pushed when something actually drops.
 - Changing the source, destination, travel date, AC preference or seat preference changes the trip *signature*, so the old baseline is not compared against the new trip. The next successful run establishes a fresh baseline.
 - Changing only `min_drop_amount` keeps your baseline intact.
@@ -98,7 +98,7 @@ Never put credentials in `config.json` or commit them.
 
 `tracker-apify.yml` is deliberately **not** scheduled: it bills per run, and its credentials
 expire. Enable it only if redBus changes its API and you want a working fallback while you fix
-`redbus_client.py`. Never run both on a schedule — they both write `history.json` and would
+`src/redbus_client.py`. Never run both on a schedule — they both write `data/history.json` and would
 race each other.
 
 ## Run it locally
@@ -107,31 +107,52 @@ race each other.
 pip install -r requirements.txt
 
 # See live fares for the configured trip (no key needed)
-python verify_redbus.py
+python src/verify_redbus.py
 
 # Do a real tracking run (needs an ntfy topic to actually notify)
-NTFY_TOPIC=your-topic python tracker_direct.py
+NTFY_TOPIC=your-topic python src/tracker_direct.py
 ```
 
 On Windows PowerShell, set the variable with `$env:NTFY_TOPIC="your-topic"`.
 
-## Files
+Both scripts locate `config.json` and `data/` relative to the repository root, so they work
+from any working directory.
+
+## Project layout
+
+```
+.
+├── config.json                 the trip you are tracking (the file you edit)
+├── requirements.txt
+├── README.md
+├── src/
+│   ├── redbus_client.py        free redBus JSON client + normaliser
+│   ├── tracker_direct.py       scheduled runner: fetch → compare → notify
+│   ├── tracker_apify.py        optional Apify-backed runner
+│   └── verify_redbus.py        manual inspector for live fares
+└── data/
+    ├── history.json            the baseline snapshot, committed each run
+    └── cities.json             cached redBus city IDs
+```
 
 | File | What it does |
 | --- | --- |
 | `config.json` | The trip you are tracking. The only file you normally edit. |
-| `redbus_client.py` | Free redBus JSON client; normalises results to the stored schema. |
-| `tracker_direct.py` | Scheduled runner: fetch → compare → notify. |
-| `tracker.py` | Optional Apify-backed runner; same comparison logic. |
-| `verify_redbus.py` | Manual inspector for live fares and the endpoint contract. |
-| `cities.json` | Cached redBus city IDs, so lookups happen once. |
-| `history.json` | The baseline snapshot, committed by the workflow each run. |
+| `src/redbus_client.py` | Free redBus JSON client; normalises results to the stored schema. |
+| `src/tracker_direct.py` | Scheduled runner: fetch → compare → notify. |
+| `src/tracker_apify.py` | Optional Apify-backed runner; same comparison logic. |
+| `src/verify_redbus.py` | Manual inspector for live fares and the endpoint contract. |
+| `data/cities.json` | Cached redBus city IDs, so lookups happen once. |
+| `data/history.json` | The baseline snapshot, committed by the workflow each run. |
+
+`config.json` stays at the repository root on purpose: it is the one file you edit from the
+GitHub mobile app, so it should be the easiest thing to find.
 
 ## Notes and caveats
 
-- `history.json` is written by the workflow. Don't hand-edit it during normal operation; a scheduled run will overwrite you. Editing a price in it is a handy way to test alerting.
-- Large diffs in `history.json` are normal — redBus reorders results between runs even when prices are unchanged.
-- This relies on redBus's internal, undocumented endpoints. They can change without notice. If the tracker stops finding buses, run `verify_redbus.py` to see what broke.
+- `data/history.json` is written by the workflow. Don't hand-edit it during normal operation; a scheduled run will overwrite you. Editing a price in it is a handy way to test alerting.
+- Large diffs in `data/history.json` are normal — redBus reorders results between runs even when prices are unchanged.
+- This relies on redBus's internal, undocumented endpoints. They can change without notice. If the tracker stops finding buses, run `src/verify_redbus.py` to see what broke.
 - Scheduled Actions are not guaranteed to start exactly on time, and can be delayed under load.
 - Intended for personal, low-frequency tracking. Be considerate: don't drop the interval to seconds.
 

@@ -1,22 +1,25 @@
 """RedBus-direct tracker: fetches fares for free directly from redBus.
 
-Uses the same config.json, history.json and ntfy alerting as tracker.py, but
+Uses the same config.json, history.json and ntfy alerting as tracker_apify.py, but
 replaces the Apify fetch and the Gemini analysis with deterministic Python.
 No paid API is involved anywhere in this runner.
 
 Usage:
-    python tracker_direct.py
+    python src/tracker_direct.py
 """
 
 import json
 import os
+from pathlib import Path
 
 import redbus_client
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC")
 
-CONFIG_FILE = "config.json"
-HISTORY_FILE = "history.json"
+CONFIG_FILE = REPO_ROOT / "config.json"
+HISTORY_FILE = REPO_ROOT / "data" / "history.json"
 
 # Gemini is no longer called; alert text is formatted locally by format_alert_message().
 # Kept here only to document which models the old analysis used, in case AI phrasing is
@@ -32,7 +35,7 @@ def load_json(filepath, default):
 
 
 def scraper_input(config):
-    """Mirror tracker.py so the trip signature stays byte-compatible."""
+    """Mirror tracker_apify.py so the trip signature stays byte-compatible."""
     return {
         "source": config["source"],
         "destination": config["destination"],
@@ -53,6 +56,7 @@ def fetch_latest_buses(config):
         date_of_journey=journey_date,
         from_city_id=config.get("fromCity"),
         to_city_id=config.get("toCity"),
+        city_cache_file=str(REPO_ROOT / "data" / "cities.json"),
     )
 
 
@@ -369,6 +373,7 @@ def main():
     else:
         print("New trip baseline saved. Will compare on the next run.")
 
+    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump({"signature": search_signature, "buses": current_buses}, f, indent=2)
 

@@ -35,7 +35,7 @@ jobs:
         id: tracker
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python -u tracker_direct.py
+        run: python -u src/tracker_direct.py
 
       - name: Commit updated fare history
         id: commit-history
@@ -43,7 +43,7 @@ jobs:
           echo "Checking whether fare history changed..."
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add history.json cities.json
+          git add data/history.json data/cities.json
           if git diff --quiet && git diff --staged --quiet; then
             echo "No fare-history changes to commit."
           else

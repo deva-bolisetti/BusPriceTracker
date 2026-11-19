@@ -3,7 +3,7 @@ name: Bus Fare Drop Tracker (Apify fallback)
 on:
   # Manual only. The free redBus-direct workflow owns the schedule because Apify
   # bills per run and its token is not guaranteed to stay valid. Both workflows
-  # write history.json, so they must never run on the same cron.
+  # write data/history.json, so they must never run on the same cron.
   #
   # Note: this runner requests maxItems=100, so a run here shortens the baseline to
   # 100 buses. The direct runner restores the full inventory on its next run.
@@ -40,7 +40,7 @@ jobs:
           APIFY_API_URL: ${{ secrets.APIFY_API_URL || 'https://api.apify.com' }}
           APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-        run: python -u tracker.py
+        run: python -u src/tracker_apify.py
 
       - name: Commit updated fare history
         id: commit-history
@@ -48,7 +48,7 @@ jobs:
           echo "Checking whether fare history changed..."
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add history.json
+          git add data/history.json
           if git diff --quiet && git diff --staged --quiet; then
             echo "No fare-history changes to commit."
           else

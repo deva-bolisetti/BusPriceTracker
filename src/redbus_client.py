@@ -12,10 +12,13 @@ import json
 import os
 import time
 from datetime import datetime
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import quote
 
 import requests
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 REDBUS_BASE = "https://www.redbus.in"
 SEARCH_PATH = "/rpw/api/searchResults"
@@ -32,7 +35,7 @@ REQUEST_TIMEOUT = 30
 RETRIES = 3
 RETRY_BACKOFF = 2.0
 
-CITY_CACHE_FILE = "cities.json"
+CITY_CACHE_FILE = str(REPO_ROOT / "data" / "cities.json")
 
 EMPTY_FILTER_BODY: Dict[str, Any] = {
     "appliedFilterCount": 0,
@@ -118,6 +121,9 @@ def load_city_cache(path: str = CITY_CACHE_FILE) -> Dict[str, Any]:
 
 def save_city_cache(cache: Dict[str, Any], path: str = CITY_CACHE_FILE) -> None:
     try:
+        parent = os.path.dirname(path)
+        if parent:
+            os.makedirs(parent, exist_ok=True)
         with open(path, "w", encoding="utf-8") as handle:
             json.dump(cache, handle, indent=2, sort_keys=True)
     except OSError as error:

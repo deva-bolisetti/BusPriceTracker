@@ -1,14 +1,18 @@
 import json
 import os
+from pathlib import Path
+
 import requests
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 APIFY_TOKEN = os.environ.get("APIFY_TOKEN")
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC")
 APIFY_API_URL = (os.environ.get("APIFY_API_URL") or "https://api.apify.com").rstrip("/")
 APIFY_ACTOR_ID = os.environ.get("APIFY_ACTOR_ID")
 
-CONFIG_FILE = "config.json"
-HISTORY_FILE = "history.json"
+CONFIG_FILE = REPO_ROOT / "config.json"
+HISTORY_FILE = REPO_ROOT / "data" / "history.json"
 
 # Gemini is no longer called; alert text is formatted locally by format_alert_message().
 # The old model list and prompt are preserved in the commented-out block below.
@@ -334,6 +338,7 @@ def main():
     else:
         print("New trip baseline saved. Will compare on the next run.")
 
+    HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump({"signature": search_signature, "buses": current_buses}, f, indent=2)
 

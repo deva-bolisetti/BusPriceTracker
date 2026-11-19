@@ -1,18 +1,21 @@
 """Validate redbus_client against the live site and print a comparison summary.
 
 Usage:
-    python verify_redbus.py            # uses config.json
-    python verify_redbus.py 2026-11-25 # override travel date
+    python src/verify_redbus.py            # uses config.json
+    python src/verify_redbus.py 2026-11-25 # override travel date
 """
 
 import json
 import sys
+from pathlib import Path
 
 import redbus_client
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
 
 def load_config():
-    with open("config.json", "r", encoding="utf-8") as handle:
+    with open(REPO_ROOT / "config.json", "r", encoding="utf-8") as handle:
         return json.load(handle)
 
 
