@@ -43,13 +43,12 @@ jobs:
         run: |
           echo "Installing Python dependencies..."
           python -m pip install --upgrade pip
-          pip install requests google-genai
+          pip install requests
           echo "Dependency installation completed."
 
       - name: Run price tracker
         id: tracker
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python -u tracker_direct.py
 

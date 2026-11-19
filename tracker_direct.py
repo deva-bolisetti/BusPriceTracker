@@ -1,8 +1,8 @@
-"""RedBus-direct tracker: identical behaviour to tracker.py, data from redbus_client.
+"""RedBus-direct tracker: fetches fares for free directly from redBus.
 
-tracker.py (Apify) on main is untouched. This runner uses the same config.json,
-history.json, Gemini analysis and ntfy alerting, but fetches fares for free
-directly from redBus.
+Uses the same config.json, history.json and ntfy alerting as tracker.py, but
+replaces the Apify fetch and the Gemini analysis with deterministic Python.
+No paid API is involved anywhere in this runner.
 
 Usage:
     python tracker_direct.py
@@ -13,14 +13,15 @@ import os
 
 import redbus_client
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 NTFY_TOPIC = os.environ.get("NTFY_TOPIC")
 
 CONFIG_FILE = "config.json"
 HISTORY_FILE = "history.json"
 
-# Try the lowest-cost model first, then fall back to the existing general-purpose model.
-AI_MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.1-flash-lite")
+# Gemini is no longer called; alert text is formatted locally by format_alert_message().
+# Kept here only to document which models the old analysis used, in case AI phrasing is
+# ever reintroduced (see the commented-out analyze_with_ai block further down).
+# AI_MODELS = ("gemini-3.5-flash-lite", "gemini-3.8-flash", "gemini-3.1-flash-lite")
 
 
 def load_json(filepath, default):
@@ -89,12 +90,18 @@ def _bus_key(bus):
 
 
 def find_fare_drops(config, previous_buses, current_buses):
-    """Deterministically narrow 160+ buses down to genuine tier-level drops.
-
-    The prompt previously carried both full snapshots (~269k tokens). That is far
-    beyond what a small model reliably reads, and it answered NO_DROP while a real
-    Rs.1000 drop sat in the payload. Filtering in Python first means the model only
-    ever judges a handful of candidates.
+    """Deterministically narrow buses down to genuine tier-level drops.
+    Returns a list of candidate drop dicts, sorted by drop amount descending.
+    Each candidate dict contains:
+    - operator: Bus operator name
+    - busType: Bus type
+    - departureTime: Departure time
+    - seatTier: Seat tier
+    - oldFare: Previous fare
+    - newFare: New fare
+    - drop: Fare drop amount
+    - seatsBefore: Number of seats available before the drop
+    - seatsAfter: Number of seats available after the drop
     """
     min_drop = int(config.get("min_drop_amount", 50))
     ac_pref = str(config.get("bus_ac_type", "Any")).strip().lower()
@@ -105,20 +112,19 @@ def find_fare_drops(config, previous_buses, current_buses):
     else:
         tier_keys = ["SEATER", "SLEEPER", "SINGLE_SLEEPER"]
 
-    previous_by_key = {}
-    for bus in previous_buses:
-        previous_by_key.setdefault(_bus_key(bus), bus)
-
     candidates = []
-    for bus in current_buses:
-        key = _bus_key(bus)
-        old_bus = previous_by_key.get(key)
-        if old_bus is None:
-            continue
+    previous_by_key = {_bus_key(bus): bus for bus in previous_buses}
 
+    for bus in current_buses:
         if ac_pref == "ac" and not bus.get("isAc"):
             continue
         if ac_pref in ("non-ac", "nonac", "non ac") and bus.get("isAc"):
+            continue
+
+        old_bus = previous_by_key.get(_bus_key(bus))
+        if old_bus is None:
+            # A bus absent from history.json has no baseline fare, so it can
+            # never produce a drop. Skip it rather than reporting it.
             continue
 
         for tier in tier_keys:
@@ -149,74 +155,120 @@ def find_fare_drops(config, previous_buses, current_buses):
     return candidates
 
 
-def analyze_with_ai(config, previous_buses, current_buses):
-    from google import genai
+def format_alert_message(config, candidates):
+    """Build the ntfy message from deterministic drop data.
 
-    client = genai.Client(api_key=GEMINI_API_KEY)
-    journey_date = config.get("dateOfJourney", config.get("date", "")) or "unspecified"
-    bus_ac_type = config.get("bus_ac_type", "Any")
-    seat_type = config.get("seat_type", "Any")
-    min_drop_amount = config.get("min_drop_amount", 50)
-    candidates = find_fare_drops(config, previous_buses, current_buses)
+    This replaces what Gemini used to do. Gemini's only roles were: reject sold-out
+    tiers, reply NO_DROP when nothing qualified, and phrase the alert. All three are
+    deterministic:
 
-    if not candidates:
-        print(f"Deterministic filter found no tier drop >= Rs.{min_drop_amount} "
-              f"for {bus_ac_type}/{seat_type}.")
-        return "NO_DROP"
+      - Sold-out tiers never appear in fareDetailsBySeatType, so there is nothing to
+        reject. (Verified: 0 of 164 buses in a live baseline had count == 0.)
+      - "Nothing qualified" is simply an empty candidate list.
+      - Phrasing is a template.
 
-    print(f"Deterministic filter found {len(candidates)} candidate drop(s); "
-          f"sending {len(json.dumps(candidates))} chars to the model "
-          f"(versus {len(json.dumps(previous_buses)) + len(json.dumps(current_buses))} unfiltered).")
-
-    prompt = f"""
-    You are a bus fare analyst tracking {config['source']} to {config['destination']} on {journey_date}.
-
-    A deterministic script already matched buses across both snapshots and filtered for
-    fare drops of at least ₹{min_drop_amount} on the requested seat tier. Your only job is
-    to discard false positives and write the alert.
-
-    STRICT FILTERS already applied: Bus AC Preference = {bus_ac_type}; Seat Type = {seat_type}.
-
-    REJECT a candidate only when:
-    - seatsAfter is 0, meaning the tier is sold out and the price is not bookable.
-    - the drop is on a different seat tier than requested.
-
-    Otherwise ACCEPT it. The candidates below are already tier-matched, so a listed drop
-    is a genuine drop for that tier.
-
-    Reply with exact text NO_DROP only if every candidate is rejected.
-    Otherwise reply with a concise alert listing, for each accepted candidate:
-      - Operator & Bus Type
-      - Departure Time
-      - Seat Tier & Old Fare -> New Fare
-
-    CANDIDATE_DROPS:
-    {json.dumps(candidates, indent=2)}
+    Gemini could never find a drop the filter missed, since it only saw the shortlist,
+    so removing it loses no detection ability.
     """
+    if not candidates:
+        return None
 
-    for model in AI_MODELS:
-        try:
-            print("Trying with model: ", model)
-            response = client.models.generate_content(
-                model=model,
-                contents=prompt,
-            )
-            verdict = (response.text or "").strip()
-            usage = getattr(response, "usage_metadata", None)
-            if usage is not None:
-                print(f"  tokens: prompt={getattr(usage, 'prompt_token_count', '?')} "
-                      f"total={getattr(usage, 'total_token_count', '?')}")
-            print("Response from AI: ", verdict)
-            if not verdict:
-                raise ValueError("The model returned an empty response.")
-            print(f"AI analysis completed with {model}.")
-            return verdict
-        except Exception as error:
-            print(f"AI model {model} failed: {error}")
-            continue
+    min_drop = int(config.get("min_drop_amount", 50))
+    source = config.get("source", "?")
+    destination = config.get("destination", "?")
+    journey_date = config.get("dateOfJourney", config.get("date", "")) or "unspecified"
 
-    print("AI analysis failed for all configured models; keeping the previous history for a retry.")
-    return None
+    # Match the old AI output shape so alert history stays comparable.
+    lines = [f"Bus fare drop: {source} to {destination} on {journey_date}"]
+    if len(candidates) > 1:
+        lines[0] += f" ({len(candidates)} drops, min Rs.{min_drop})"
+
+    tier_labels = {
+        "SINGLE_SLEEPER": "Single Sleeper",
+        "SLEEPER": "Double Sleeper",
+        "SEATER": "Seater",
+    }
+
+    for candidate in candidates:
+        tier = tier_labels.get(candidate["seatTier"], candidate["seatTier"])
+        lines.append("")
+        lines.append(f"- {candidate['operator']} ({candidate['busType']})")
+        lines.append(f"  Departure: {candidate['departureTime']}")
+        lines.append(
+            f"  {tier}: Rs.{candidate['oldFare']} -> Rs.{candidate['newFare']} "
+            f"(down Rs.{candidate['drop']})"
+        )
+        if candidate.get("seatsAfter") is not None:
+            lines.append(f"  Seats available: {candidate['seatsAfter']}")
+
+    return "\n".join(lines)
+
+
+# --- Gemini analysis, disabled -------------------------------------------------
+# Replaced by find_fare_drops() + format_alert_message(). Left commented as a
+# reference for the prompt shape and model fallback, and because it documents why
+# sending full snapshots to a model was wrong (269k tokens, answered NO_DROP while
+# a real Rs.1000 drop was present).
+#
+# GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+#
+# def analyze_with_ai(config, previous_buses, current_buses):
+#     from google import genai
+#
+#     client = genai.Client(api_key=GEMINI_API_KEY)
+#     journey_date = config.get("dateOfJourney", config.get("date", "")) or "unspecified"
+#     bus_ac_type = config.get("bus_ac_type", "Any")
+#     seat_type = config.get("seat_type", "Any")
+#     min_drop_amount = config.get("min_drop_amount", 50)
+#     candidates = find_fare_drops(config, previous_buses, current_buses)
+#
+#     if not candidates:
+#         print(f"Deterministic filter found no tier drop >= Rs.{min_drop_amount} "
+#               f"for {bus_ac_type}/{seat_type}.")
+#         return "NO_DROP"
+#
+#     print(f"Deterministic filter found {len(candidates)} candidate drop(s); "
+#           f"sending {len(json.dumps(candidates))} chars to the model.")
+#
+#     prompt = f"""
+#     You are a bus fare analyst tracking {config['source']} to {config['destination']} on {journey_date}.
+#
+#     A deterministic script already matched buses across both snapshots and filtered for
+#     fare drops of at least Rs.{min_drop_amount} on the requested seat tier. Your only job is
+#     to discard false positives and write the alert.
+#
+#     STRICT FILTERS already applied: Bus AC Preference = {bus_ac_type}; Seat Type = {seat_type}.
+#
+#     REJECT a candidate only when:
+#     - seatsAfter is 0, meaning the tier is sold out and the price is not bookable.
+#     - the drop is on a different seat tier than requested.
+#
+#     Otherwise ACCEPT it.
+#
+#     Reply with exact text NO_DROP only if every candidate is rejected.
+#     Otherwise reply with a concise alert listing, for each accepted candidate:
+#       - Operator & Bus Type
+#       - Departure Time
+#       - Seat Tier & Old Fare -> New Fare
+#
+#     CANDIDATE_DROPS:
+#     {json.dumps(candidates, indent=2)}
+#     """
+#
+#     for model in AI_MODELS:
+#         try:
+#             print("Trying with model: ", model)
+#             response = client.models.generate_content(model=model, contents=prompt)
+#             verdict = (response.text or "").strip()
+#             print("Response from AI: ", verdict)
+#             if not verdict:
+#                 raise ValueError("The model returned an empty response.")
+#             return verdict
+#         except Exception as error:
+#             print(f"AI model {model} failed: {error}")
+#             continue
+#
+#     return None
 
 
 def send_android_alert(config, message):
@@ -245,7 +297,6 @@ def main():
     missing = [
         name
         for name, value in {
-            "GEMINI_API_KEY": GEMINI_API_KEY,
             "NTFY_TOPIC": NTFY_TOPIC,
         }.items()
         if not value
@@ -285,17 +336,21 @@ def main():
         return
 
     if previous_buses:
-        verdict = analyze_with_ai(config, previous_buses, current_buses)
-        if verdict is None:
-            print("No Verdict")
-            send_android_alert(config, "verdict is NONE")
-            return
-        if verdict != "NO_DROP":
-            send_android_alert(config, verdict)
-            print("Alert sent:\n", verdict)
+        candidates = find_fare_drops(config, previous_buses, current_buses)
+        message = format_alert_message(config, candidates)
+
+        if message:
+            print(f"Found {len(candidates)} drop(s):")
+            for candidate in candidates:
+                print(f"  {candidate['operator']} | {candidate['departureTime']} | "
+                      f"{candidate['seatTier']} | {candidate['oldFare']} -> {candidate['newFare']}")
+            send_android_alert(config, message)
+            print("Alert sent:\n" + message)
         else:
-            print("No genuine price drop detected.")
-            send_android_alert(config, verdict)
+            # No notification on a quiet run: the cron fires every 15 minutes and a
+            # "no drop" push each time is noise.
+            min_drop = config.get("min_drop_amount", 50)
+            print(f"No fare drop of at least Rs.{min_drop} detected. No alert sent.")
     else:
         print("New trip baseline saved. Will compare on the next run.")
 
