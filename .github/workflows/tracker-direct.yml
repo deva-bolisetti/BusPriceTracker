@@ -1,8 +1,11 @@
 name: Bus Fare Drop Tracker (redBus direct, no Apify)
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  # Manual-only while Apify (tracker.yml) still owns the schedule on main.
+  # Both push history.json, so they must not run on the same cron.
+  # Enable this cron only after retiring tracker.yml:
+  # schedule:
+  #   - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
