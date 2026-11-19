@@ -3,3 +3,5 @@ __pycache__/
 .playwright-mcp/
 .kilo/
 CODEBASE_NOTES.md
+
+.gitignore
