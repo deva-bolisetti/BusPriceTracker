@@ -86,7 +86,20 @@ def _tier_count(tiers, tier_key):
 
 
 def _bus_key(bus):
-    return (bus.get("travelsName"), bus.get("busType"), bus.get("departureTime"))
+    """Identify one inventory across snapshots.
+
+    travelsName/busType/departureTime alone collide, and the collisions are real:
+    one operator can sell two separate inventories under the same name, bus type and
+    departure (e.g. VARAHI TRAVELS 20:30 at Rs.950 and Rs.3444). serviceId is the
+    stable discriminator and stayed identical for every bus across repeated fetches,
+    where routeId is re-issued frequently and must not be used for matching.
+    """
+    return (
+        bus.get("travelsName"),
+        bus.get("busType"),
+        bus.get("departureTime"),
+        bus.get("serviceId") or bus.get("routeId"),
+    )
 
 
 def find_fare_drops(config, previous_buses, current_buses):
@@ -113,7 +126,9 @@ def find_fare_drops(config, previous_buses, current_buses):
         tier_keys = ["SEATER", "SLEEPER", "SINGLE_SLEEPER"]
 
     candidates = []
-    previous_by_key = {_bus_key(bus): bus for bus in previous_buses}
+    previous_by_key = {}
+    for bus in previous_buses:
+        previous_by_key.setdefault(_bus_key(bus), bus)
 
     for bus in current_buses:
         if ac_pref == "ac" and not bus.get("isAc"):

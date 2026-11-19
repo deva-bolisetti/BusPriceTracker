@@ -5,7 +5,7 @@ Verified endpoints (November 2026):
   POST /rpw/api/searchResults?...        -> data.inventories[] bus inventory
 
 Output is normalised to the same field names the Apify actor returned, so the
-existing history.json baseline and Gemini prompt work unchanged.
+existing history.json baseline keeps matching and no re-baseline is needed.
 """
 
 import json
@@ -272,7 +272,7 @@ def _seat_fare_map(fare_details: Dict[str, Any]) -> Dict[str, Any]:
     """Normalise to the Apify shape: {tier: [{originalPrice, discountedPrice, count}]}.
 
     Apify emitted a list per tier, so the existing history.json baseline and the
-    Gemini prompt expect lists. Keep that shape exactly.
+    drop detector expect lists. Keep that shape exactly.
     """
     mapped: Dict[str, Any] = {}
     if not isinstance(fare_details, dict):

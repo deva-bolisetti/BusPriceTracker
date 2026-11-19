@@ -26,7 +26,7 @@ jobs:
         id: install-dependencies
         run: |
           echo "Installing Python dependencies..."
-          pip install requests google-genai
+          pip install requests
           echo "Dependency installation completed."
 
       - name: Run price tracker
@@ -35,7 +35,6 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           APIFY_API_URL: ${{ secrets.APIFY_API_URL || 'https://api.apify.com' }}
           APIFY_ACTOR_ID: ${{ secrets.APIFY_ACTOR_ID }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python -u tracker.py
 
