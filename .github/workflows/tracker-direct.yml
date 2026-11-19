@@ -7,6 +7,19 @@ on:
   # schedule:
   #   - cron: '*/15 * * * *'
   workflow_dispatch:
+  # Push triggers DO run from non-default branches, unlike schedule/workflow_dispatch.
+  # This is the only way to exercise this workflow before it reaches main.
+  # Remove this block once the branch is merged.
+  push:
+    branches:
+      - feature/redbus-direct
+    paths:
+      - 'redbus_client.py'
+      - 'tracker_direct.py'
+      - 'verify_redbus.py'
+      - 'config.json'
+      - 'cities.json'
+      - '.github/workflows/tracker-direct.yml'
 
 permissions:
   contents: write
