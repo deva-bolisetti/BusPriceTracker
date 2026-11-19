@@ -1,8 +1,12 @@
-name: Custom Bus Fare Drop Tracker
+name: Bus Fare Drop Tracker (Apify fallback)
 
 on:
-  # schedule:
-    # - cron: '*/15 * * * *'
+  # Manual only. The free redBus-direct workflow owns the schedule because Apify
+  # bills per run and its token is not guaranteed to stay valid. Both workflows
+  # write history.json, so they must never run on the same cron.
+  #
+  # Note: this runner requests maxItems=100, so a run here shortens the baseline to
+  # 100 buses. The direct runner restores the full inventory on its next run.
   workflow_dispatch:
 
 permissions:

@@ -1,83 +1,140 @@
 # BusPriceTracker
 
-Track bus fares for a configurable trip and receive a phone notification when a matching fare drops by at least your chosen amount. Trip settings live in `config.json`, so you can change them from the GitHub mobile app without editing Python code.
+Track bus fares for a configurable trip and get a push notification on your phone when a matching fare drops by at least the amount you choose.
 
-> **Status:** This README describes the intended setup. The repository needs `tracker.py`, `config.json`, and `.github/workflows/tracker.yml` for the tracker to run. Confirm the Apify API URL in `tracker.py` matches the actor/API you use; an Apify token by itself is not a complete actor endpoint.
+Fare data comes straight from redBus's public JSON endpoints — **no API key, no paid service, no scraping proxy**. It runs entirely on GitHub Actions' free tier, so there is nothing to host and nothing to pay for.
+
+Trip settings live in `config.json`, so you can change them from the GitHub mobile app without touching Python.
 
 ## How it works
 
-- GitHub Actions runs the workflow every 30 minutes, or when you start it manually.
-- The script reads the trip settings from `config.json` and fetches the latest bus results.
-- On the first run for a trip, it saves a baseline in `history.json`.
-- On later runs, it compares current results with the saved baseline and sends an ntfy notification for a qualifying fare drop.
-- Changing the source, destination, travel date, AC preference, or seat preference changes the trip signature. The old trip's results are not used for comparison; the next successful run establishes a new baseline.
+```
+GitHub Actions (every 15 min)
+   → read config.json          which trip to track
+   → fetch fares from redBus   free JSON API
+   → compare with history.json yesterday's/previous snapshot
+   → if a fare dropped ≥ your threshold → ntfy push to your phone
+   → commit history.json       becomes the next baseline
+```
+
+- The first run for a trip saves a baseline in `history.json`; comparison starts on the run after that.
+- A run with no qualifying drop sends **no notification** — you only get pushed when something actually drops.
+- Changing the source, destination, travel date, AC preference or seat preference changes the trip *signature*, so the old baseline is not compared against the new trip. The next successful run establishes a fresh baseline.
+- Changing only `min_drop_amount` keeps your baseline intact.
+
+All fare comparison is deterministic Python. There is no AI model in the loop.
+
+## Quick start
+
+1. **Fork or clone** this repository.
+2. **Edit `config.json`** for your trip:
+
+   ```json
+   {
+     "active": true,
+     "source": "Hyderabad",
+     "destination": "Tuni",
+     "date": "2026-11-22",
+     "bus_ac_type": "AC",
+     "seat_type": "Single Sleeper",
+     "min_drop_amount": 50
+   }
+   ```
+
+3. **Add the `NTFY_TOPIC` secret** — see below.
+4. **Run the workflow once** from the Actions tab to record a baseline.
+5. Install the ntfy app, subscribe to your topic, and wait for a drop.
 
 ## Configure a trip
 
-Create `config.json` in the repository root:
-
-```json
-{
-  "active": true,
-  "source": "Hyderabad",
-  "destination": "Tuni",
-  "date": "2026-11-16",
-  "bus_ac_type": "AC",
-  "seat_type": "Single Sleeper",
-  "min_drop_amount": 50
-}
-```
-
-Fields:
-
 | Field | Description |
 | --- | --- |
-| `active` | Set to `false` to skip tracking and API calls while leaving the scheduled workflow enabled. |
-| `source` | Departure city or location understood by the configured bus-data source. |
-| `destination` | Arrival city or location understood by the configured bus-data source. |
-| `date` | Travel date in `YYYY-MM-DD` format. |
+| `active` | `false` skips tracking and makes no API calls, while leaving the schedule enabled. |
+| `source` | Departure city name as redBus spells it. |
+| `destination` | Arrival city name as redBus spells it. |
+| `date` | Travel date, `YYYY-MM-DD`. A past date returns no buses, so the run no-ops. |
 | `bus_ac_type` | `AC`, `Non-AC`, or `Any`. |
 | `seat_type` | `Single Sleeper`, `Double Sleeper`, `Seater`, or `Any`. |
-| `min_drop_amount` | Minimum fare decrease, in rupees, required for an alert. |
+| `min_drop_amount` | Minimum fare decrease, in rupees, required before you are notified. |
+| `fromCity` / `toCity` | Optional. Pin redBus city IDs to skip the name lookup. |
 
-Edit and commit this file whenever your trip preferences change. The workflow will use the committed settings on its next run. You can also run the workflow manually to capture a new baseline immediately.
+Commit the file when you change it; the next scheduled run picks it up. You can also trigger a run manually from the Actions tab.
 
-## Required GitHub Actions secrets
-
-In the repository, open **Settings → Secrets and variables → Actions** and add:
-
-- `APIFY_TOKEN` — credential for your configured Apify actor/API.
-- `GEMINI_API_KEY` — Google Gemini API key used to analyze fare changes.
-- `NTFY_TOPIC` — ntfy topic name used for phone notifications.
-
-Do not put these credentials in `config.json` or commit them to the repository. Treat an ntfy topic name as a secret if anyone who knows it can publish to your notifications.
-
-## Notifications on your phone
+## Notifications
 
 1. Install the [ntfy app](https://ntfy.sh/) on your phone.
-2. Subscribe to the same topic configured in the `NTFY_TOPIC` secret.
-3. Keep the topic private; anyone who knows a public topic name may be able to publish messages to it.
+2. Subscribe to the same topic you put in the `NTFY_TOPIC` secret.
+3. Keep the topic private — anyone who knows a public topic name can publish to it.
 
-## GitHub Actions workflow
+A sample alert:
 
-The workflow file should be `.github/workflows/tracker.yml`. It should:
+```
+Bus fare drop: Hyderabad to Tuni on 2026-11-22
 
-- schedule the tracker using `*/30 * * * *`;
-- include `workflow_dispatch` for manual runs;
-- grant `contents: write` so it can commit `history.json`;
-- install Python dependencies, run `tracker.py`, and commit history changes.
+- KALOSONA DREAMLINE (VE A/C Seater / Sleeper (2+1))
+  Departure: 2026-11-22 12:45:00
+  Single Sleeper: Rs.3450 -> Rs.2750 (down Rs.700)
+  Seats available: 3
+```
 
-Scheduled Actions runs are not guaranteed to start at the exact minute and can be delayed during periods of high GitHub Actions load. A manual run is available from the repository's **Actions** tab.
+## Required secret
 
-## Important implementation notes
+Only one is needed for the free path.
 
-- Set the actual Apify actor/API endpoint in `tracker.py`. The endpoint must follow the API documentation for the actor that returns your bus data; do not construct an API URL by simply appending a token to `https://apify.com`.
-- Verify the actor's expected request fields and response format. The tracker and fare comparison need to match the data returned by that actor.
-- The AI analysis uses fare data sent to the Gemini API. Review the data and service terms before enabling it.
-- `history.json` is generated by the workflow and should not be edited manually. It stores the most recent baseline and the search signature.
-- Changing only `min_drop_amount` does not change the search signature; the existing fare baseline remains usable with the new threshold.
-- Disabling `active` prevents the script from making tracking API calls, but scheduled workflow runs still occur and exit early.
+In **Settings → Secrets and variables → Actions**, add:
+
+| Secret | Purpose |
+| --- | --- |
+| `NTFY_TOPIC` | ntfy topic used for phone notifications |
+
+Never put credentials in `config.json` or commit them.
+
+## Workflows
+
+| Workflow | Trigger | Data source | Notes |
+| --- | --- | --- | --- |
+| `tracker-direct.yml` | every 15 minutes, or manual | redBus JSON API | The scheduled path. Free. |
+| `tracker-apify.yml` | manual only | Apify actor | Optional fallback. Paid, and needs `APIFY_TOKEN` + `APIFY_ACTOR_ID`. |
+
+`tracker-apify.yml` is deliberately **not** scheduled: it bills per run, and its credentials
+expire. Enable it only if redBus changes its API and you want a working fallback while you fix
+`redbus_client.py`. Never run both on a schedule — they both write `history.json` and would
+race each other.
+
+## Run it locally
+
+```bash
+pip install -r requirements.txt
+
+# See live fares for the configured trip (no key needed)
+python verify_redbus.py
+
+# Do a real tracking run (needs an ntfy topic to actually notify)
+NTFY_TOPIC=your-topic python tracker_direct.py
+```
+
+On Windows PowerShell, set the variable with `$env:NTFY_TOPIC="your-topic"`.
+
+## Files
+
+| File | What it does |
+| --- | --- |
+| `config.json` | The trip you are tracking. The only file you normally edit. |
+| `redbus_client.py` | Free redBus JSON client; normalises results to the stored schema. |
+| `tracker_direct.py` | Scheduled runner: fetch → compare → notify. |
+| `tracker.py` | Optional Apify-backed runner; same comparison logic. |
+| `verify_redbus.py` | Manual inspector for live fares and the endpoint contract. |
+| `cities.json` | Cached redBus city IDs, so lookups happen once. |
+| `history.json` | The baseline snapshot, committed by the workflow each run. |
+
+## Notes and caveats
+
+- `history.json` is written by the workflow. Don't hand-edit it during normal operation; a scheduled run will overwrite you. Editing a price in it is a handy way to test alerting.
+- Large diffs in `history.json` are normal — redBus reorders results between runs even when prices are unchanged.
+- This relies on redBus's internal, undocumented endpoints. They can change without notice. If the tracker stops finding buses, run `verify_redbus.py` to see what broke.
+- Scheduled Actions are not guaranteed to start exactly on time, and can be delayed under load.
+- Intended for personal, low-frequency tracking. Be considerate: don't drop the interval to seconds.
 
 ## License
 
-No license is specified yet. All rights reserved unless the repository owner adds a license.
+No license is specified yet. All rights reserved unless the repository owner adds one.

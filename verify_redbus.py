@@ -16,6 +16,16 @@ def load_config():
         return json.load(handle)
 
 
+def tier_price(tiers, tier):
+    """Read the fare out of the tier -> list-of-dicts shape the client emits."""
+    entries = (tiers or {}).get(tier)
+    if isinstance(entries, list):
+        entries = entries[0] if entries else None
+    if isinstance(entries, dict):
+        return entries.get("originalPrice")
+    return entries
+
+
 def main() -> int:
     config = load_config()
     date = sys.argv[1] if len(sys.argv) > 1 else config.get("dateOfJourney") or config.get("date")
@@ -41,8 +51,8 @@ def main() -> int:
     print("-" * 118)
     for bus in buses:
         tiers = ",".join(
-            f"{tier}:{info.get('originalPrice')}"
-            for tier, info in (bus.get("fareDetailsBySeatType") or {}).items()
+            f"{tier}:{tier_price(bus.get('fareDetailsBySeatType'), tier)}"
+            for tier in (bus.get("fareDetailsBySeatType") or {})
         )
         print(
             f"{(bus.get('travelsName') or '')[:27]:28} "
@@ -57,8 +67,8 @@ def main() -> int:
     ]
     print(f"\nAC buses with SINGLE_SLEEPER tier: {len(ac_sleeper_single)}")
     for bus in ac_sleeper_single:
-        tier = bus["fareDetailsBySeatType"]["SINGLE_SLEEPER"]
-        print(f"  {bus['travelsName']} @ {bus['departureTime']} -> Rs.{tier.get('originalPrice')}")
+        price = tier_price(bus["fareDetailsBySeatType"], "SINGLE_SLEEPER")
+        print(f"  {bus['travelsName']} @ {bus['departureTime']} -> Rs.{price}")
 
     return 0
 

@@ -309,7 +309,13 @@ def main():
     previous_buses = history.get("buses", []) if history.get("signature") == search_signature else []
     current_buses = fetch_latest_buses(actor_input)
 
-    if previous_buses and current_buses:
+    if not current_buses:
+        # An empty response (past date, actor failure) must not overwrite the baseline,
+        # or the next run would compare against nothing and stay silent forever.
+        print("No buses returned. Leaving history untouched.")
+        return
+
+    if previous_buses:
         candidates = find_fare_drops(config, previous_buses, current_buses)
         message = format_alert_message(config, candidates)
 
