@@ -55,6 +55,100 @@ def fetch_latest_buses(config):
     )
 
 
+SEAT_TIER_KEYS = {
+    "single sleeper": "SINGLE_SLEEPER",
+    "double sleeper": "SLEEPER",
+    "sleeper": "SLEEPER",
+    "seater": "SEATER",
+}
+
+
+def _tier_price(tiers, tier_key):
+    """Read originalPrice out of the list-per-tier shape Apify also used."""
+    entries = (tiers or {}).get(tier_key)
+    if isinstance(entries, list) and entries:
+        entry = entries[0]
+    else:
+        entry = entries
+    if isinstance(entry, dict):
+        return entry.get("originalPrice")
+    if isinstance(entry, (int, float)):
+        return entry
+    return None
+
+
+def _tier_count(tiers, tier_key):
+    entries = (tiers or {}).get(tier_key)
+    if isinstance(entries, list) and entries and isinstance(entries[0], dict):
+        return entries[0].get("count")
+    return None
+
+
+def _bus_key(bus):
+    return (bus.get("travelsName"), bus.get("busType"), bus.get("departureTime"))
+
+
+def find_fare_drops(config, previous_buses, current_buses):
+    """Deterministically narrow 160+ buses down to genuine tier-level drops.
+
+    The prompt previously carried both full snapshots (~269k tokens). That is far
+    beyond what a small model reliably reads, and it answered NO_DROP while a real
+    Rs.1000 drop sat in the payload. Filtering in Python first means the model only
+    ever judges a handful of candidates.
+    """
+    min_drop = int(config.get("min_drop_amount", 50))
+    ac_pref = str(config.get("bus_ac_type", "Any")).strip().lower()
+    seat_pref = str(config.get("seat_type", "Any")).strip().lower()
+
+    if seat_pref in SEAT_TIER_KEYS:
+        tier_keys = [SEAT_TIER_KEYS[seat_pref]]
+    else:
+        tier_keys = ["SEATER", "SLEEPER", "SINGLE_SLEEPER"]
+
+    previous_by_key = {}
+    for bus in previous_buses:
+        previous_by_key.setdefault(_bus_key(bus), bus)
+
+    candidates = []
+    for bus in current_buses:
+        key = _bus_key(bus)
+        old_bus = previous_by_key.get(key)
+        if old_bus is None:
+            continue
+
+        if ac_pref == "ac" and not bus.get("isAc"):
+            continue
+        if ac_pref in ("non-ac", "nonac", "non ac") and bus.get("isAc"):
+            continue
+
+        for tier in tier_keys:
+            old_price = _tier_price(old_bus.get("fareDetailsBySeatType"), tier)
+            new_price = _tier_price(bus.get("fareDetailsBySeatType"), tier)
+            if old_price is None or new_price is None:
+                continue
+
+            drop = old_price - new_price
+            if drop < min_drop:
+                continue
+
+            candidates.append(
+                {
+                    "operator": bus.get("travelsName"),
+                    "busType": bus.get("busType"),
+                    "departureTime": bus.get("departureTime"),
+                    "seatTier": tier,
+                    "oldFare": old_price,
+                    "newFare": new_price,
+                    "drop": drop,
+                    "seatsBefore": _tier_count(old_bus.get("fareDetailsBySeatType"), tier),
+                    "seatsAfter": _tier_count(bus.get("fareDetailsBySeatType"), tier),
+                }
+            )
+
+    candidates.sort(key=lambda c: -c["drop"])
+    return candidates
+
+
 def analyze_with_ai(config, previous_buses, current_buses):
     from google import genai
 
@@ -63,28 +157,41 @@ def analyze_with_ai(config, previous_buses, current_buses):
     bus_ac_type = config.get("bus_ac_type", "Any")
     seat_type = config.get("seat_type", "Any")
     min_drop_amount = config.get("min_drop_amount", 50)
+    candidates = find_fare_drops(config, previous_buses, current_buses)
+
+    if not candidates:
+        print(f"Deterministic filter found no tier drop >= Rs.{min_drop_amount} "
+              f"for {bus_ac_type}/{seat_type}.")
+        return "NO_DROP"
+
+    print(f"Deterministic filter found {len(candidates)} candidate drop(s); "
+          f"sending {len(json.dumps(candidates))} chars to the model "
+          f"(versus {len(json.dumps(previous_buses)) + len(json.dumps(current_buses))} unfiltered).")
+
     prompt = f"""
     You are a bus fare analyst tracking {config['source']} to {config['destination']} on {journey_date}.
 
-    STRICT FILTERS (Apply these first):
-    - Bus AC Preference: {bus_ac_type} (Only include buses matching this preference; if 'Any', include both AC and Non-AC).
-    - Seat Type Preference: {seat_type} (Only evaluate fares for this exact seat tier; if 'Any', evaluate all tiers separately).
+    A deterministic script already matched buses across both snapshots and filtered for
+    fare drops of at least ₹{min_drop_amount} on the requested seat tier. Your only job is
+    to discard false positives and write the alert.
 
-    COMPARISON RULES:
-    1. Match buses across PREVIOUS_FARES and CURRENT_FARES by Operator Name, Bus Type, and Departure Time.
-    2. Ignore cases where a lower price appears simply because a higher-priced tier sold out and only a cheaper tier remains.
-    3. Only flag a GENUINE price drop if the matching seat tier dropped in fare by at least ₹{min_drop_amount}.
-    4. If there is NO genuine drop matching the filters, reply with exact text: NO_DROP
-    5. If there IS a genuine drop, reply with a concise alert showing:
-       - Operator & Bus Type
-       - Departure Time
-       - Seat Type & Old Fare -> New Fare
+    STRICT FILTERS already applied: Bus AC Preference = {bus_ac_type}; Seat Type = {seat_type}.
 
-    PREVIOUS_FARES:
-    {json.dumps(previous_buses)}
+    REJECT a candidate only when:
+    - seatsAfter is 0, meaning the tier is sold out and the price is not bookable.
+    - the drop is on a different seat tier than requested.
 
-    CURRENT_FARES:
-    {json.dumps(current_buses)}
+    Otherwise ACCEPT it. The candidates below are already tier-matched, so a listed drop
+    is a genuine drop for that tier.
+
+    Reply with exact text NO_DROP only if every candidate is rejected.
+    Otherwise reply with a concise alert listing, for each accepted candidate:
+      - Operator & Bus Type
+      - Departure Time
+      - Seat Tier & Old Fare -> New Fare
+
+    CANDIDATE_DROPS:
+    {json.dumps(candidates, indent=2)}
     """
 
     for model in AI_MODELS:
@@ -95,7 +202,10 @@ def analyze_with_ai(config, previous_buses, current_buses):
                 contents=prompt,
             )
             verdict = (response.text or "").strip()
-            print("Raw Response from AI: ", response)
+            usage = getattr(response, "usage_metadata", None)
+            if usage is not None:
+                print(f"  tokens: prompt={getattr(usage, 'prompt_token_count', '?')} "
+                      f"total={getattr(usage, 'total_token_count', '?')}")
             print("Response from AI: ", verdict)
             if not verdict:
                 raise ValueError("The model returned an empty response.")
