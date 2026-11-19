@@ -1,0 +1,95 @@
+name: Bus Fare Drop Tracker (redBus direct, no Apify)
+
+on:
+  # Manual-only while Apify (tracker.yml) still owns the schedule on main.
+  # Both push history.json, so they must not run on the same cron.
+  # Enable this cron only after retiring tracker.yml:
+  # schedule:
+  #   - cron: '*/15 * * * *'
+  workflow_dispatch:
+  # Push triggers DO run from non-default branches, unlike schedule/workflow_dispatch.
+  # This is the only way to exercise this workflow before it reaches main.
+  # Remove this block once the branch is merged.
+  push:
+    branches:
+      - feature/redbus-direct
+    paths:
+      - 'redbus_client.py'
+      - 'tracker_direct.py'
+      - 'verify_redbus.py'
+      - 'config.json'
+      - 'cities.json'
+      - '.github/workflows/tracker-direct.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  check-fares:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        id: checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        id: setup-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        id: install-dependencies
+        run: |
+          echo "Installing Python dependencies..."
+          python -m pip install --upgrade pip
+          pip install requests google-genai
+          echo "Dependency installation completed."
+
+      - name: Run price tracker
+        id: tracker
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python -u tracker_direct.py
+
+      - name: Commit updated fare history
+        id: commit-history
+        run: |
+          echo "Checking whether fare history changed..."
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add history.json cities.json
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No fare-history changes to commit."
+          else
+            git commit -m "Update fare history [skip ci]"
+            git push
+            echo "Fare history committed and pushed."
+          fi
+
+      - name: Add run summary
+        if: always()
+        env:
+          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
+          SETUP_OUTCOME: ${{ steps.setup-python.outcome }}
+          INSTALL_OUTCOME: ${{ steps.install-dependencies.outcome }}
+          TRACKER_OUTCOME: ${{ steps.tracker.outcome }}
+          HISTORY_OUTCOME: ${{ steps.commit-history.outcome }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          {
+            echo "## Bus fare tracker (redBus direct)"
+            echo
+            echo "**Overall result:** ${JOB_STATUS}"
+            echo
+            echo "| Step | Result |"
+            echo "| --- | --- |"
+            echo "| Checkout repository | ${CHECKOUT_OUTCOME:-not run} |"
+            echo "| Set up Python | ${SETUP_OUTCOME:-not run} |"
+            echo "| Install dependencies | ${INSTALL_OUTCOME:-not run} |"
+            echo "| Run price tracker | ${TRACKER_OUTCOME:-not run} |"
+            echo "| Commit fare history | ${HISTORY_OUTCOME:-not run} |"
+            echo
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "GitHub Actions run summary written."

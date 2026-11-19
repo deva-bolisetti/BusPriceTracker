@@ -1,0 +1,12 @@
+{
+  "hyderabad": {
+    "id": 124,
+    "locationType": "CITY",
+    "name": "Hyderabad"
+  },
+  "tuni": {
+    "id": 335,
+    "locationType": "CITY",
+    "name": "Tuni"
+  }
+}
