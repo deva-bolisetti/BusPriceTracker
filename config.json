@@ -20,12 +20,12 @@
 
   // Departure and arrival city names, spelled as redBus spells them.
   // Used for the city-ID lookup, cached in data/cities.json after the first run.
-  "source": "Hyderabad",
-  "destination": "Tuni",
+  "source": "Tuni",
+  "destination": "Hyderabad",
 
   // Travel date, YYYY-MM-DD.
   // A past date returns no buses, so the run no-ops and leaves history.json alone.
-  "date": "2026-11-22",
+  "date": "2026-11-23",
 
   // Air conditioning. One of:
   //   "AC"       only air-conditioned buses
@@ -45,7 +45,7 @@
   // explicit set, e.g. "Single Sleeper, Seater".
   //
   // Note: a typo does not fail loudly - anything unrecognised is treated as "Any".
-  "seat_type": "Sleeper",
+  "seat_type": "Single Sleeper",
 
   // Minimum fare decrease, in rupees, before a notification is sent.
   // Only drops of at least this much are reported.
