@@ -252,8 +252,9 @@
       "droppingPointCount": 18,
       "fareList": [
         1550,
-        1650,
+        1640,
         2500,
+        2620,
         2770
       ],
       "minFare": 1550,
@@ -263,7 +264,7 @@
         "SEATER": [
           {
             "originalPrice": 1550,
-            "count": 21
+            "count": 19
           }
         ],
         "SLEEPER": [
@@ -279,13 +280,13 @@
           }
         ]
       },
-      "availableSeats": 36,
+      "availableSeats": 34,
       "totalSeats": 54,
-      "availableWindowSeats": 17,
+      "availableWindowSeats": 16,
       "availableSingleSeats": 7,
-      "availableAisleSeats": 14,
+      "availableAisleSeats": 13,
       "availableUpperSeats": 15,
-      "availableLowerSeats": 21,
+      "availableLowerSeats": 19,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -2604,113 +2605,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 29598799,
-      "operatorId": 29872,
-      "travelsName": "Neelachal Travels",
-      "routeId": 29598799,
-      "serviceId": "17",
-      "serviceName": "PATTUPURAM-HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/29872.png",
-      "busType": "A/C Seater / Sleeper (2+1)",
-      "busTypeId": 4,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        9,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-23 18:50:00",
-      "arrivalTime": "2026-11-24 06:15:00",
-      "journeyDurationMin": 685,
-      "dateOfJourney": "2026-11-23",
-      "firstBpTime": "2026-11-23 18:50:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
-      "boardingPointCount": 1,
-      "droppingPointCount": 22,
-      "fareList": [
-        1499,
-        2099,
-        2299,
-        2399
-      ],
-      "minFare": 1499,
-      "maxFare": 2399,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1499,
-            "count": 24
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2099,
-            "count": 18
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2299,
-            "count": 6
-          }
-        ]
-      },
-      "availableSeats": 48,
-      "totalSeats": 49,
-      "availableWindowSeats": 28,
-      "availableSingleSeats": 12,
-      "availableAisleSeats": 18,
-      "availableUpperSeats": 18,
-      "availableLowerSeats": 30,
-      "isSeatLayoutAvailable": true,
-      "rating": 2.9,
-      "numberOfReviews": "4",
-      "busScore": 0.9101850246130696,
-      "perzScore": 0.9101850246130696,
-      "isRescheduled": true,
-      "rescheduleTime": null,
-      "campaignType": [
-        37,
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 24673367,
-        "dpId": 24673588
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "0:-1:0:0",
-          "serviceStartTime": "2026-11-23 18:50:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 55652300,
       "operatorId": 38072,
       "travelsName": "Vyshnavi Travels",
@@ -3565,6 +3459,105 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 56503822,
+      "operatorId": 38287,
+      "travelsName": "SRI NEELAMANI TRAVELS",
+      "routeId": 56503822,
+      "serviceId": "3",
+      "serviceName": "7 Th Mile To Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/38287.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        7,
+        9,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-23 19:00:00",
+      "arrivalTime": "2026-11-24 06:40:00",
+      "journeyDurationMin": 700,
+      "dateOfJourney": "2026-11-23",
+      "firstBpTime": "2026-11-23 18:20:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Miyapur",
+      "droppingPointId": 66664,
+      "boardingPointCount": 1,
+      "droppingPointCount": 19,
+      "fareList": [
+        990,
+        1049,
+        1099,
+        1499,
+        1599
+      ],
+      "minFare": 990,
+      "maxFare": 1599,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 990,
+            "count": 22
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1499,
+            "count": 9
+          }
+        ]
+      },
+      "availableSeats": 31,
+      "totalSeats": 45,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 31,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.8,
+      "numberOfReviews": "0",
+      "busScore": 0.6187718610888872,
+      "perzScore": 0.6187718610888872,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": null,
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 30259504,
+        "dpId": 30259530
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-23 18:20:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 18250154,
       "operatorId": 15840,
       "travelsName": "Sri KVR Travels",
@@ -3666,105 +3659,6 @@
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:0:0",
           "serviceStartTime": "2026-11-23 19:10:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 56503822,
-      "operatorId": 38287,
-      "travelsName": "SRI NEELAMANI TRAVELS",
-      "routeId": 56503822,
-      "serviceId": "3",
-      "serviceName": "7 Th Mile To Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/38287.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        7,
-        9,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-23 19:00:00",
-      "arrivalTime": "2026-11-24 06:40:00",
-      "journeyDurationMin": 700,
-      "dateOfJourney": "2026-11-23",
-      "firstBpTime": "2026-11-23 18:20:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
-      "boardingPointCount": 1,
-      "droppingPointCount": 19,
-      "fareList": [
-        990,
-        1049,
-        1099,
-        1499,
-        1599
-      ],
-      "minFare": 990,
-      "maxFare": 1599,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 990,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1499,
-            "count": 9
-          }
-        ]
-      },
-      "availableSeats": 31,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 31,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.8,
-      "numberOfReviews": "0",
-      "busScore": 0.6187718610888872,
-      "perzScore": 0.6187718610888872,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": null,
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 30259504,
-        "dpId": 30259530
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-23 18:20:00"
         }
       ],
       "source": "Tuni",
@@ -8487,7 +8381,7 @@
     {
       "id": 40213864,
       "operatorId": 20218,
-      "travelsName": "zingbus plus",
+      "travelsName": "zingbus plus (Free Food)",
       "routeId": 40213864,
       "serviceId": "6825972d3ee4364f80a4a35d",
       "serviceName": "6825972d3ee4364f80a4a35d",
@@ -8529,19 +8423,19 @@
       "boardingPointCount": 1,
       "droppingPointCount": 19,
       "fareList": [
-        1593,
+        1557,
         1809,
         2789,
         3474
       ],
-      "minFare": 1593,
+      "minFare": 1557,
       "maxFare": 3474,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1593,
-            "discountedPrice": 1394,
+            "originalPrice": 1557,
+            "discountedPrice": 1362,
             "count": 13
           }
         ],
@@ -8579,8 +8473,8 @@
           "campaignCode": "ALLC_ab927732",
           "description": "Get 13 % Extra OFF",
           "type": "PERCENT",
-          "discount": 199,
-          "maxDiscount": 12.51,
+          "discount": 195,
+          "maxDiscount": 12.52,
           "dealType": "REDDEAL"
         }
       ],
@@ -8716,7 +8610,7 @@
     {
       "id": 21498367,
       "operatorId": 20218,
-      "travelsName": "zingbus plus",
+      "travelsName": "zingbus plus (Free Food)",
       "routeId": 21498367,
       "serviceId": "629ea4969e04fe6bad682a31",
       "serviceName": "629ea4969e04fe6bad682a31",
@@ -8758,29 +8652,30 @@
       "boardingPointCount": 1,
       "droppingPointCount": 20,
       "fareList": [
-        1354,
-        1525,
-        1937
+        1957,
+        2205,
+        2587,
+        2744
       ],
-      "minFare": 1354,
-      "maxFare": 1937,
+      "minFare": 1957,
+      "maxFare": 2744,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1354,
-            "discountedPrice": 1185,
-            "count": 35
+            "originalPrice": 1957,
+            "discountedPrice": 1712,
+            "count": 32
           }
         ]
       },
-      "availableSeats": 35,
+      "availableSeats": 32,
       "totalSeats": 41,
-      "availableWindowSeats": 20,
+      "availableWindowSeats": 18,
       "availableSingleSeats": 4,
       "availableAisleSeats": 4,
-      "availableUpperSeats": 17,
-      "availableLowerSeats": 18,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 17,
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "102",
@@ -8800,7 +8695,7 @@
           "campaignCode": "ALLC_ab927732",
           "description": "Get 13 % Extra OFF",
           "type": "PERCENT",
-          "discount": 169,
+          "discount": 245,
           "maxDiscount": 12.52,
           "dealType": "REDDEAL"
         }
@@ -13784,7 +13679,7 @@
     {
       "id": 39003313,
       "operatorId": 20218,
-      "travelsName": "zingbus plus",
+      "travelsName": "zingbus plus (Free Food)",
       "routeId": 39003313,
       "serviceId": "681b4c31746bc4425ca59c40",
       "serviceName": "681b4c31746bc4425ca59c40",
@@ -13839,16 +13734,16 @@
           {
             "originalPrice": 2512,
             "discountedPrice": 2198,
-            "count": 24
+            "count": 23
           }
         ]
       },
-      "availableSeats": 24,
+      "availableSeats": 23,
       "totalSeats": 42,
       "availableWindowSeats": 12,
       "availableSingleSeats": 3,
       "availableAisleSeats": 4,
-      "availableUpperSeats": 12,
+      "availableUpperSeats": 11,
       "availableLowerSeats": 12,
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
