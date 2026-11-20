@@ -1,8 +1,11 @@
 import json
 import os
+import re
 from pathlib import Path
 
 import requests
+
+import redbus_client
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
@@ -24,6 +27,19 @@ def load_json(filepath, default):
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
     return default
+
+
+def load_config(filepath=CONFIG_FILE):
+    """Load config.json, allowing // comments so allowed values are discoverable."""
+    if not os.path.exists(filepath):
+        return {}
+    with open(filepath, "r", encoding="utf-8") as handle:
+        raw = handle.read()
+    cleaned = re.sub(r",(\s*[}\]])", r"\1", redbus_client.strip_json_comments(raw))
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError as error:
+        raise ValueError(f"{filepath} is not valid JSON: {error}") from error
 
 
 def scraper_input(config):
@@ -274,7 +290,7 @@ def send_android_alert(config, message):
 
 
 def main():
-    config = load_json(CONFIG_FILE, {})
+    config = load_config(CONFIG_FILE)
     if not config.get("active", True):
         print("Tracker is paused in config.json. Exiting.")
         return

@@ -10,6 +10,7 @@ Usage:
 
 import json
 import os
+import re
 from pathlib import Path
 
 import redbus_client
@@ -32,6 +33,11 @@ def load_json(filepath, default):
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
     return default
+
+
+def load_config(filepath=CONFIG_FILE):
+    """Load config.json, allowing // comments so allowed values are discoverable."""
+    return redbus_client.load_jsonc(str(filepath), {})
 
 
 def scraper_input(config):
@@ -61,11 +67,36 @@ def fetch_latest_buses(config):
 
 
 SEAT_TIER_KEYS = {
-    "single sleeper": "SINGLE_SLEEPER",
-    "double sleeper": "SLEEPER",
-    "sleeper": "SLEEPER",
-    "seater": "SEATER",
+    # redBus sells single and double berths as separate tiers with separate prices
+    # (a bus offering SLEEPER at Rs.2500 also offers SINGLE_SLEEPER at Rs.2750), so
+    # a plain "Sleeper" request deliberately covers both. Every bus in the baseline
+    # that has SINGLE_SLEEPER also has SLEEPER, so this loses no coverage.
+    "single sleeper": ["SINGLE_SLEEPER"],
+    "double sleeper": ["SLEEPER"],
+    "sleeper": ["SLEEPER", "SINGLE_SLEEPER"],
+    "seater": ["SEATER"],
 }
+
+ALL_TIER_KEYS = ["SEATER", "SLEEPER", "SINGLE_SLEEPER"]
+
+
+def resolve_tier_keys(seat_pref):
+    """Map a seat_type value onto the tier keys to compare.
+
+    Accepts a single name ("Sleeper"), a list, or a delimited string
+    ("Single Sleeper, Double Sleeper"). Unknown input falls back to every tier.
+    """
+    if isinstance(seat_pref, (list, tuple)):
+        parts = list(seat_pref)
+    else:
+        parts = re.split(r"[,/&+]", str(seat_pref or ""))
+
+    keys = []
+    for part in parts:
+        for key in SEAT_TIER_KEYS.get(str(part).strip().lower(), []):
+            if key not in keys:
+                keys.append(key)
+    return keys or list(ALL_TIER_KEYS)
 
 
 def _tier_price(tiers, tier_key):
@@ -122,12 +153,8 @@ def find_fare_drops(config, previous_buses, current_buses):
     """
     min_drop = int(config.get("min_drop_amount", 50))
     ac_pref = str(config.get("bus_ac_type", "Any")).strip().lower()
-    seat_pref = str(config.get("seat_type", "Any")).strip().lower()
 
-    if seat_pref in SEAT_TIER_KEYS:
-        tier_keys = [SEAT_TIER_KEYS[seat_pref]]
-    else:
-        tier_keys = ["SEATER", "SLEEPER", "SINGLE_SLEEPER"]
+    tier_keys = resolve_tier_keys(config.get("seat_type", "Any"))
 
     candidates = []
     previous_by_key = {}
@@ -307,8 +334,123 @@ def send_android_alert(config, message):
     )
 
 
+def fetch_identity(config):
+    """The fields that decide *what gets fetched*, and therefore what a snapshot means.
+
+    seat_type and bus_ac_type are deliberately absent: they only filter the two
+    snapshots during comparison, never the fetch. Both snapshots store the full
+    inventory with every fare tier and isAc, so changing either filter can reuse an
+    existing baseline instead of throwing it away.
+    """
+    return {
+        "source": config.get("source"),
+        "destination": config.get("destination"),
+        "dateOfJourney": config.get("dateOfJourney", config.get("date", "")),
+        "fromCity": config.get("fromCity"),
+        "toCity": config.get("toCity"),
+    }
+
+
+def search_signature_for(config):
+    """Signature stored beside the buses, describing which trip they belong to."""
+    return json.dumps({"v": 2, "fetch": fetch_identity(config)}, sort_keys=True)
+
+
+def _stored_fetch_identity(stored_signature):
+    """Read the fetch identity out of a signature in either the current or legacy format."""
+    try:
+        parsed = json.loads(stored_signature or "{}")
+    except (TypeError, ValueError):
+        return None
+    if not isinstance(parsed, dict):
+        return None
+
+    # Current format: {"v": 2, "fetch": {...}}
+    if isinstance(parsed.get("fetch"), dict):
+        return parsed["fetch"]
+
+    # Legacy format: the flat Apify-style input plus the two filter strings. Buses in
+    # a legacy baseline are still valid for the same trip, so adopt them rather than
+    # forcing a needless re-baseline on upgrade.
+    if "source" in parsed:
+        identity = {key: parsed.get(key) for key in ("source", "destination", "dateOfJourney")}
+        for key in ("fromCity", "toCity"):
+            if key in parsed:
+                identity[key] = parsed.get(key)
+        return identity
+
+    return None
+
+
+def signature_buses_are_reusable(stored_signature, config):
+    """True when a stored snapshot may be compared against the configured trip."""
+    stored = _stored_fetch_identity(stored_signature)
+    if not stored:
+        return False
+
+    current = fetch_identity(config)
+    if any(stored.get(key) != current[key] for key in ("source", "destination", "dateOfJourney")):
+        return False
+
+    # Only enforced when the stored signature actually recorded city IDs.
+    if any(key in stored for key in ("fromCity", "toCity")):
+        if any(stored.get(key) != current[key] for key in ("fromCity", "toCity")):
+            return False
+
+    return True
+
+
+def describe_signature_change(stored_signature, config):
+    """Human-readable list of what changed about the trip, for logs and the push notice."""
+    stored = _stored_fetch_identity(stored_signature) or {}
+    current = fetch_identity(config)
+    return [
+        f"{key}: {stored.get(key)!r} -> {current[key]!r}"
+        for key in sorted(current)
+        if stored.get(key) != current[key]
+    ]
+
+
+def send_baseline_notice(config, changes):
+    """Tell the phone that tracking restarted, so a silent reset is not a surprise.
+
+    Low priority: this is informational, not an alert. A failure here must not
+    stop the baseline from being written.
+    """
+    import requests
+
+    source = config.get("source", "?")
+    destination = config.get("destination", "?")
+    journey_date = config.get("dateOfJourney", config.get("date", "")) or "unspecified"
+
+    lines = [
+        f"Tracking restarted: {source} to {destination} on {journey_date}",
+        "",
+        "config.json changed, so a new baseline was saved.",
+        "Fare comparison starts on the next run.",
+    ]
+    if changes:
+        lines.append("")
+        lines.extend(f"- {change}" for change in changes)
+
+    ntfy_url = NTFY_TOPIC if NTFY_TOPIC.startswith("http") else f"https://ntfy.sh/{NTFY_TOPIC}"
+    try:
+        requests.post(
+            ntfy_url,
+            data="\n".join(lines).encode("utf-8"),
+            headers={
+                "Title": f"Tracker re-baselined: {source} to {destination}",
+                "Priority": "low",
+                "Tags": "arrows_counterclockwise",
+            },
+            timeout=15,
+        )
+    except Exception as error:
+        print(f"  could not send baseline notice: {type(error).__name__}: {error}")
+
+
 def main():
-    config = load_json(CONFIG_FILE, {})
+    config = load_config(CONFIG_FILE)
     if not config.get("active", True):
         print("Tracker is paused in config.json. Exiting.")
         return
@@ -331,18 +473,27 @@ def main():
     if not config.get("source") or not config.get("destination"):
         raise ValueError("config.json must include non-empty source and destination values.")
 
-    actor_input = scraper_input(config)
-    search_signature = json.dumps(
-        {
-            **actor_input,
-            "bus_ac_type": config.get("bus_ac_type", "Any"),
-            "seat_type": config.get("seat_type", "Any"),
-        },
-        sort_keys=True,
-    )
+    search_signature = search_signature_for(config)
 
     history = load_json(HISTORY_FILE, {})
-    previous_buses = history.get("buses", []) if history.get("signature") == search_signature else []
+    previous_signature = history.get("signature")
+    reusable = bool(previous_signature) and signature_buses_are_reusable(previous_signature, config)
+    signature_changed = bool(previous_signature) and not reusable
+    signature_changes = (
+        describe_signature_change(previous_signature, config)
+        if signature_changed
+        else []
+    )
+
+    if signature_changed:
+        print("Trip changed since the last run:")
+        for change in signature_changes:
+            print(f"  {change}")
+        print("Discarding the old baseline; this run establishes a new one.")
+    elif history and not previous_signature:
+        print("Stored history has no signature (older format); treating this run as a fresh baseline.")
+
+    previous_buses = history.get("buses", []) if reusable else []
 
     try:
         current_buses = fetch_latest_buses(config)
@@ -371,7 +522,11 @@ def main():
             min_drop = config.get("min_drop_amount", 50)
             print(f"No fare drop of at least Rs.{min_drop} detected. No alert sent.")
     else:
-        print("New trip baseline saved. Will compare on the next run.")
+        if signature_changed:
+            print("Baseline reset after a config change; no comparison this run.")
+            send_baseline_notice(config, signature_changes)
+        else:
+            print("New trip baseline saved. Will compare on the next run.")
 
     HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:

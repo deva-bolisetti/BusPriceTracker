@@ -1,9 +1,58 @@
+// BusPriceTracker configuration
+//
+// Edit this file to change what is tracked. Comments are allowed here (// and /* */),
+// and trailing commas are tolerated, so this is not strict JSON - the tracker strips
+// them before parsing.
+//
+//   What you change here        |  Effect on data/history.json
+//   ---------------------------|-----------------------------------------------
+//   source, destination, date  |  RESET: new baseline, low-priority push tells you
+//   fromCity, toCity           |  RESET: same as above
+//   seat_type, bus_ac_type     |  KEPT: comparison continues on the next run
+//   min_drop_amount, active    |  KEPT: no effect on the baseline at all
+//
+// A run that resets never alerts on a drop, because there is nothing to compare
+// against yet. Comparison resumes on the following run (~15 minutes later).
 {
+  // false pauses tracking: the run exits immediately with no API calls and no
+  // notification, leaving the schedule and the baseline untouched.
   "active": true,
+
+  // Departure and arrival city names, spelled as redBus spells them.
+  // Used for the city-ID lookup, cached in data/cities.json after the first run.
   "source": "Hyderabad",
   "destination": "Tuni",
+
+  // Travel date, YYYY-MM-DD.
+  // A past date returns no buses, so the run no-ops and leaves history.json alone.
   "date": "2026-11-22",
+
+  // Air conditioning. One of:
+  //   "AC"       only air-conditioned buses
+  //   "Non-AC"   only non-air-conditioned buses
+  //   "Any"      both
   "bus_ac_type": "AC",
-  "seat_type": "Single Sleeper",
+
+  // Seat type. One of:
+  //   "Sleeper"         every sleeper berth, single AND double (recommended)
+  //   "Single Sleeper"  single berths only
+  //   "Double Sleeper"  double berths only
+  //   "Seater"          seater buses only, no berths
+  //   "Any"             all of the above
+  //
+  // redBus prices single and double berths as separate tiers, so "Sleeper" compares
+  // both and reports each tier's drop separately. Combine values with commas for an
+  // explicit set, e.g. "Single Sleeper, Seater".
+  //
+  // Note: a typo does not fail loudly - anything unrecognised is treated as "Any".
+  "seat_type": "Sleeper",
+
+  // Minimum fare decrease, in rupees, before a notification is sent.
+  // Only drops of at least this much are reported.
   "min_drop_amount": 50
+
+  // Optional: pin redBus city IDs to skip the name lookup. Get them from
+  // data/cities.json after a first run, or from the "resolved ... -> id=" log line.
+  // "fromCity": 124,
+  // "toCity": 335
 }

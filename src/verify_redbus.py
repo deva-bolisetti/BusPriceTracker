@@ -15,8 +15,8 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 
 def load_config():
-    with open(REPO_ROOT / "config.json", "r", encoding="utf-8") as handle:
-        return json.load(handle)
+    """Load config.json, tolerating the // comments used to document allowed values."""
+    return redbus_client.load_jsonc(str(REPO_ROOT / "config.json"), {})
 
 
 def tier_price(tiers, tier):

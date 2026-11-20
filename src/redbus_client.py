@@ -10,6 +10,7 @@ existing history.json baseline keeps matching and no re-baseline is needed.
 
 import json
 import os
+import re
 import time
 from datetime import datetime
 from pathlib import Path
@@ -107,6 +108,79 @@ def format_doj(date_string: str) -> str:
         except ValueError:
             continue
     raise ValueError(f"Unrecognised date format: {date_string!r} (expected YYYY-MM-DD)")
+
+
+def strip_json_comments(text: str) -> str:
+    """Remove // and /* */ comments from JSON with comments (JSONC).
+
+    config.json carries explanatory comments so the allowed values are discoverable
+    without reading the source, but json.load cannot parse them. This strips comments
+    while leaving anything inside a string literal untouched, so a value such as
+    "http://example" or "a // b" survives intact.
+    """
+    out = []
+    i = 0
+    in_string = False
+    escaped = False
+    length = len(text)
+
+    while i < length:
+        char = text[i]
+
+        if in_string:
+            out.append(char)
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            i += 1
+            continue
+
+        if char == '"':
+            in_string = True
+            out.append(char)
+            i += 1
+            continue
+
+        if char == "/" and i + 1 < length:
+            nxt = text[i + 1]
+            if nxt == "/":
+                i += 2
+                while i < length and text[i] not in "\r\n":
+                    i += 1
+                continue
+            if nxt == "*":
+                i += 2
+                while i + 1 < length and not (text[i] == "*" and text[i + 1] == "/"):
+                    i += 1
+                i = min(i + 2, length)
+                continue
+
+        out.append(char)
+        i += 1
+
+    return "".join(out)
+
+
+def load_jsonc(path: str, default: Any = None) -> Any:
+    """Load a JSON/JSONC file, tolerating comments and trailing commas."""
+    if not os.path.exists(path):
+        return default
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            raw = handle.read()
+    except OSError:
+        return default
+
+    cleaned = strip_json_comments(raw)
+    # Trailing commas are a common hand-editing slip in an annotated file.
+    cleaned = re.sub(r",(\s*[}\]])", r"\1", cleaned)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError as error:
+        raise RedbusError(f"{path} is not valid JSON: {error}") from error
 
 
 def load_city_cache(path: str = CITY_CACHE_FILE) -> Dict[str, Any]:
