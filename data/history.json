@@ -1580,32 +1580,41 @@
       "fareList": [
         1550,
         1770,
-        2500
+        2500,
+        2510,
+        2610,
+        2660
       ],
       "minFare": 1550,
-      "maxFare": 2500,
+      "maxFare": 2660,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
             "originalPrice": 1550,
-            "count": 34
+            "count": 33
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2500,
-            "count": 11
+            "count": 8
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 2660,
+            "count": 3
           }
         ]
       },
-      "availableSeats": 45,
+      "availableSeats": 44,
       "totalSeats": 54,
-      "availableWindowSeats": 26,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 12,
       "availableAisleSeats": 14,
       "availableUpperSeats": 11,
-      "availableLowerSeats": 34,
+      "availableLowerSeats": 33,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -6481,8 +6490,8 @@
       "fareList": [
         800,
         1200,
-        1200,
         1250,
+        1254,
         1287,
         1415,
         1480
@@ -6512,7 +6521,7 @@
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -9305,8 +9314,9 @@
       "fareList": [
         800,
         840,
+        1200,
+        1200,
         1280,
-        1334,
         1356,
         1400,
         1507,
@@ -9323,22 +9333,22 @@
             "count": 23
           }
         ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1200,
+            "count": 9
+          }
+        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1280,
             "count": 10
           }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1334,
-            "count": 9
-          }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 14,
@@ -11332,11 +11342,10 @@
         800,
         819,
         859,
-        1200,
-        1200,
         1280,
         1334,
         1356,
+        1400,
         1507,
         1582,
         1657
@@ -11351,22 +11360,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1200,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1280,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1334,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 23,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 17,
       "availableUpperSeats": 15,
@@ -12397,8 +12406,9 @@
       "fareList": [
         800,
         840,
+        1200,
+        1200,
         1280,
-        1334,
         1356,
         1400,
         1507,
@@ -12415,22 +12425,22 @@
             "count": 22
           }
         ],
-        "SINGLE_SLEEPER": [
+        "SLEEPER": [
           {
-            "originalPrice": 1280,
+            "originalPrice": 1200,
             "count": 10
           }
         ],
-        "SLEEPER": [
+        "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1334,
+            "originalPrice": 1280,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -14549,8 +14559,8 @@
       "fareList": [
         800,
         1200,
+        1200,
         1250,
-        1260,
         1288,
         1356,
         1423,
