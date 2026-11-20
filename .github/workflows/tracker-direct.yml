@@ -1,9 +1,11 @@
 name: Bus Fare Drop Tracker (redBus direct, no Apify)
 
 on:
-  # The primary path: no paid API, so this is the one that runs on a schedule.
-  schedule:
-    - cron: '*/15 * * * *'
+  # Schedule disabled — GitHub's cron is best-effort and drops most runs on public
+  # repos. Triggering is now external (cron-job.org) and targets tracker-loop.yml,
+  # which keeps checking for ~6h per dispatch.
+  # schedule:
+  #   - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -16,6 +18,9 @@ jobs:
       - name: Checkout repository
         id: checkout
         uses: actions/checkout@v4
+        with:
+          # Full history so the rebase-retry in the commit step always has a base.
+          fetch-depth: 0
 
       - name: Set up Python
         id: setup-python
@@ -40,17 +45,56 @@ jobs:
       - name: Commit updated fare history
         id: commit-history
         run: |
+          set -euo pipefail
+
           echo "Checking whether fare history changed..."
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/history.json data/cities.json
-          if git diff --quiet && git diff --staged --quiet; then
+
+          # Stage separately: a missing cities.json must never block the history add.
+          git add data/history.json
+          git add data/cities.json || true
+
+          if git diff --staged --quiet; then
             echo "No fare-history changes to commit."
-          else
-            git commit -m "Update fare history [skip ci]"
-            git push
-            echo "Fare history committed and pushed."
+            exit 0
           fi
+
+          BRANCH="${GITHUB_REF_NAME}"
+          git commit -m "Update fare history [skip ci]"
+
+          # tracker-loop.yml shares this repository and pushes every 15 minutes, so a
+          # manual run can lose the race. Retry instead of failing the job.
+          ATTEMPTS=5
+          for attempt in $(seq 1 "$ATTEMPTS"); do
+            echo "Push attempt $attempt/$ATTEMPTS on branch $BRANCH"
+
+            if git pull --rebase --autostash origin "$BRANCH" && git push origin "HEAD:$BRANCH"; then
+              echo "Fare history committed and pushed."
+              exit 0
+            fi
+
+            # A conflicting history.json leaves a rebase in progress; clear it so the
+            # next attempt starts from a known state.
+            git rebase --abort >/dev/null 2>&1 || true
+
+            # Rebase can still conflict on this machine-generated file. Fall back to
+            # replaying our snapshot as a single commit on top of the remote tip:
+            # our fetch is the newest data, so our version of the file should win.
+            if git fetch origin "$BRANCH" \
+              && git reset --soft "origin/$BRANCH" \
+              && git commit -m "Update fare history [skip ci]"; then
+              if git push origin "HEAD:$BRANCH"; then
+                echo "Fare history committed and pushed (after replay onto remote tip)."
+                exit 0
+              fi
+            fi
+
+            sleep $(( attempt * 5 ))
+          done
+
+          echo "::error::Could not push fare history after $ATTEMPTS attempts. The snapshot from this run was not saved."
+          exit 1
 
       - name: Add run summary
         if: always()

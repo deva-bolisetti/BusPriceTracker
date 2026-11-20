@@ -1,0 +1,178 @@
+name: Bus Fare Drop Tracker (manual loop backup)
+
+on:
+  # No cron here on purpose. This is the manual backup path: dispatch it by hand
+  # when the external scheduler (cron-job.org) is down, then cancel it once that
+  # scheduler is healthy again. It is never scheduled, so it costs no minutes idle.
+  #
+  # Both inputs are optional and clamped:
+  #   hours            how long to keep checking (0.25 - 5.75, default 5.75)
+  #   interval_minutes minutes between checks   (1 - 60, default 15)
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: 'Hours to keep checking (0.25 - 5.75)'
+        required: false
+        default: '5.75'
+        type: string
+      interval_minutes:
+        description: 'Minutes between fare checks (1 - 60)'
+        required: false
+        default: '15'
+        type: string
+
+# Serialises loop runs against each other: only one may run at a time, and a
+# dispatch arriving mid-run waits rather than starting a second loop. Queued runs
+# are kept, not cancelled, so the next one starts as soon as this one finishes.
+# tracker-direct.yml deliberately has no group, so a scheduled direct run still
+# starts immediately; its commit step rebases and retries if it loses the race.
+concurrency:
+  group: fare-tracker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  track-loop:
+    runs-on: ubuntu-latest
+    # GitHub hard-kills a job at 360 min. Stop the loop at 345 so the final push
+    # completes and the job exits cleanly instead of being cancelled mid-write.
+    timeout-minutes: 355
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Full history so `git pull --rebase` never trips over a shallow clone.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Track fares in a loop
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          INPUT_HOURS: ${{ inputs.hours }}
+          INPUT_INTERVAL_MINUTES: ${{ inputs.interval_minutes }}
+        run: |
+          set +e   # one failed iteration must not kill the whole run
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Hard bounds, independent of what was typed into the dispatch form.
+          # 345 min keeps the final push clear of the 355-minute job timeout.
+          MAX_LOOP_SECONDS=20700
+          MIN_LOOP_SECONDS=60
+          MAX_INTERVAL_SECONDS=3600
+          MIN_INTERVAL_SECONDS=60
+
+          # Accept anything the form or the API sends; reject non-numeric values
+          # back to the defaults, then clamp into the supported range.
+          is_number() {
+            case "$1" in
+              ''|*[!0-9.]*|*.*.*) return 1 ;;   # empty, stray chars, or two dots
+              *) return 0 ;;
+            esac
+          }
+
+          HOURS="${INPUT_HOURS:-5.75}"
+          INTERVAL_MINUTES="${INPUT_INTERVAL_MINUTES:-15}"
+          is_number "$HOURS" || HOURS=5.75
+          is_number "$INTERVAL_MINUTES" || INTERVAL_MINUTES=15
+
+          LOOP_SECONDS=$(awk -v h="$HOURS" 'BEGIN { printf "%d", h * 3600 }')
+          [ "$LOOP_SECONDS" -lt "$MIN_LOOP_SECONDS" ] && LOOP_SECONDS=$MIN_LOOP_SECONDS
+          [ "$LOOP_SECONDS" -gt "$MAX_LOOP_SECONDS" ] && LOOP_SECONDS=$MAX_LOOP_SECONDS
+
+          INTERVAL_SECONDS=$(awk -v m="$INTERVAL_MINUTES" 'BEGIN { printf "%d", m * 60 }')
+          [ "$INTERVAL_SECONDS" -lt "$MIN_INTERVAL_SECONDS" ] && INTERVAL_SECONDS=$MIN_INTERVAL_SECONDS
+          [ "$INTERVAL_SECONDS" -gt "$MAX_INTERVAL_SECONDS" ] && INTERVAL_SECONDS=$MAX_INTERVAL_SECONDS
+
+          echo "Requested hours='$HOURS' interval_minutes='$INTERVAL_MINUTES'"
+          echo "Effective loop window: $(( LOOP_SECONDS / 60 )) min, interval: $(( INTERVAL_SECONDS / 60 )) min"
+
+          # Push explicitly to the dispatched ref instead of relying on upstream
+          # tracking, which is absent when the workflow is dispatched against a tag
+          # or a commit SHA rather than a branch.
+          BRANCH="${GITHUB_REF_NAME}"
+
+          # Commit the freshly written snapshot and get it onto the remote.
+          #
+          # history.json is machine-generated and always conflicts when another run
+          # pushed first, so a plain rebase is not enough: the rebase aborts, leaves
+          # HEAD unchanged, and the following push reports "Everything up-to-date",
+          # silently dropping this iteration's snapshot. Mirror the fallback used by
+          # tracker-direct.yml: replay our snapshot as one commit on the remote tip,
+          # so the newest fetch wins.
+          commit_and_push() {
+            git add data/history.json || echo "::warning::could not stage history"
+            git add data/cities.json || true
+            if git diff --staged --quiet; then
+              echo "No fare-history changes this iteration."
+              return 0
+            fi
+
+            git commit -m "Update fare history [skip ci]" || return 1
+
+            if git pull --rebase --autostash origin "$BRANCH" \
+              && git push origin "HEAD:$BRANCH"; then
+              echo "Fare history pushed."
+              return 0
+            fi
+
+            # Conflict on history.json leaves a rebase in progress; clear it so the
+            # next step starts from a known state.
+            git rebase --abort >/dev/null 2>&1 || true
+
+            if git fetch origin "$BRANCH" \
+              && git reset --soft "origin/$BRANCH" \
+              && git commit -m "Update fare history [skip ci]" \
+              && git push origin "HEAD:$BRANCH"; then
+              echo "Fare history pushed (after replay onto remote tip)."
+              return 0
+            fi
+
+            git rebase --abort >/dev/null 2>&1 || true
+            echo "::warning::could not push this iteration; next iteration retries"
+            return 1
+          }
+
+          deadline=$(( $(date +%s) + LOOP_SECONDS ))
+          iteration=0
+
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            iteration=$(( iteration + 1 ))
+            echo "::group::Iteration $iteration at $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+
+            # Clear any rebase left behind by a previous iteration so this one starts
+            # from a known state, and re-attach HEAD if it was left detached.
+            git rebase --abort >/dev/null 2>&1 || true
+            git checkout -q "$BRANCH" 2>/dev/null || true
+
+            python -u src/tracker_direct.py \
+              || echo "::warning::tracker exited non-zero; keeping the loop alive"
+
+            commit_and_push || true
+
+            echo "::endgroup::"
+
+            remaining=$(( deadline - $(date +%s) ))
+            if [ "$remaining" -le 0 ]; then
+              echo "Deadline reached. Exiting loop."
+              break
+            fi
+            sleep_for=$(( remaining < INTERVAL_SECONDS ? remaining : INTERVAL_SECONDS ))
+            echo "Sleeping ${sleep_for}s before the next check."
+            sleep "$sleep_for"
+          done
+
+          echo "Loop finished after $iteration iteration(s)."
