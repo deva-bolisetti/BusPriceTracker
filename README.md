@@ -4,18 +4,22 @@ Track bus fares for a configurable trip and get a push notification on your phon
 
 Fare data comes straight from redBus's public JSON endpoints — **no API key, no paid service, no scraping proxy**. It runs entirely on GitHub Actions' free tier, so there is nothing to host and nothing to pay for.
 
-Trip settings live in `config.json`, so you can change them from the GitHub mobile app without touching Python.
+Trip settings live in `config.json`, so you can change them from the GitHub mobile app without touching Python. That file accepts `//` comments, so the allowed values are documented inline.
 
 ## How it works
 
 ```
-GitHub Actions (every 15 min)
-   → read config.json          which trip to track
-   → fetch fares from redBus   free JSON API
-   → compare with data/history.json   the previous snapshot
+External scheduler (every 15 min)
+   → workflow_dispatch on tracker-direct.yml
+   → read config.json                which trip to track
+   → fetch fares from redBus         free JSON API
+   → compare with data/history.json  the previous snapshot
    → if a fare dropped ≥ your threshold → ntfy push to your phone
-   → commit data/history.json    becomes the next baseline
+   → commit data/history.json        becomes the next baseline
 ```
+
+GitHub's own `schedule` event is best-effort and drops most runs on public repositories, so the
+cron is driven externally instead — see [Scheduling](#scheduling).
 
 - The first run for a trip saves a baseline in `data/history.json`; comparison starts on the run after that.
 - A run with no qualifying drop sends **no notification** — you only get pushed when something actually drops.
@@ -27,23 +31,24 @@ All fare comparison is deterministic Python. There is no AI model in the loop.
 ## Quick start
 
 1. **Fork or clone** this repository.
-2. **Edit `config.json`** for your trip:
+2. **Edit `config.json`** for your trip. The file documents every allowed value inline:
 
-   ```json
+   ```jsonc
    {
      "active": true,
      "source": "Hyderabad",
      "destination": "Tuni",
      "date": "2026-11-22",
-     "bus_ac_type": "AC",
-     "seat_type": "Single Sleeper",
+     "bus_ac_type": "AC",       // "AC" | "Non-AC" | "Any"
+     "seat_type": "Sleeper",    // "Sleeper" | "Single Sleeper" | "Double Sleeper" | "Seater" | "Any"
      "min_drop_amount": 50
    }
    ```
 
 3. **Add the `NTFY_TOPIC` secret** — see below.
 4. **Run the workflow once** from the Actions tab to record a baseline.
-5. Install the ntfy app, subscribe to your topic, and wait for a drop.
+5. **Set up the external scheduler** — see [Scheduling](#scheduling).
+6. Install the ntfy app, subscribe to your topic, and wait for a drop.
 
 ## Configure a trip
 
@@ -57,6 +62,12 @@ All fare comparison is deterministic Python. There is no AI model in the loop.
 | `seat_type` | `Sleeper`, `Single Sleeper`, `Double Sleeper`, `Seater`, or `Any`. Combine with commas. |
 | `min_drop_amount` | Minimum fare decrease, in rupees, required before you are notified. |
 | `fromCity` / `toCity` | Optional. Pin redBus city IDs to skip the name lookup. |
+
+`config.json` is parsed leniently: `//` and `/* */` comments are stripped and trailing
+commas are tolerated, so you can annotate the file freely. It is therefore not strict JSON —
+if another tool reads it directly, strip the comments first.
+
+A `seat_type` typo does not fail loudly: anything unrecognised is treated as `Any`.
 
 ### Seat types
 
@@ -89,7 +100,7 @@ existing baseline and compares immediately:
 A reset never alerts on a drop for the run that resets, because there is nothing to
 compare against yet. Comparison resumes 15 minutes later.
 
-Commit the file when you change it; the next scheduled run picks it up. You can also trigger a run manually from the Actions tab.
+Commit the file when you change it; the next run picks it up. You can also trigger a run manually from the Actions tab.
 
 ## Notifications
 
@@ -124,13 +135,52 @@ Never put credentials in `config.json` or commit them.
 
 | Workflow | Trigger | Data source | Notes |
 | --- | --- | --- | --- |
-| `tracker-direct.yml` | every 15 minutes, or manual | redBus JSON API | The scheduled path. Free. |
-| `tracker-apify.yml` | manual only | Apify actor | Optional fallback. Paid, and needs `APIFY_TOKEN` + `APIFY_ACTOR_ID`. |
+| `tracker-direct.yml` | `workflow_dispatch` only | redBus JSON API | The live path. Free. |
+| `tracker-loop.yml` | `workflow_dispatch` only | redBus JSON API | Manual backup: repeats `tracker-direct` inside one job. |
+| `tracker-apify.yml` | `workflow_dispatch` only | Apify actor | Optional fallback. Paid, and needs `APIFY_TOKEN` + `APIFY_ACTOR_ID`. |
+
+None of them carry a `schedule:` trigger. `tracker-direct.yml` is driven by the external
+scheduler below; the other two are run by hand.
+
+`tracker-loop.yml` takes two inputs: `hours` (default `5.75`, the most GitHub allows in one job)
+and `interval_minutes` (default `15`). It is for covering a gap when the external cron is
+unavailable, not for routine use — a loop burns roughly 44,400 Actions minutes a month if left
+running, against about 2,880 for a 15-minute dispatch.
 
 `tracker-apify.yml` is deliberately **not** scheduled: it bills per run, and its credentials
 expire. Enable it only if redBus changes its API and you want a working fallback while you fix
-`src/redbus_client.py`. Never run both on a schedule — they both write `data/history.json` and would
-race each other.
+`src/redbus_client.py`.
+
+Never run two of these at the same time. They all write `data/history.json`, so overlapping runs
+race each other and can push the same drop twice.
+
+## Scheduling
+
+GitHub's `schedule:` trigger is best-effort and, on public repositories, drops most runs — which
+is why the workflow has no cron of its own. A free external scheduler calls the dispatch API
+instead, which GitHub always honours.
+
+1. Create a **fine-grained personal access token** scoped to this repository with
+   *Actions: Read and write* and *Metadata: Read-only*.
+2. At [cron-job.org](https://cron-job.org), create a job:
+   - **URL**: `https://api.github.com/repos/<owner>/<repo>/actions/workflows/tracker-direct.yml/dispatches`
+   - **Method**: `POST`
+   - **Schedule**: custom `*/15 * * * *` — the form defaults to hourly, so change it.
+   - **Headers** (one row each):
+     | Header | Value |
+     | --- | --- |
+     | `Authorization` | `Bearer <your token>` |
+     | `Accept` | `application/vnd.github+json` |
+     | `X-GitHub-Api-Version` | `2022-11-28` |
+     | `Content-Type` | `application/json` |
+   - **Body**: `{"ref":"main"}` — use your working branch while you are still testing, then
+     switch to `main` after merging.
+3. Expect **HTTP 204** with an empty body. A `404` means the ref or workflow filename is wrong;
+   a `401`/`403` means the token is missing a permission.
+4. Watch the Actions tab for the first few runs and confirm each one commits `data/history.json`.
+
+Treat the token like a password: it can start workflows in your repository. Rotate it if it is
+ever pasted anywhere it could be read.
 
 ## Run it locally
 
@@ -156,9 +206,13 @@ from any working directory.
 ├── config.json                 the trip you are tracking (the file you edit)
 ├── requirements.txt
 ├── README.md
+├── .github/workflows/
+│   ├── tracker-direct.yml      the live path (dispatch only)
+│   ├── tracker-loop.yml        manual loop backup
+│   └── tracker-apify.yml       optional Apify fallback
 ├── src/
 │   ├── redbus_client.py        free redBus JSON client + normaliser
-│   ├── tracker_direct.py       scheduled runner: fetch → compare → notify
+│   ├── tracker_direct.py       runner: fetch → compare → notify
 │   ├── tracker_apify.py        optional Apify-backed runner
 │   └── verify_redbus.py        manual inspector for live fares
 └── data/
@@ -169,9 +223,9 @@ from any working directory.
 | File | What it does |
 | --- | --- |
 | `config.json` | The trip you are tracking. The only file you normally edit. |
-| `src/redbus_client.py` | Free redBus JSON client; normalises results to the stored schema. |
-| `src/tracker_direct.py` | Scheduled runner: fetch → compare → notify. |
-| `src/tracker_apify.py` | Optional Apify-backed runner; same comparison logic. |
+| `src/redbus_client.py` | Free redBus JSON client; normalises results to the stored schema; loads the JSONC config. |
+| `src/tracker_direct.py` | Runner: fetch → compare → notify. |
+| `src/tracker_apify.py` | Optional Apify-backed runner. Not kept in sync with the direct runner. |
 | `src/verify_redbus.py` | Manual inspector for live fares and the endpoint contract. |
 | `data/cities.json` | Cached redBus city IDs, so lookups happen once. |
 | `data/history.json` | The baseline snapshot, committed by the workflow each run. |
@@ -184,7 +238,7 @@ GitHub mobile app, so it should be the easiest thing to find.
 - `data/history.json` is written by the workflow. Don't hand-edit it during normal operation; a scheduled run will overwrite you. Editing a price in it is a handy way to test alerting.
 - Large diffs in `data/history.json` are normal — redBus reorders results between runs even when prices are unchanged.
 - This relies on redBus's internal, undocumented endpoints. They can change without notice. If the tracker stops finding buses, run `src/verify_redbus.py` to see what broke.
-- Scheduled Actions are not guaranteed to start exactly on time, and can be delayed under load.
+- Dispatched runs still queue behind GitHub's own capacity, so they can start late under load.
 - Intended for personal, low-frequency tracking. Be considerate: don't drop the interval to seconds.
 
 ## License

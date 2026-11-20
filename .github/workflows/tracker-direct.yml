@@ -2,8 +2,8 @@ name: Bus Fare Drop Tracker (redBus direct, no Apify)
 
 on:
   # Schedule disabled — GitHub's cron is best-effort and drops most runs on public
-  # repos. Triggering is now external (cron-job.org) and targets tracker-loop.yml,
-  # which keeps checking for ~6h per dispatch.
+  # repos. Triggering is now external (cron-job.org), which POSTs to this workflow's
+  # dispatch API every 15 minutes. See README §Scheduling.
   # schedule:
   #   - cron: '*/15 * * * *'
   workflow_dispatch:
@@ -63,8 +63,8 @@ jobs:
           BRANCH="${GITHUB_REF_NAME}"
           git commit -m "Update fare history [skip ci]"
 
-          # tracker-loop.yml shares this repository and pushes every 15 minutes, so a
-          # manual run can lose the race. Retry instead of failing the job.
+          # tracker-loop.yml shares this repository and pushes every 15 minutes when it
+          # is running, so a run can lose the race. Retry instead of failing the job.
           ATTEMPTS=5
           for attempt in $(seq 1 "$ATTEMPTS"); do
             echo "Push attempt $attempt/$ATTEMPTS on branch $BRANCH"
