@@ -19,8 +19,8 @@ GitHub Actions (every 15 min)
 
 - The first run for a trip saves a baseline in `data/history.json`; comparison starts on the run after that.
 - A run with no qualifying drop sends **no notification** — you only get pushed when something actually drops.
-- Changing the source, destination, travel date, AC preference or seat preference changes the trip *signature*, so the old baseline is not compared against the new trip. The next successful run establishes a fresh baseline.
-- Changing only `min_drop_amount` keeps your baseline intact.
+- Changing the source, destination, travel date or pinned city IDs changes the trip, so the old baseline is not compared against it. A fresh baseline is saved and a low-priority push tells you tracking restarted.
+- Changing `seat_type`, `bus_ac_type` or `min_drop_amount` keeps your baseline intact — those only filter the comparison.
 
 All fare comparison is deterministic Python. There is no AI model in the loop.
 
@@ -54,9 +54,40 @@ All fare comparison is deterministic Python. There is no AI model in the loop.
 | `destination` | Arrival city name as redBus spells it. |
 | `date` | Travel date, `YYYY-MM-DD`. A past date returns no buses, so the run no-ops. |
 | `bus_ac_type` | `AC`, `Non-AC`, or `Any`. |
-| `seat_type` | `Single Sleeper`, `Double Sleeper`, `Seater`, or `Any`. |
+| `seat_type` | `Sleeper`, `Single Sleeper`, `Double Sleeper`, `Seater`, or `Any`. Combine with commas. |
 | `min_drop_amount` | Minimum fare decrease, in rupees, required before you are notified. |
 | `fromCity` / `toCity` | Optional. Pin redBus city IDs to skip the name lookup. |
+
+### Seat types
+
+redBus prices single and double berths as **separate tiers**, so they are separate
+values here too:
+
+| `seat_type` | Tiers compared |
+| --- | --- |
+| `Sleeper` | `SLEEPER` + `SINGLE_SLEEPER` — every sleeper berth, single or double |
+| `Single Sleeper` | `SINGLE_SLEEPER` only |
+| `Double Sleeper` | `SLEEPER` only |
+| `Seater` | `SEATER` only |
+| `Any` | all three |
+
+`Sleeper` is the usual choice: a bus that sells single berths also sells doubles, so
+one setting covers both and reports each tier's drop separately. Combine values with
+commas if you want an explicit set, e.g. `"Single Sleeper, Seater"`.
+
+### What resets the baseline
+
+`data/history.json` stores the full inventory with every fare tier, so the seat and AC
+settings are only *filters* applied at comparison time — changing them reuses the
+existing baseline and compares immediately:
+
+| Change | Baseline |
+| --- | --- |
+| `seat_type`, `bus_ac_type`, `min_drop_amount` | **kept** — comparison continues on the next run |
+| `source`, `destination`, `date`, `fromCity`, `toCity` | **reset** — a new baseline is saved and a low-priority "Tracker re-baselined" push explains what changed |
+
+A reset never alerts on a drop for the run that resets, because there is nothing to
+compare against yet. Comparison resumes 15 minutes later.
 
 Commit the file when you change it; the next scheduled run picks it up. You can also trigger a run manually from the Actions tab.
 
