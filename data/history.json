@@ -252,13 +252,12 @@
       "droppingPointCount": 18,
       "fareList": [
         1550,
-        1570,
+        1650,
         2500,
-        2550,
-        2640
+        2780
       ],
       "minFare": 1550,
-      "maxFare": 2640,
+      "maxFare": 2780,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -275,7 +274,7 @@
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2640,
+            "originalPrice": 2780,
             "count": 3
           }
         ]
@@ -1286,114 +1285,6 @@
           "type": "PERCENT",
           "discount": 190,
           "maxDiscount": 20.01,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni Bypas",
-        "destinationDp": "Miyapur",
-        "bpId": 27830869,
-        "dpId": 28258529
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-23 01:25:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 59599875,
-      "operatorId": 35061,
-      "travelsName": "Varalakshmi Tours and Travels",
-      "routeId": 59599875,
-      "serviceId": "116",
-      "serviceName": "VISAKHAPATNAM TO HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35061.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-23 01:25:00",
-      "arrivalTime": "2026-11-23 08:45:00",
-      "journeyDurationMin": 440,
-      "dateOfJourney": "2026-11-23",
-      "firstBpTime": "2026-11-23 01:25:00",
-      "boardingPoint": "Tuni Bypas",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 17,
-      "fareList": [
-        799,
-        1119,
-        1359
-      ],
-      "minFare": 799,
-      "maxFare": 1359,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 799,
-            "discountedPrice": 639,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1119,
-            "discountedPrice": 895,
-            "count": 13
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 41,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 27,
-      "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
-      "busScore": 0.016744873012623316,
-      "perzScore": 0.016744873012623316,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_66fe7fca",
-          "description": "Get 21 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 160,
-          "maxDiscount": 20.03,
           "dealType": "REDDEAL"
         }
       ],
@@ -6873,16 +6764,16 @@
       "boardingPointCount": 1,
       "droppingPointCount": 20,
       "fareList": [
-        1500,
-        1600
+        1300,
+        1400
       ],
-      "minFare": 1500,
-      "maxFare": 1600,
+      "minFare": 1300,
+      "maxFare": 1400,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1500,
+            "originalPrice": 1300,
             "count": 28
           }
         ]
