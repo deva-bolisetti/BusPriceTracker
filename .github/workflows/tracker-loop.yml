@@ -1,0 +1,93 @@
+name: Bus Fare Drop Tracker (looped, ~6h)
+
+on:
+  # No cron here on purpose. This workflow is started by an external scheduler
+  # (cron-job.org) hitting the workflow_dispatch endpoint, because GitHub's own
+  # `schedule` event is best-effort and silently drops most runs on public repos.
+  #
+  # One dispatch keeps checking for ~5h45m, so a single reliable trigger covers
+  # ~23 fare checks. cron-job.org only has to land one trigger per ~6 hours.
+  workflow_dispatch:
+
+# Shared with tracker-direct.yml on purpose: both write data/history.json, so they
+# must never overlap. Queued runs are kept, not cancelled, so a pending trigger
+# starts the next loop as soon as this one finishes.
+concurrency:
+  group: fare-tracker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  track-loop:
+    runs-on: ubuntu-latest
+    # GitHub hard-kills a job at 360 min. Stop the loop at 345 so the final push
+    # completes and the job exits cleanly instead of being cancelled mid-write.
+    timeout-minutes: 355
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Full history so `git pull --rebase` never trips over a shallow clone.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Track fares in a loop
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          set +e   # one failed iteration must not kill the whole 6h run
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          INTERVAL_SECONDS=900          # 15 minutes
+          deadline=$(( $(date +%s) + 345*60 ))
+          iteration=0
+
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            iteration=$(( iteration + 1 ))
+            echo "::group::Iteration $iteration at $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+
+            # Recover from a previous iteration that died mid-rebase.
+            git rebase --abort >/dev/null 2>&1 || true
+
+            python -u src/tracker_direct.py \
+              || echo "::warning::tracker exited non-zero; keeping the loop alive"
+
+            # Add separately: a missing cities.json must not block the history add.
+            git add data/history.json || echo "::warning::could not stage history"
+            git add data/cities.json || true
+            if git diff --staged --quiet; then
+              echo "No fare-history changes this iteration."
+            else
+              git commit -m "Update fare history [skip ci]"
+              # main may have moved: a human edit to config.json, or a late cron run.
+              git pull --rebase --autostash || echo "::warning::pull --rebase failed"
+              git push || echo "::warning::push failed; next iteration retries"
+            fi
+
+            echo "::endgroup::"
+
+            remaining=$(( deadline - $(date +%s) ))
+            if [ "$remaining" -le 0 ]; then
+              echo "Deadline reached. Exiting loop."
+              break
+            fi
+            sleep_for=$(( remaining < INTERVAL_SECONDS ? remaining : INTERVAL_SECONDS ))
+            echo "Sleeping ${sleep_for}s before the next check."
+            sleep "$sleep_for"
+          done
+
+          echo "Loop finished after $iteration iteration(s)."
