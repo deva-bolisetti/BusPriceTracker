@@ -264,7 +264,7 @@
         "SEATER": [
           {
             "originalPrice": 1550,
-            "count": 19
+            "count": 21
           }
         ],
         "SLEEPER": [
@@ -280,13 +280,13 @@
           }
         ]
       },
-      "availableSeats": 34,
+      "availableSeats": 36,
       "totalSeats": 54,
-      "availableWindowSeats": 16,
+      "availableWindowSeats": 17,
       "availableSingleSeats": 7,
-      "availableAisleSeats": 13,
+      "availableAisleSeats": 14,
       "availableUpperSeats": 15,
-      "availableLowerSeats": 19,
+      "availableLowerSeats": 21,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -6353,11 +6353,13 @@
         800,
         1200,
         1250,
-        1295,
-        1354
+        1260,
+        1296,
+        1425,
+        1490
       ],
       "minFare": 800,
-      "maxFare": 1354,
+      "maxFare": 1490,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -6759,8 +6761,7 @@
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 922.86,
-            "discountedPrice": 831
+            "originalPrice": 922.86
           }
         ]
       },
@@ -6779,21 +6780,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_bdf7aacd",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 91.86,
-          "maxDiscount": 10.04,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -7515,21 +7505,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_bdf7aacd",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 84.67,
-          "maxDiscount": 10.05,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -7595,20 +7574,22 @@
       "fareList": [
         1200,
         1200,
-        1250,
-        1269,
-        1310,
-        1410,
-        1480
+        1311,
+        1318,
+        1376,
+        1395,
+        1442,
+        1551,
+        1628
       ],
       "minFare": 1200,
-      "maxFare": 1480,
+      "maxFare": 1628,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1200,
-            "count": 8
+            "count": 9
           }
         ]
       },
@@ -8765,18 +8746,21 @@
         1200,
         1200,
         1250,
-        1337,
-        1401,
-        1403
+        1261,
+        1323,
+        1471,
+        1472,
+        1542,
+        1544
       ],
       "minFare": 1200,
-      "maxFare": 1403,
+      "maxFare": 1544,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1200,
-            "count": 7
+            "count": 8
           }
         ]
       },
@@ -8988,8 +8972,7 @@
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 770.48,
-            "discountedPrice": 693
+            "originalPrice": 770.48
           }
         ]
       },
@@ -9008,21 +8991,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_bdf7aacd",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 77.48,
-          "maxDiscount": 10.06,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -9206,7 +9178,8 @@
       "droppingPointCount": 21,
       "fareList": [
         800,
-        1219,
+        1200,
+        1200,
         1250,
         1279,
         1378,
@@ -9225,7 +9198,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1219,
+            "originalPrice": 1200,
             "count": 9
           }
         ],
@@ -9238,7 +9211,7 @@
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 14,
@@ -11220,16 +11193,18 @@
       "droppingPointCount": 50,
       "fareList": [
         800,
-        1200,
-        1200,
-        1250,
-        1279,
-        1378,
-        1446,
-        1515
+        805,
+        845,
+        1288,
+        1342,
+        1364,
+        1409,
+        1516,
+        1591,
+        1667
       ],
       "minFare": 800,
-      "maxFare": 1515,
+      "maxFare": 1667,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -11238,22 +11213,22 @@
             "count": 23
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1200,
-            "count": 9
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1250,
+            "originalPrice": 1288,
             "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1342,
+            "count": 9
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 14,
@@ -12215,21 +12190,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_bdf7aacd",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 66.71,
-          "maxDiscount": 10.02,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -12294,16 +12258,18 @@
       "droppingPointCount": 38,
       "fareList": [
         800,
-        1200,
-        1200,
-        1250,
-        1279,
-        1378,
-        1446,
-        1515
+        805,
+        845,
+        1288,
+        1342,
+        1364,
+        1409,
+        1516,
+        1591,
+        1667
       ],
       "minFare": 800,
-      "maxFare": 1515,
+      "maxFare": 1667,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -12312,22 +12278,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
+        "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1200,
+            "originalPrice": 1288,
             "count": 10
           }
         ],
-        "SINGLE_SLEEPER": [
+        "SLEEPER": [
           {
-            "originalPrice": 1250,
+            "originalPrice": 1342,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -12466,113 +12432,6 @@
           "isAvailReschedule": true,
           "reschedulePolicy": "12:-1:0:0",
           "serviceStartTime": ""
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 54346197,
-      "operatorId": 21154,
-      "travelsName": "Sai Sarvam Tours and Travels",
-      "routeId": 54346197,
-      "serviceId": "48",
-      "serviceName": "Vijayanagaram - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/21154.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        4,
-        5,
-        6,
-        7,
-        9,
-        10,
-        26,
-        86,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-23 22:10:00",
-      "arrivalTime": "2026-11-24 08:00:00",
-      "journeyDurationMin": 590,
-      "dateOfJourney": "2026-11-23",
-      "firstBpTime": "2026-11-23 22:10:00",
-      "boardingPoint": "Tuni By Pass",
-      "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
-      "boardingPointCount": 1,
-      "droppingPointCount": 12,
-      "fareList": [
-        1320
-      ],
-      "minFare": 1320,
-      "maxFare": 1320,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1320,
-            "discountedPrice": 1254,
-            "count": 23
-          }
-        ]
-      },
-      "availableSeats": 23,
-      "totalSeats": 37,
-      "availableWindowSeats": 12,
-      "availableSingleSeats": 6,
-      "availableAisleSeats": 7,
-      "availableUpperSeats": 9,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.6,
-      "numberOfReviews": "0",
-      "busScore": 0.8887328195714242,
-      "perzScore": 0.8887328195714242,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_e5c85cc4",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 66,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni By Pass",
-        "destinationDp": "Miyapur",
-        "bpId": 29566160,
-        "dpId": 23114795
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-23 22:10:00"
         }
       ],
       "source": "Tuni",
@@ -14553,13 +14412,16 @@
       "fareList": [
         800,
         1200,
+        1207,
         1250,
-        1304,
-        1369,
-        1434
+        1267,
+        1295,
+        1364,
+        1432,
+        1500
       ],
       "minFare": 800,
-      "maxFare": 1434,
+      "maxFare": 1500,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -14583,7 +14445,7 @@
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
