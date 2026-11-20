@@ -1,5 +1,4 @@
 // BusPriceTracker configuration
-// Comments and trailing commas are allowed.
 
 {
   // false pauses tracking
@@ -20,8 +19,4 @@
 
   // Minimum fare drop to notify (₹)
   "min_drop_amount": 50,
-
-  // Optional: pin IDs from data/cities.json or the resolved city log
-  // "fromCity": 124,
-  // "toCity": 335
 }
