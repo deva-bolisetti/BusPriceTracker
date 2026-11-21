@@ -147,24 +147,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 15,
       "fareList": [
-        2800,
-        2900,
-        3000,
-        3100
+        2400,
+        2500,
+        2600,
+        2700
       ],
-      "minFare": 2800,
-      "maxFare": 3100,
+      "minFare": 2400,
+      "maxFare": 2700,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 2800,
+            "originalPrice": 2400,
             "count": 17
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 3000,
+            "originalPrice": 2600,
             "count": 2
           }
         ]
@@ -262,33 +262,33 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1530,
-        1580,
-        1680,
-        2420,
-        2520,
-        2700,
-        3090
+        1550,
+        1610,
+        1710,
+        2460,
+        2560,
+        2740,
+        3130
       ],
-      "minFare": 1530,
-      "maxFare": 3090,
+      "minFare": 1550,
+      "maxFare": 3130,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1530,
+            "originalPrice": 1550,
             "count": 13
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2420,
+            "originalPrice": 2460,
             "count": 7
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 3090,
+            "originalPrice": 3130,
             "count": 2
           }
         ]
@@ -1136,23 +1136,31 @@
       "boardingPointCount": 1,
       "droppingPointCount": 20,
       "fareList": [
-        1499,
-        2490
+        960,
+        1340,
+        1440,
+        1540
       ],
-      "minFare": 1499,
-      "maxFare": 2490,
+      "minFare": 960,
+      "maxFare": 1540,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1499,
+            "originalPrice": 960,
             "count": 20
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2490,
-            "count": 20
+            "originalPrice": 1340,
+            "count": 10
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 1440,
+            "count": 10
           }
         ]
       },
@@ -1464,25 +1472,25 @@
       "boardingPointCount": 1,
       "droppingPointCount": 5,
       "fareList": [
+        2400,
+        2500,
+        2600,
         2700,
-        2800,
-        2900,
-        3000,
-        3100
+        2800
       ],
-      "minFare": 2700,
-      "maxFare": 3100,
+      "minFare": 2400,
+      "maxFare": 2800,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 2700,
+            "originalPrice": 2400,
             "count": 17
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 3000,
+            "originalPrice": 2700,
             "count": 3
           }
         ]
@@ -3084,19 +3092,18 @@
       "boardingPointCount": 1,
       "droppingPointCount": 19,
       "fareList": [
-        1275,
-        1434,
-        1680,
-        1781
+        1224,
+        1376,
+        1770
       ],
-      "minFare": 1275,
-      "maxFare": 1781,
+      "minFare": 1224,
+      "maxFare": 1770,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1275,
-            "discountedPrice": 1116,
+            "originalPrice": 1224,
+            "discountedPrice": 1071,
             "count": 35
           }
         ]
@@ -3127,8 +3134,8 @@
           "campaignCode": "ALLC_ab927732",
           "description": "Get 13 % Extra OFF",
           "type": "PERCENT",
-          "discount": 159,
-          "maxDiscount": 12.52,
+          "discount": 153,
+          "maxDiscount": 12.5,
           "dealType": "REDDEAL"
         }
       ],
@@ -8989,19 +8996,19 @@
       "boardingPointCount": 1,
       "droppingPointCount": 20,
       "fareList": [
-        1908,
-        2049,
-        2403,
-        2548
+        1835,
+        1971,
+        2312,
+        2452
       ],
-      "minFare": 1908,
-      "maxFare": 2548,
+      "minFare": 1835,
+      "maxFare": 2452,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1908,
-            "discountedPrice": 1670,
+            "originalPrice": 1835,
+            "discountedPrice": 1606,
             "count": 30
           }
         ]
@@ -9032,7 +9039,7 @@
           "campaignCode": "ALLC_ab927732",
           "description": "Get 13 % Extra OFF",
           "type": "PERCENT",
-          "discount": 238,
+          "discount": 229,
           "maxDiscount": 12.5,
           "dealType": "REDDEAL"
         }
@@ -9673,10 +9680,10 @@
         1610,
         1659,
         1709,
-        1799
+        1759
       ],
       "minFare": 1610,
-      "maxFare": 1799,
+      "maxFare": 1759,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
@@ -9687,7 +9694,7 @@
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1799,
+            "originalPrice": 1759,
             "count": 4
           }
         ]
@@ -11778,12 +11785,11 @@
       "droppingPointCount": 22,
       "fareList": [
         1460,
-        1489,
-        1669,
-        1889
+        1599,
+        1799
       ],
       "minFare": 1460,
-      "maxFare": 1889,
+      "maxFare": 1799,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
@@ -11795,8 +11801,8 @@
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1889,
-            "discountedPrice": 1889,
+            "originalPrice": 1799,
+            "discountedPrice": 1799,
             "count": 3
           }
         ]
@@ -11903,14 +11909,14 @@
       "droppingPointCount": 28,
       "fareList": [
         1659,
-        1769,
-        1929,
-        2009,
-        2109,
-        2229
+        1719,
+        1879,
+        1959,
+        2059,
+        2179
       ],
       "minFare": 1659,
-      "maxFare": 2229,
+      "maxFare": 2179,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
@@ -11921,7 +11927,7 @@
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2229,
+            "originalPrice": 2179,
             "count": 2
           }
         ]
@@ -14787,34 +14793,36 @@
       "boardingPointCount": 1,
       "droppingPointCount": 16,
       "fareList": [
-        3090,
-        3200,
-        3300
+        2000,
+        2200,
+        2300,
+        2500,
+        2600
       ],
-      "minFare": 3090,
-      "maxFare": 3300,
+      "minFare": 2000,
+      "maxFare": 2600,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 3090,
-            "count": 30
+            "originalPrice": 2000,
+            "count": 26
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 3200,
-            "count": 4
+            "originalPrice": 2500,
+            "count": 6
           }
         ]
       },
-      "availableSeats": 34,
+      "availableSeats": 32,
       "totalSeats": 42,
-      "availableWindowSeats": 18,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 14,
+      "availableWindowSeats": 17,
+      "availableSingleSeats": 6,
+      "availableAisleSeats": 13,
       "availableUpperSeats": 18,
-      "availableLowerSeats": 16,
+      "availableLowerSeats": 14,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
