@@ -9,7 +9,7 @@
   "destination": "Hyderabad",
 
   // YYYY-MM-DD
-  "date": "2026-11-23",
+  "date": "2026-11-30",
 
   // AC, Non-AC, or Any
   "bus_ac_type": "AC",
