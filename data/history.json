@@ -2579,24 +2579,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 19,
       "fareList": [
-        1799,
-        2399,
-        2499,
-        2699
+        2099,
+        2799,
+        2899,
+        2999
       ],
-      "minFare": 1799,
-      "maxFare": 2699,
+      "minFare": 2099,
+      "maxFare": 2999,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1799,
+            "originalPrice": 2099,
             "count": 10
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2399,
+            "originalPrice": 2799,
             "count": 12
           }
         ]
@@ -8072,26 +8072,35 @@
       "boardingPointCount": 1,
       "droppingPointCount": 19,
       "fareList": [
-        3000
+        2099,
+        2799,
+        2899,
+        2999
       ],
-      "minFare": 3000,
-      "maxFare": 3000,
+      "minFare": 2099,
+      "maxFare": 2999,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 3000,
-            "count": 38
+            "originalPrice": 2099,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2799,
+            "count": 12
           }
         ]
       },
-      "availableSeats": 38,
+      "availableSeats": 22,
       "totalSeats": 40,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 38,
+      "availableLowerSeats": 22,
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
@@ -10860,18 +10869,21 @@
         "SEATER": [
           {
             "originalPrice": 2490,
+            "discountedPrice": 2241,
             "count": 19
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2980,
+            "discountedPrice": 2682,
             "count": 10
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 3280,
+            "discountedPrice": 2952,
             "count": 10
           }
         ]
@@ -10891,10 +10903,21 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "MULC_8a628097",
+          "description": "Get 10 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 249,
+          "maxDiscount": 10,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
