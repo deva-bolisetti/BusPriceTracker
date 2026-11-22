@@ -12085,24 +12085,16 @@
       "boardingPointCount": 1,
       "droppingPointCount": 28,
       "fareList": [
-        1859,
-        1899,
-        2019
+        1859
       ],
       "minFare": 1859,
-      "maxFare": 2019,
+      "maxFare": 1859,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
             "originalPrice": 1859,
-            "count": 32
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2019,
-            "count": 4
+            "count": 36
           }
         ]
       },
