@@ -784,27 +784,27 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1680,
-        1770,
-        1940,
-        2460,
-        2660,
-        2790,
-        2910
+        1630,
+        1710,
+        1870,
+        2380,
+        2560,
+        2700,
+        2830
       ],
-      "minFare": 1680,
-      "maxFare": 2910,
+      "minFare": 1630,
+      "maxFare": 2830,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1680,
+            "originalPrice": 1630,
             "count": 18
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2460,
+            "originalPrice": 2380,
             "count": 18
           }
         ]
@@ -8361,12 +8361,14 @@
         "SEATER": [
           {
             "originalPrice": 1390,
+            "discountedPrice": 1321,
             "count": 23
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2000,
+            "discountedPrice": 1900,
             "count": 22
           }
         ]
@@ -8386,10 +8388,21 @@
       "isRescheduled": true,
       "rescheduleTime": 4,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "MULC_d3408a71",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 69,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
