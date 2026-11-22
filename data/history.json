@@ -1311,7 +1311,7 @@
           {
             "originalPrice": 799,
             "discountedPrice": 639,
-            "count": 14
+            "count": 13
           }
         ],
         "SLEEPER": [
@@ -1322,13 +1322,13 @@
           }
         ]
       },
-      "availableSeats": 25,
+      "availableSeats": 24,
       "totalSeats": 41,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 25,
+      "availableLowerSeats": 24,
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "0",
@@ -5393,93 +5393,6 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 19:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 59703305,
-      "operatorId": 38534,
-      "travelsName": "ZIPP Bus",
-      "routeId": 59703305,
-      "serviceId": "33",
-      "serviceName": "vishakapatnam-hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/38534.png",
-      "busType": "A/C Seater / Sleeper (2+1)",
-      "busTypeId": 4,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 19:35:00",
-      "arrivalTime": "2026-12-01 05:30:00",
-      "journeyDurationMin": 595,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 19:35:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 15,
-      "fareList": [
-        3000
-      ],
-      "minFare": 3000,
-      "maxFare": 3000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 46
-          }
-        ]
-      },
-      "availableSeats": 46,
-      "totalSeats": 46,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 46,
-      "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
-      "busScore": 0.016707295065514046,
-      "perzScore": 0.016707295065514046,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "PRAGATHINAGAR",
-        "bpId": 30399487,
-        "dpId": 30465354
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 19:35:00"
         }
       ],
       "source": "Tuni",
@@ -11902,7 +11815,7 @@
       "droppingPoint": "LB Nagar",
       "droppingPointId": 79232,
       "boardingPointCount": 1,
-      "droppingPointCount": 43,
+      "droppingPointCount": 42,
       "fareList": [
         1799,
         2399,
@@ -11921,17 +11834,17 @@
         "SLEEPER": [
           {
             "originalPrice": 2399,
-            "count": 20
+            "count": 19
           }
         ]
       },
-      "availableSeats": 29,
+      "availableSeats": 28,
       "totalSeats": 43,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 29,
+      "availableLowerSeats": 28,
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
@@ -11949,9 +11862,9 @@
       "locationSearchParams": {
         "isExactMatch": true,
         "sourceBp": "Tuni",
-        "destinationDp": "Patancheru",
+        "destinationDp": "Ramachandra Puram",
         "bpId": 24620857,
-        "dpId": 25935449
+        "dpId": 25935470
       },
       "boReqParams": [
         {
