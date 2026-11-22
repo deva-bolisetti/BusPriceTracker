@@ -1195,21 +1195,18 @@
         "SEATER": [
           {
             "originalPrice": 951,
-            "discountedPrice": 761,
             "count": 15
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1501,
-            "discountedPrice": 1201,
             "count": 5
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1549,
-            "discountedPrice": 1239,
             "count": 4
           }
         ]
@@ -1229,21 +1226,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_66fe7fca",
-          "description": "Get 21 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 190,
-          "maxDiscount": 20.01,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -1310,14 +1296,12 @@
         "SEATER": [
           {
             "originalPrice": 799,
-            "discountedPrice": 639,
             "count": 13
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1119,
-            "discountedPrice": 895,
             "count": 11
           }
         ]
@@ -1337,21 +1321,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_66fe7fca",
-          "description": "Get 21 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 160,
-          "maxDiscount": 20.03,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -5680,8 +5653,8 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 48,
       "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
+      "rating": 3.9,
+      "numberOfReviews": "0",
       "busScore": 0.506530482620813,
       "perzScore": 0.506530482620813,
       "isRescheduled": null,
@@ -10770,7 +10743,7 @@
       "availableUpperSeats": 18,
       "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
-      "rating": 3.5,
+      "rating": 3.6,
       "numberOfReviews": "0",
       "busScore": 0.3798975136221189,
       "perzScore": 0.3798975136221189,
@@ -11815,25 +11788,28 @@
       "droppingPoint": "LB Nagar",
       "droppingPointId": 79232,
       "boardingPointCount": 1,
-      "droppingPointCount": 42,
+      "droppingPointCount": 48,
       "fareList": [
-        1799,
-        2399,
-        2699
+        1399,
+        1499,
+        1599,
+        1999,
+        2099,
+        2299
       ],
-      "minFare": 1799,
-      "maxFare": 2699,
+      "minFare": 1399,
+      "maxFare": 2299,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1799,
+            "originalPrice": 1399,
             "count": 9
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2399,
+            "originalPrice": 1999,
             "count": 19
           }
         ]
@@ -11862,9 +11838,9 @@
       "locationSearchParams": {
         "isExactMatch": true,
         "sourceBp": "Tuni",
-        "destinationDp": "Ramachandra Puram",
+        "destinationDp": "Patancheru",
         "bpId": 24620857,
-        "dpId": 25935470
+        "dpId": 25935449
       },
       "boReqParams": [
         {
