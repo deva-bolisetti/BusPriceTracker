@@ -14973,26 +14973,35 @@
       "boardingPointCount": 1,
       "droppingPointCount": 14,
       "fareList": [
-        1730
+        2100,
+        2200,
+        2300,
+        2400
       ],
-      "minFare": 1730,
-      "maxFare": 1730,
+      "minFare": 2100,
+      "maxFare": 2400,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1730,
-            "count": 36
+            "originalPrice": 2100,
+            "count": 28
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 2300,
+            "count": 6
           }
         ]
       },
-      "availableSeats": 36,
+      "availableSeats": 34,
       "totalSeats": 37,
-      "availableWindowSeats": 21,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 11,
-      "availableAisleSeats": 11,
+      "availableAisleSeats": 10,
       "availableUpperSeats": 18,
-      "availableLowerSeats": 18,
+      "availableLowerSeats": 16,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "35",
