@@ -818,7 +818,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 36,
       "isSeatLayoutAvailable": true,
-      "rating": 3.1,
+      "rating": 3,
       "numberOfReviews": "0",
       "busScore": 0.2661861006105822,
       "perzScore": 0.2661861006105822,
@@ -1117,7 +1117,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 34,
       "isSeatLayoutAvailable": true,
-      "rating": 3,
+      "rating": 3.8,
       "numberOfReviews": "0",
       "busScore": 0.6201806123447613,
       "perzScore": 0.6201806123447613,
@@ -2629,8 +2629,8 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 27,
       "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
+      "rating": 2.9,
+      "numberOfReviews": "0",
       "busScore": 0.16773836544139945,
       "perzScore": 0.16773836544139945,
       "isRescheduled": null,
@@ -2922,7 +2922,7 @@
       "availableUpperSeats": 10,
       "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
-      "rating": 4.3,
+      "rating": 4.1,
       "numberOfReviews": "0",
       "busScore": 0.776725114169081,
       "perzScore": 0.776725114169081,
@@ -3858,7 +3858,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 31,
       "isSeatLayoutAvailable": true,
-      "rating": 3.7,
+      "rating": 3.4,
       "numberOfReviews": "0",
       "busScore": 0.42614852390443003,
       "perzScore": 0.42614852390443003,
@@ -5921,7 +5921,7 @@
       "availableUpperSeats": 15,
       "availableLowerSeats": 26,
       "isSeatLayoutAvailable": true,
-      "rating": 4.3,
+      "rating": 4.1,
       "numberOfReviews": "0",
       "busScore": 0.5968763483472479,
       "perzScore": 0.5968763483472479,
@@ -7506,27 +7506,27 @@
       "boardingPointCount": 1,
       "droppingPointCount": 30,
       "fareList": [
-        1709,
-        1849,
-        1969,
-        2159,
-        2309,
+        1959,
+        2099,
+        2219,
         2409,
-        2509
+        2559,
+        2659,
+        2759
       ],
-      "minFare": 1709,
-      "maxFare": 2509,
+      "minFare": 1959,
+      "maxFare": 2759,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1709,
+            "originalPrice": 1959,
             "count": 22
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2409,
+            "originalPrice": 2659,
             "count": 8
           }
         ]
@@ -8183,6 +8183,114 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 49826449,
+      "operatorId": 34656,
+      "travelsName": "KBS Xpress",
+      "routeId": 49826449,
+      "serviceId": "38",
+      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
+      "busType": "A/C Seater/Sleeper (2+1)",
+      "busTypeId": 1376,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:30:00",
+      "arrivalTime": "2026-12-01 05:30:00",
+      "journeyDurationMin": 540,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:30:00",
+      "boardingPoint": "Near Thandava Bridge",
+      "boardingPointId": null,
+      "droppingPoint": "Moosapet",
+      "droppingPointId": 86162,
+      "boardingPointCount": 1,
+      "droppingPointCount": 11,
+      "fareList": [
+        1390,
+        2000
+      ],
+      "minFare": 1390,
+      "maxFare": 2000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 1390,
+            "discountedPrice": 1321,
+            "count": 23
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2000,
+            "discountedPrice": 1900,
+            "count": 22
+          }
+        ]
+      },
+      "availableSeats": 45,
+      "totalSeats": 45,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 45,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.2,
+      "numberOfReviews": "0",
+      "busScore": 0.2388300071684711,
+      "perzScore": 0.2388300071684711,
+      "isRescheduled": true,
+      "rescheduleTime": 4,
+      "campaignType": [
+        999901,
+        86,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "MULC_d3408a71",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 69,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Near Thandava Bridge",
+        "destinationDp": "Miyapur",
+        "bpId": 27491975,
+        "dpId": 27929528
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "4:-1:0:0",
+          "serviceStartTime": "2026-11-30 20:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 59695893,
       "operatorId": 22309,
       "travelsName": "Sai Ganesh Travels",
@@ -8292,114 +8400,6 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-11-30 20:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 49826449,
-      "operatorId": 34656,
-      "travelsName": "KBS Xpress",
-      "routeId": 49826449,
-      "serviceId": "38",
-      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
-      "busType": "A/C Seater/Sleeper (2+1)",
-      "busTypeId": 1376,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:30:00",
-      "arrivalTime": "2026-12-01 05:30:00",
-      "journeyDurationMin": 540,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:30:00",
-      "boardingPoint": "Near Thandava Bridge",
-      "boardingPointId": null,
-      "droppingPoint": "Moosapet",
-      "droppingPointId": 86162,
-      "boardingPointCount": 1,
-      "droppingPointCount": 11,
-      "fareList": [
-        1390,
-        2000
-      ],
-      "minFare": 1390,
-      "maxFare": 2000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1390,
-            "discountedPrice": 1321,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2000,
-            "discountedPrice": 1900,
-            "count": 22
-          }
-        ]
-      },
-      "availableSeats": 45,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 45,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.2,
-      "numberOfReviews": "0",
-      "busScore": 0.2388300071684711,
-      "perzScore": 0.2388300071684711,
-      "isRescheduled": true,
-      "rescheduleTime": 4,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "MULC_d3408a71",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 69,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Near Thandava Bridge",
-        "destinationDp": "Miyapur",
-        "bpId": 27491975,
-        "dpId": 27929528
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "4:-1:0:0",
           "serviceStartTime": "2026-11-30 20:30:00"
         }
       ],
@@ -12557,8 +12557,8 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 45,
       "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
+      "rating": 3.2,
+      "numberOfReviews": "0",
       "busScore": 0.2388300071684711,
       "perzScore": 0.2388300071684711,
       "isRescheduled": true,
@@ -16830,14 +16830,14 @@
       },
       "inventoryTags": null,
       "departureTime": "2026-11-30 23:59:00",
-      "arrivalTime": "2026-12-01 11:00:00",
-      "journeyDurationMin": 661,
+      "arrivalTime": "2026-12-01 09:00:00",
+      "journeyDurationMin": 541,
       "dateOfJourney": "2026-11-30",
       "firstBpTime": "2026-11-30 23:59:00",
       "boardingPoint": "Tuni Bypas",
       "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
+      "droppingPoint": "Malakpet",
+      "droppingPointId": 70639,
       "boardingPointCount": 1,
       "droppingPointCount": 21,
       "fareList": [
