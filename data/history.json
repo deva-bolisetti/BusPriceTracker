@@ -150,13 +150,13 @@
         1260,
         1350,
         1500,
-        1790,
-        1990,
-        2310,
-        2580
+        1810,
+        2000,
+        2290,
+        2550
       ],
       "minFare": 1260,
-      "maxFare": 2580,
+      "maxFare": 2550,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -167,23 +167,23 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1790,
-            "count": 12
+            "originalPrice": 1810,
+            "count": 11
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2580,
+            "originalPrice": 2550,
             "count": 4
           }
         ]
       },
-      "availableSeats": 46,
+      "availableSeats": 45,
       "totalSeats": 54,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 12,
       "availableAisleSeats": 16,
-      "availableUpperSeats": 16,
+      "availableUpperSeats": 15,
       "availableLowerSeats": 30,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
@@ -8021,26 +8021,26 @@
       "boardingPointCount": 2,
       "droppingPointCount": 28,
       "fareList": [
+        1859,
+        1909,
+        1969,
         2039,
-        2089,
-        2149,
-        2219,
-        2419,
-        2719
+        2239,
+        2539
       ],
-      "minFare": 2039,
-      "maxFare": 2719,
+      "minFare": 1859,
+      "maxFare": 2539,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 2039,
+            "originalPrice": 1859,
             "count": 34
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2719,
+            "originalPrice": 2539,
             "count": 6
           }
         ]
@@ -8192,114 +8192,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 49826449,
-      "operatorId": 34656,
-      "travelsName": "KBS Xpress",
-      "routeId": 49826449,
-      "serviceId": "38",
-      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
-      "busType": "A/C Seater/Sleeper (2+1)",
-      "busTypeId": 1376,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:30:00",
-      "arrivalTime": "2026-12-01 05:30:00",
-      "journeyDurationMin": 540,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:30:00",
-      "boardingPoint": "Near Thandava Bridge",
-      "boardingPointId": null,
-      "droppingPoint": "Moosapet",
-      "droppingPointId": 86162,
-      "boardingPointCount": 1,
-      "droppingPointCount": 11,
-      "fareList": [
-        1390,
-        2000
-      ],
-      "minFare": 1390,
-      "maxFare": 2000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1390,
-            "discountedPrice": 1321,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2000,
-            "discountedPrice": 1900,
-            "count": 22
-          }
-        ]
-      },
-      "availableSeats": 45,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 45,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.2,
-      "numberOfReviews": "0",
-      "busScore": 0.2388300071684711,
-      "perzScore": 0.2388300071684711,
-      "isRescheduled": true,
-      "rescheduleTime": 4,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "MULC_d3408a71",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 69,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Near Thandava Bridge",
-        "destinationDp": "Miyapur",
-        "bpId": 27491975,
-        "dpId": 27929528
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "4:-1:0:0",
-          "serviceStartTime": "2026-11-30 20:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 59695893,
       "operatorId": 22309,
       "travelsName": "Sai Ganesh Travels",
@@ -8416,6 +8308,114 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 49826449,
+      "operatorId": 34656,
+      "travelsName": "KBS Xpress",
+      "routeId": 49826449,
+      "serviceId": "38",
+      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
+      "busType": "A/C Seater/Sleeper (2+1)",
+      "busTypeId": 1376,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:30:00",
+      "arrivalTime": "2026-12-01 05:30:00",
+      "journeyDurationMin": 540,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:30:00",
+      "boardingPoint": "Near Thandava Bridge",
+      "boardingPointId": null,
+      "droppingPoint": "Moosapet",
+      "droppingPointId": 86162,
+      "boardingPointCount": 1,
+      "droppingPointCount": 11,
+      "fareList": [
+        1390,
+        2000
+      ],
+      "minFare": 1390,
+      "maxFare": 2000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 1390,
+            "discountedPrice": 1321,
+            "count": 23
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2000,
+            "discountedPrice": 1900,
+            "count": 22
+          }
+        ]
+      },
+      "availableSeats": 45,
+      "totalSeats": 45,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 45,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.2,
+      "numberOfReviews": "0",
+      "busScore": 0.2388300071684711,
+      "perzScore": 0.2388300071684711,
+      "isRescheduled": true,
+      "rescheduleTime": 4,
+      "campaignType": [
+        999901,
+        86,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "MULC_d3408a71",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 69,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Near Thandava Bridge",
+        "destinationDp": "Miyapur",
+        "bpId": 27491975,
+        "dpId": 27929528
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "4:-1:0:0",
+          "serviceStartTime": "2026-11-30 20:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 39010596,
       "operatorId": 32017,
       "travelsName": "7Hills roadways",
@@ -8463,26 +8463,26 @@
       "boardingPointCount": 1,
       "droppingPointCount": 28,
       "fareList": [
-        1689,
-        1739,
-        1789,
-        1889,
-        1989,
-        2109
+        1649,
+        1699,
+        1749,
+        1849,
+        1949,
+        2069
       ],
-      "minFare": 1689,
-      "maxFare": 2109,
+      "minFare": 1649,
+      "maxFare": 2069,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1689,
+            "originalPrice": 1649,
             "count": 29
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2109,
+            "originalPrice": 2069,
             "count": 4
           }
         ]
@@ -10672,36 +10672,36 @@
       "boardingPointCount": 1,
       "droppingPointCount": 30,
       "fareList": [
-        1002,
-        1053,
-        1604,
-        1844,
-        2006,
-        2086,
-        2246
+        1062,
+        1115,
+        1700,
+        1954,
+        2125,
+        2210,
+        2380
       ],
-      "minFare": 1002,
-      "maxFare": 2246,
+      "minFare": 1062,
+      "maxFare": 2380,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1002,
-            "discountedPrice": 1002,
+            "originalPrice": 1062,
+            "discountedPrice": 1062,
             "count": 15
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1604,
-            "discountedPrice": 1604,
+            "originalPrice": 1700,
+            "discountedPrice": 1700,
             "count": 9
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2006,
-            "discountedPrice": 2006,
+            "originalPrice": 2125,
+            "discountedPrice": 2125,
             "count": 8
           }
         ]
