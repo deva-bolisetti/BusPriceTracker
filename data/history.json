@@ -97,6 +97,104 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 52165272,
+      "operatorId": 36562,
+      "travelsName": "Greenline",
+      "routeId": 52165272,
+      "serviceId": "255",
+      "serviceName": "Bhubaneswar - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
+      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
+      "busTypeId": 1757,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        35,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": [
+        "OTG_ADDON"
+      ],
+      "departureTime": "2026-11-30 00:30:00",
+      "arrivalTime": "2026-11-30 09:05:00",
+      "journeyDurationMin": 515,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 00:30:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 15,
+      "fareList": [
+        4598.85,
+        4703.5
+      ],
+      "minFare": 4598.85,
+      "maxFare": 4703.5,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 4598.85,
+            "count": 37
+          }
+        ]
+      },
+      "availableSeats": 37,
+      "totalSeats": 42,
+      "availableWindowSeats": 22,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 13,
+      "availableUpperSeats": 18,
+      "availableLowerSeats": 19,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.2,
+      "numberOfReviews": "0",
+      "busScore": 0.8131782767252485,
+      "perzScore": 0.8131782767252485,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": [
+        37,
+        86,
+        555
+      ],
+      "programList": [
+        3
+      ],
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": true,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 29602224,
+        "dpId": 29568520
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-11-30 00:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 52066926,
       "operatorId": 34660,
       "travelsName": "KALOSONA DREAMLINE",
@@ -206,104 +304,6 @@
         "destinationDp": "Miyapur",
         "bpId": 29316347,
         "dpId": 29592866
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-11-30 00:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 52165272,
-      "operatorId": 36562,
-      "travelsName": "Greenline",
-      "routeId": 52165272,
-      "serviceId": "255",
-      "serviceName": "Bhubaneswar - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
-      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
-      "busTypeId": 1757,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        35,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": [
-        "OTG_ADDON"
-      ],
-      "departureTime": "2026-11-30 00:30:00",
-      "arrivalTime": "2026-11-30 09:05:00",
-      "journeyDurationMin": 515,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 00:30:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 15,
-      "fareList": [
-        4598.85,
-        4703.5
-      ],
-      "minFare": 4598.85,
-      "maxFare": 4703.5,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4598.85,
-            "count": 37
-          }
-        ]
-      },
-      "availableSeats": 37,
-      "totalSeats": 42,
-      "availableWindowSeats": 22,
-      "availableSingleSeats": 12,
-      "availableAisleSeats": 13,
-      "availableUpperSeats": 18,
-      "availableLowerSeats": 19,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.2,
-      "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
-      "isRescheduled": true,
-      "rescheduleTime": 8,
-      "campaignType": [
-        37,
-        86,
-        555
-      ],
-      "programList": [
-        3
-      ],
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": true,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 29602224,
-        "dpId": 29568520
       },
       "boReqParams": [
         {
@@ -803,13 +803,13 @@
         1650,
         1730,
         1890,
-        2400,
-        2580,
-        2720,
-        2850
+        2450,
+        2650,
+        2790,
+        2920
       ],
       "minFare": 1650,
-      "maxFare": 2850,
+      "maxFare": 2920,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -820,18 +820,18 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2400,
-            "count": 18
+            "originalPrice": 2450,
+            "count": 17
           }
         ]
       },
-      "availableSeats": 36,
+      "availableSeats": 35,
       "totalSeats": 49,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 36,
+      "availableLowerSeats": 35,
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "0",
@@ -3609,20 +3609,22 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 54054732,
-      "operatorId": 36475,
-      "travelsName": "Sri Bhavani Tours and Travels",
-      "routeId": 54054732,
-      "serviceId": "5",
-      "serviceName": "7th mile, uppalada - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
-      "busType": "A/C Seater / Sleeper (2+1)",
-      "busTypeId": 4,
-      "isAc": true,
+      "id": 56503822,
+      "operatorId": 38287,
+      "travelsName": "SRI NEELAMANI TRAVELS",
+      "routeId": 56503822,
+      "serviceId": "3",
+      "serviceName": "7 Th Mile To Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/38287.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
       "amenities": [
+        7,
+        9,
         19
       ],
       "isPartialCancellationAllowed": true,
@@ -3636,38 +3638,37 @@
       },
       "inventoryTags": null,
       "departureTime": "2026-11-30 19:00:00",
-      "arrivalTime": "2026-12-01 07:30:00",
-      "journeyDurationMin": 750,
+      "arrivalTime": "2026-12-01 06:40:00",
+      "journeyDurationMin": 700,
       "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 19:00:00",
+      "firstBpTime": "2026-11-30 18:20:00",
       "boardingPoint": "Tuni",
       "boardingPointId": null,
-      "droppingPoint": "Bharat Nagar",
-      "droppingPointId": 79228,
+      "droppingPoint": "Miyapur",
+      "droppingPointId": 66664,
       "boardingPointCount": 1,
-      "droppingPointCount": 20,
+      "droppingPointCount": 19,
       "fareList": [
-        5000
+        3000
       ],
-      "minFare": 5000,
-      "maxFare": 5000,
+      "minFare": 3000,
+      "maxFare": 3000,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
-        "SEATER": [
+        "SLEEPER": [
           {
-            "originalPrice": 5000,
-            "discountedPrice": 4750,
-            "count": 30
+            "originalPrice": 3000,
+            "count": 31
           }
         ]
       },
-      "availableSeats": 30,
-      "totalSeats": 41,
-      "availableWindowSeats": 17,
-      "availableSingleSeats": 8,
-      "availableAisleSeats": 10,
-      "availableUpperSeats": 12,
-      "availableLowerSeats": 18,
+      "availableSeats": 31,
+      "totalSeats": 45,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 31,
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
@@ -3675,35 +3676,22 @@
       "perzScore": 0.42614852390443003,
       "isRescheduled": null,
       "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
+      "campaignType": null,
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_8544942a",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 250,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
         "sourceBp": "Tuni",
         "destinationDp": "Miyapur",
-        "bpId": 29141806,
-        "dpId": 29141658
+        "bpId": 30259504,
+        "dpId": 30259530
       },
       "boReqParams": [
         {
           "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 19:00:00"
+          "serviceStartTime": "2026-11-30 18:20:00"
         }
       ],
       "source": "Tuni",
@@ -3811,22 +3799,20 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 56503822,
-      "operatorId": 38287,
-      "travelsName": "SRI NEELAMANI TRAVELS",
-      "routeId": 56503822,
-      "serviceId": "3",
-      "serviceName": "7 Th Mile To Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/38287.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
+      "id": 54054732,
+      "operatorId": 36475,
+      "travelsName": "Sri Bhavani Tours and Travels",
+      "routeId": 54054732,
+      "serviceId": "5",
+      "serviceName": "7th mile, uppalada - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
+      "busType": "A/C Seater / Sleeper (2+1)",
+      "busTypeId": 4,
+      "isAc": true,
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
       "amenities": [
-        7,
-        9,
         19
       ],
       "isPartialCancellationAllowed": true,
@@ -3840,37 +3826,38 @@
       },
       "inventoryTags": null,
       "departureTime": "2026-11-30 19:00:00",
-      "arrivalTime": "2026-12-01 06:40:00",
-      "journeyDurationMin": 700,
+      "arrivalTime": "2026-12-01 07:30:00",
+      "journeyDurationMin": 750,
       "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 18:20:00",
+      "firstBpTime": "2026-11-30 19:00:00",
       "boardingPoint": "Tuni",
       "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
+      "droppingPoint": "Bharat Nagar",
+      "droppingPointId": 79228,
       "boardingPointCount": 1,
-      "droppingPointCount": 19,
+      "droppingPointCount": 20,
       "fareList": [
-        3000
+        5000
       ],
-      "minFare": 3000,
-      "maxFare": 3000,
+      "minFare": 5000,
+      "maxFare": 5000,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
-        "SLEEPER": [
+        "SEATER": [
           {
-            "originalPrice": 3000,
-            "count": 31
+            "originalPrice": 5000,
+            "discountedPrice": 4750,
+            "count": 30
           }
         ]
       },
-      "availableSeats": 31,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 31,
+      "availableSeats": 30,
+      "totalSeats": 41,
+      "availableWindowSeats": 17,
+      "availableSingleSeats": 8,
+      "availableAisleSeats": 10,
+      "availableUpperSeats": 12,
+      "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
@@ -3878,22 +3865,35 @@
       "perzScore": 0.42614852390443003,
       "isRescheduled": null,
       "rescheduleTime": null,
-      "campaignType": null,
+      "campaignType": [
+        999901,
+        86,
+        15
+      ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLC_8544942a",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 250,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
         "isExactMatch": true,
         "sourceBp": "Tuni",
         "destinationDp": "Miyapur",
-        "bpId": 30259504,
-        "dpId": 30259530
+        "bpId": 29141806,
+        "dpId": 29141658
       },
       "boReqParams": [
         {
           "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 18:20:00"
+          "serviceStartTime": "2026-11-30 19:00:00"
         }
       ],
       "source": "Tuni",
@@ -7051,108 +7051,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:05:00",
-      "arrivalTime": "2026-12-01 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        1799,
-        1899,
-        1990
-      ],
-      "minFare": 1799,
-      "maxFare": 1990,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 23
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1899,
-            "count": 4
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 58653207,
       "operatorId": 20551,
       "travelsName": "Sri Keerthana Sai Travels",
@@ -7259,6 +7157,108 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:10:0",
+          "serviceStartTime": "2026-11-30 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:05:00",
+      "arrivalTime": "2026-12-01 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        1799,
+        1899,
+        1990
+      ],
+      "minFare": 1799,
+      "maxFare": 1990,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 1799,
+            "count": 23
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 1899,
+            "count": 4
+          }
+        ]
+      },
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.5058488895108052,
+      "perzScore": 0.5058488895108052,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 20:05:00"
         }
       ],
