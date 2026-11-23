@@ -3591,16 +3591,16 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 54054732,
+      "id": 57569643,
       "operatorId": 36475,
       "travelsName": "Sri Bhavani Tours and Travels",
-      "routeId": 54054732,
-      "serviceId": "5",
-      "serviceName": "7th mile, uppalada - Hyderabad",
+      "routeId": 57569643,
+      "serviceId": "11",
+      "serviceName": "Rayagada - Hyderabad",
       "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
-      "busType": "A/C Seater / Sleeper (2+1)",
-      "busTypeId": 4,
-      "isAc": true,
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
@@ -3639,17 +3639,17 @@
           {
             "originalPrice": 5000,
             "discountedPrice": 4750,
-            "count": 30
+            "count": 40
           }
         ]
       },
-      "availableSeats": 30,
+      "availableSeats": 40,
       "totalSeats": 41,
-      "availableWindowSeats": 17,
-      "availableSingleSeats": 8,
-      "availableAisleSeats": 10,
-      "availableUpperSeats": 12,
-      "availableLowerSeats": 18,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 25,
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
@@ -3781,16 +3781,16 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 57569643,
+      "id": 54054732,
       "operatorId": 36475,
       "travelsName": "Sri Bhavani Tours and Travels",
-      "routeId": 57569643,
-      "serviceId": "11",
-      "serviceName": "Rayagada - Hyderabad",
+      "routeId": 54054732,
+      "serviceId": "5",
+      "serviceName": "7th mile, uppalada - Hyderabad",
       "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
+      "busType": "A/C Seater / Sleeper (2+1)",
+      "busTypeId": 4,
+      "isAc": true,
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
@@ -3829,17 +3829,17 @@
           {
             "originalPrice": 5000,
             "discountedPrice": 4750,
-            "count": 40
+            "count": 30
           }
         ]
       },
-      "availableSeats": 40,
+      "availableSeats": 30,
       "totalSeats": 41,
-      "availableWindowSeats": 23,
-      "availableSingleSeats": 10,
-      "availableAisleSeats": 14,
-      "availableUpperSeats": 15,
-      "availableLowerSeats": 25,
+      "availableWindowSeats": 17,
+      "availableSingleSeats": 8,
+      "availableAisleSeats": 10,
+      "availableUpperSeats": 12,
+      "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
@@ -6229,6 +6229,100 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59463563,
+      "operatorId": 33013,
+      "travelsName": "Saraswathi Travels",
+      "routeId": 59463563,
+      "serviceId": "24",
+      "serviceName": "Chapara - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/33013.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 19:45:00",
+      "arrivalTime": "2026-12-01 05:15:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 19:45:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 20,
+      "fareList": [
+        2000,
+        3000
+      ],
+      "minFare": 2000,
+      "maxFare": 3000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 2000,
+            "count": 12
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 3000,
+            "count": 12
+          }
+        ]
+      },
+      "availableSeats": 24,
+      "totalSeats": 49,
+      "availableWindowSeats": 13,
+      "availableSingleSeats": 6,
+      "availableAisleSeats": 8,
+      "availableUpperSeats": 9,
+      "availableLowerSeats": 15,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.7,
+      "numberOfReviews": "0",
+      "busScore": 0.6908776617321913,
+      "perzScore": 0.6908776617321913,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 26234654,
+        "dpId": 26234822
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-30 19:45:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 30734308,
       "operatorId": 20437,
       "travelsName": "IntrCity SmartBus",
@@ -6336,100 +6430,6 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "2:-1:0:0",
-          "serviceStartTime": "2026-11-30 19:45:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 59463563,
-      "operatorId": 33013,
-      "travelsName": "Saraswathi Travels",
-      "routeId": 59463563,
-      "serviceId": "24",
-      "serviceName": "Chapara - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/33013.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 19:45:00",
-      "arrivalTime": "2026-12-01 05:15:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 19:45:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 20,
-      "fareList": [
-        2000,
-        3000
-      ],
-      "minFare": 2000,
-      "maxFare": 3000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2000,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 12
-          }
-        ]
-      },
-      "availableSeats": 24,
-      "totalSeats": 49,
-      "availableWindowSeats": 13,
-      "availableSingleSeats": 6,
-      "availableAisleSeats": 8,
-      "availableUpperSeats": 9,
-      "availableLowerSeats": 15,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.7,
-      "numberOfReviews": "0",
-      "busScore": 0.6908776617321913,
-      "perzScore": 0.6908776617321913,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 26234654,
-        "dpId": 26234822
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 19:45:00"
         }
       ],
