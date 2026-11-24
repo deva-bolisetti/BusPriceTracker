@@ -6173,11 +6173,10 @@
         1099,
         1219,
         1339,
-        1719,
-        1719,
         1959,
         2029,
         2079,
+        2229,
         2309,
         2539,
         2649
@@ -6192,22 +6191,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1719,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1959,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2029,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -7398,23 +7397,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 32,
       "fareList": [
+        1855,
+        1855,
         1964,
         2164,
         2183,
         2291,
-        2292,
         2401,
         2546,
         2673,
         2800
       ],
-      "minFare": 1964,
+      "minFare": 1855,
       "maxFare": 2800,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1964,
+            "originalPrice": 1855,
             "count": 22
           }
         ],
@@ -7427,7 +7427,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 18,
       "availableSingleSeats": 9,
       "availableAisleSeats": 11,
       "availableUpperSeats": 15,
@@ -8806,8 +8806,8 @@
         1669,
         1767,
         1947,
-        1964,
         2061,
+        2062,
         2160,
         2291,
         2405,
@@ -9475,8 +9475,8 @@
         1909,
         1909,
         2179,
+        2249,
         2309,
-        2359,
         2559,
         2689,
         2819
@@ -11577,8 +11577,8 @@
         1909,
         1909,
         2179,
+        2249,
         2309,
-        2359,
         2559,
         2689,
         2819
@@ -15229,9 +15229,10 @@
         1489,
         1909,
         1909,
+        1909,
+        2029,
+        2139,
         2179,
-        2249,
-        2359,
         2429,
         2559,
         2689,
@@ -16611,9 +16612,9 @@
       "droppingPointCount": 50,
       "fareList": [
         1855,
-        1855,
         2164,
         2183,
+        2292,
         2401,
         2546,
         2673,
@@ -16638,7 +16639,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
