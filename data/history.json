@@ -249,41 +249,41 @@
         1340,
         1440,
         1600,
-        1910,
-        2070,
-        2360,
-        2620
+        1950,
+        2110,
+        2400,
+        2660
       ],
       "minFare": 1340,
-      "maxFare": 2620,
+      "maxFare": 2660,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
             "originalPrice": 1340,
-            "count": 27
+            "count": 28
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1910,
+            "originalPrice": 1950,
             "count": 11
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2620,
-            "count": 4
+            "originalPrice": 2660,
+            "count": 3
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 54,
-      "availableWindowSeats": 23,
-      "availableSingleSeats": 12,
+      "availableWindowSeats": 22,
+      "availableSingleSeats": 11,
       "availableAisleSeats": 15,
-      "availableUpperSeats": 15,
-      "availableLowerSeats": 27,
+      "availableUpperSeats": 14,
+      "availableLowerSeats": 28,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -1712,44 +1712,44 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1360,
-        1460,
-        1560,
-        1910,
-        2070,
-        2210,
-        2310
+        1510,
+        1620,
+        1780,
+        2140,
+        2240,
+        2440,
+        2540
       ],
-      "minFare": 1360,
-      "maxFare": 2310,
+      "minFare": 1510,
+      "maxFare": 2540,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1360,
-            "count": 34
+            "originalPrice": 1510,
+            "count": 28
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1910,
-            "count": 12
+            "originalPrice": 2140,
+            "count": 10
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2310,
-            "count": 4
+            "originalPrice": 2540,
+            "count": 3
           }
         ]
       },
-      "availableSeats": 50,
+      "availableSeats": 41,
       "totalSeats": 54,
-      "availableWindowSeats": 29,
-      "availableSingleSeats": 13,
-      "availableAisleSeats": 16,
-      "availableUpperSeats": 16,
-      "availableLowerSeats": 34,
+      "availableWindowSeats": 24,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 12,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 28,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -7396,15 +7396,15 @@
       "boardingPointCount": 1,
       "droppingPointCount": 17,
       "fareList": [
-        1180
+        1141.9
       ],
-      "minFare": 1180,
-      "maxFare": 1180,
+      "minFare": 1141.9,
+      "maxFare": 1141.9,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1180
+            "originalPrice": 1141.9
           }
         ]
       },
@@ -9125,8 +9125,8 @@
           }
         ]
       },
-      "availableSeats": 33,
-      "totalSeats": 33,
+      "availableSeats": 29,
+      "totalSeats": 29,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
@@ -12751,8 +12751,8 @@
           }
         ]
       },
-      "availableSeats": 43,
-      "totalSeats": 43,
+      "availableSeats": 41,
+      "totalSeats": 41,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
@@ -16679,7 +16679,7 @@
         1855,
         1855,
         2164,
-        2292,
+        2183,
         2401,
         2546,
         2673,
