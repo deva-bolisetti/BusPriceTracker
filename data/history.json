@@ -69,8 +69,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -91,104 +91,6 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 00:00:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 52165272,
-      "operatorId": 36562,
-      "travelsName": "Greenline",
-      "routeId": 52165272,
-      "serviceId": "255",
-      "serviceName": "Bhubaneswar - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
-      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
-      "busTypeId": 1757,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        35,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": [
-        "OTG_ADDON"
-      ],
-      "departureTime": "2026-11-30 00:30:00",
-      "arrivalTime": "2026-11-30 09:05:00",
-      "journeyDurationMin": 515,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 00:30:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 15,
-      "fareList": [
-        3218.85,
-        3323.5
-      ],
-      "minFare": 3218.85,
-      "maxFare": 3323.5,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3218.85,
-            "count": 37
-          }
-        ]
-      },
-      "availableSeats": 37,
-      "totalSeats": 42,
-      "availableWindowSeats": 22,
-      "availableSingleSeats": 12,
-      "availableAisleSeats": 13,
-      "availableUpperSeats": 18,
-      "availableLowerSeats": 19,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.2,
-      "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
-      "isRescheduled": true,
-      "rescheduleTime": 8,
-      "campaignType": [
-        37,
-        86,
-        555
-      ],
-      "programList": [
-        3
-      ],
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": true,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 29602224,
-        "dpId": 29568520
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-11-30 00:30:00"
         }
       ],
       "source": "Tuni",
@@ -286,8 +188,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
+      "busScore": 0.8124767447603503,
+      "perzScore": 0.8124767447603503,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -304,6 +206,104 @@
         "destinationDp": "Miyapur",
         "bpId": 29316347,
         "dpId": 29592866
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-11-30 00:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 52165272,
+      "operatorId": 36562,
+      "travelsName": "Greenline",
+      "routeId": 52165272,
+      "serviceId": "255",
+      "serviceName": "Bhubaneswar - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
+      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
+      "busTypeId": 1757,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        35,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": [
+        "OTG_ADDON"
+      ],
+      "departureTime": "2026-11-30 00:30:00",
+      "arrivalTime": "2026-11-30 09:05:00",
+      "journeyDurationMin": 515,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 00:30:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 15,
+      "fareList": [
+        3218.85,
+        3323.5
+      ],
+      "minFare": 3218.85,
+      "maxFare": 3323.5,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 3218.85,
+            "count": 37
+          }
+        ]
+      },
+      "availableSeats": 37,
+      "totalSeats": 42,
+      "availableWindowSeats": 22,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 13,
+      "availableUpperSeats": 18,
+      "availableLowerSeats": 19,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.2,
+      "numberOfReviews": "0",
+      "busScore": 0.8124767447603503,
+      "perzScore": 0.8124767447603503,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": [
+        37,
+        86,
+        555
+      ],
+      "programList": [
+        3
+      ],
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": true,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 29602224,
+        "dpId": 29568520
       },
       "boReqParams": [
         {
@@ -392,8 +392,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.6629407906235275,
-      "perzScore": 0.6629407906235275,
+      "busScore": 0.6623443228198931,
+      "perzScore": 0.6623443228198931,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -509,8 +509,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -618,8 +618,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.5046246060571511,
-      "perzScore": 0.5046246060571511,
+      "busScore": 0.505173211589959,
+      "perzScore": 0.505173211589959,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -725,8 +725,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -835,8 +835,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "0",
-      "busScore": 0.2661861006105822,
-      "perzScore": 0.2661861006105822,
+      "busScore": 0.2992925572313598,
+      "perzScore": 0.2992925572313598,
       "isRescheduled": true,
       "rescheduleTime": 4,
       "campaignType": [
@@ -946,8 +946,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.6629407906235275,
-      "perzScore": 0.6629407906235275,
+      "busScore": 0.6623443228198931,
+      "perzScore": 0.6623443228198931,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -1037,8 +1037,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.32916718769561,
-      "perzScore": 0.32916718769561,
+      "busScore": 0.32938739547953017,
+      "perzScore": 0.32938739547953017,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -1134,8 +1134,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "0",
-      "busScore": 0.6201806123447613,
-      "perzScore": 0.6201806123447613,
+      "busScore": 0.622455303192328,
+      "perzScore": 0.622455303192328,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -1237,8 +1237,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "0",
-      "busScore": 0.10987381081813524,
-      "perzScore": 0.10987381081813524,
+      "busScore": 0.109854528924247,
+      "perzScore": 0.109854528924247,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -1334,8 +1334,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "0",
-      "busScore": 0.10987381081813524,
-      "perzScore": 0.10987381081813524,
+      "busScore": 0.109854528924247,
+      "perzScore": 0.109854528924247,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -1426,8 +1426,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
+      "busScore": 0.8124767447603503,
+      "perzScore": 0.8124767447603503,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -1539,8 +1539,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -1659,8 +1659,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
+      "busScore": 0.8124767447603503,
+      "perzScore": 0.8124767447603503,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -1773,8 +1773,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.1,
       "numberOfReviews": "131",
-      "busScore": 1.3507581607475,
-      "perzScore": 1.3507581607475,
+      "busScore": 1.3982195180002734,
+      "perzScore": 1.3982195180002734,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -1894,8 +1894,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "115",
-      "busScore": 1.4354716719763942,
-      "perzScore": 1.4354716719763942,
+      "busScore": 1.4339425552833587,
+      "perzScore": 1.4339425552833587,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -1996,8 +1996,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "0",
-      "busScore": 0.470581930936223,
-      "perzScore": 0.470581930936223,
+      "busScore": 0.47162737645192543,
+      "perzScore": 0.47162737645192543,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2121,8 +2121,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.7,
       "numberOfReviews": "44",
-      "busScore": 1.2418525774801894,
-      "perzScore": 1.2418525774801894,
+      "busScore": 1.2415047070767344,
+      "perzScore": 1.2415047070767344,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2223,8 +2223,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.2,
       "numberOfReviews": "0",
-      "busScore": 0.12771021352746087,
-      "perzScore": 0.12771021352746087,
+      "busScore": 0.1279667144922109,
+      "perzScore": 0.1279667144922109,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2341,8 +2341,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "57",
-      "busScore": 1.1272945385464141,
-      "perzScore": 1.1272945385464141,
+      "busScore": 1.1803848914431847,
+      "perzScore": 1.1803848914431847,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2453,8 +2453,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4,
       "numberOfReviews": "0",
-      "busScore": 0.5489470024719433,
-      "perzScore": 0.5489470024719433,
+      "busScore": 0.5479332459709298,
+      "perzScore": 0.5479332459709298,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2542,8 +2542,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "0",
-      "busScore": 0.470581930936223,
-      "perzScore": 0.470581930936223,
+      "busScore": 0.47162737645192543,
+      "perzScore": 0.47162737645192543,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -2645,8 +2645,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
-      "busScore": 0.16773836544139945,
-      "perzScore": 0.16773836544139945,
+      "busScore": 0.1682121436985261,
+      "perzScore": 0.1682121436985261,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -2734,8 +2734,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "120",
-      "busScore": 2.3651593347210853,
-      "perzScore": 2.3651593347210853,
+      "busScore": 2.3636493457613876,
+      "perzScore": 2.3636493457613876,
       "isRescheduled": true,
       "rescheduleTime": 6,
       "campaignType": null,
@@ -2836,8 +2836,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "0",
-      "busScore": 0.8822098061755578,
-      "perzScore": 0.8822098061755578,
+      "busScore": 0.8894744132206839,
+      "perzScore": 0.8894744132206839,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -2938,8 +2938,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "0",
-      "busScore": 0.776725114169081,
-      "perzScore": 0.776725114169081,
+      "busScore": 0.7779203763139688,
+      "perzScore": 0.7779203763139688,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -3036,8 +3036,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "60",
-      "busScore": 1.666094379824781,
-      "perzScore": 1.666094379824781,
+      "busScore": 1.6653076094791148,
+      "perzScore": 1.6653076094791148,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -3154,8 +3154,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "37",
-      "busScore": 1.0935609635277885,
-      "perzScore": 1.0935609635277885,
+      "busScore": 1.0933665084182402,
+      "perzScore": 1.0933665084182402,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -3261,8 +3261,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "12",
-      "busScore": 1.054806898403302,
-      "perzScore": 1.054806898403302,
+      "busScore": 1.0546525363653223,
+      "perzScore": 1.0546525363653223,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -3356,8 +3356,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.2,
       "numberOfReviews": "4",
-      "busScore": 0.7004294482550817,
-      "perzScore": 0.7004294482550817,
+      "busScore": 0.7004299145469659,
+      "perzScore": 0.7004299145469659,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -3472,8 +3472,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "0",
-      "busScore": 0.6201806123447613,
-      "perzScore": 0.6201806123447613,
+      "busScore": 0.622455303192328,
+      "perzScore": 0.622455303192328,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -3564,8 +3564,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
-      "busScore": 0.42614852390443003,
-      "perzScore": 0.42614852390443003,
+      "busScore": 0.4295591959591166,
+      "perzScore": 0.4295591959591166,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -3665,8 +3665,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
-      "busScore": 0.42614852390443003,
-      "perzScore": 0.42614852390443003,
+      "busScore": 0.4295591959591166,
+      "perzScore": 0.4295591959591166,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -3767,8 +3767,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
-      "busScore": 0.42614852390443003,
-      "perzScore": 0.42614852390443003,
+      "busScore": 0.32938739547953017,
+      "perzScore": 0.32938739547953017,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -3876,8 +3876,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.2388300071684711,
-      "perzScore": 0.2388300071684711,
+      "busScore": 0.23900710840534262,
+      "perzScore": 0.23900710840534262,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -3995,8 +3995,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
-      "busScore": 0.16773836544139945,
-      "perzScore": 0.16773836544139945,
+      "busScore": 0.1682121436985261,
+      "perzScore": 0.1682121436985261,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -4112,8 +4112,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "96",
-      "busScore": 2.12455999089089,
-      "perzScore": 2.12455999089089,
+      "busScore": 2.1232989143144585,
+      "perzScore": 2.1232989143144585,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -4227,8 +4227,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.4,
       "numberOfReviews": "58",
-      "busScore": 1.8041607888509472,
-      "perzScore": 1.8041607888509472,
+      "busScore": 1.8032311817112452,
+      "perzScore": 1.8032311817112452,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -4337,8 +4337,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "30",
-      "busScore": 1.2476823945273796,
-      "perzScore": 1.2476823945273796,
+      "busScore": 1.2473284928786514,
+      "perzScore": 1.2473284928786514,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -4424,8 +4424,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
-      "busScore": 0.3164150761355272,
-      "perzScore": 0.3164150761355272,
+      "busScore": 0.3191445487890119,
+      "perzScore": 0.3191445487890119,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -4534,8 +4534,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.7,
       "numberOfReviews": "4",
-      "busScore": 0.9328820779963195,
-      "perzScore": 0.9328820779963195,
+      "busScore": 0.9328538534495887,
+      "perzScore": 0.9328538534495887,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -4638,8 +4638,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "0",
-      "busScore": 0.6481501343541025,
-      "perzScore": 0.6481501343541025,
+      "busScore": 0.6482179805076564,
+      "perzScore": 0.6482179805076564,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -4750,8 +4750,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.7,
       "numberOfReviews": "10",
-      "busScore": 0.9192201873056768,
-      "perzScore": 0.9192201873056768,
+      "busScore": 0.9192060966868177,
+      "perzScore": 0.9192060966868177,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -4860,8 +4860,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "103",
-      "busScore": 3.015134245888623,
-      "perzScore": 3.015134245888623,
+      "busScore": 3.012951824487393,
+      "perzScore": 3.012951824487393,
       "isRescheduled": true,
       "rescheduleTime": 24,
       "campaignType": [
@@ -4967,8 +4967,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "37",
-      "busScore": 0.8842773802440976,
-      "perzScore": 0.8842773802440976,
+      "busScore": 0.8790336074876045,
+      "perzScore": 0.8790336074876045,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -5074,8 +5074,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.32916718769561,
-      "perzScore": 0.32916718769561,
+      "busScore": 0.32938739547953017,
+      "perzScore": 0.32938739547953017,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -5186,8 +5186,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 1.7,
       "numberOfReviews": "0",
-      "busScore": 0.09430233891698864,
-      "perzScore": 0.09430233891698864,
+      "busScore": 0.09438287446144858,
+      "perzScore": 0.09438287446144858,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -5297,8 +5297,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.32916718769561,
-      "perzScore": 0.32916718769561,
+      "busScore": 0.9066052162867639,
+      "perzScore": 0.9066052162867639,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -5424,8 +5424,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "66",
-      "busScore": 1.5246577714764766,
-      "perzScore": 1.5246577714764766,
+      "busScore": 1.524017324569207,
+      "perzScore": 1.524017324569207,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -5515,8 +5515,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -5618,8 +5618,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "14",
-      "busScore": 1.1959391410448539,
-      "perzScore": 1.1959391410448539,
+      "busScore": 1.1956387704504392,
+      "perzScore": 1.1956387704504392,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -5728,8 +5728,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "30",
-      "busScore": 1.0573168676261941,
-      "perzScore": 1.0573168676261941,
+      "busScore": 1.05715990889609,
+      "perzScore": 1.05715990889609,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -5745,100 +5745,6 @@
         "destinationDp": "Miyapur",
         "bpId": 26098156,
         "dpId": 26097468
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 19:45:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 59518391,
-      "operatorId": 37865,
-      "travelsName": "Vayuputra Travels",
-      "routeId": 59518391,
-      "serviceId": "6",
-      "serviceName": "KAVITI - HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/37865.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 19:45:00",
-      "arrivalTime": "2026-12-01 05:00:00",
-      "journeyDurationMin": 555,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 19:45:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Malakpet",
-      "droppingPointId": 70639,
-      "boardingPointCount": 1,
-      "droppingPointCount": 21,
-      "fareList": [
-        1299,
-        1999,
-        2199,
-        2299
-      ],
-      "minFare": 1299,
-      "maxFare": 2299,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1299,
-            "count": 15
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1999,
-            "count": 12
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 41,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 27,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.1,
-      "numberOfReviews": "0",
-      "busScore": 0.5968763483472479,
-      "perzScore": 0.5968763483472479,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": null,
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Bachupally",
-        "bpId": 29975347,
-        "dpId": 29975369
       },
       "boReqParams": [
         {
@@ -5918,8 +5824,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "0",
-      "busScore": 0.8942267559002602,
-      "perzScore": 0.8942267559002602,
+      "busScore": 0.8941522202582389,
+      "perzScore": 0.8941522202582389,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6016,8 +5922,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "0",
-      "busScore": 0.8408173466776492,
-      "perzScore": 0.8408173466776492,
+      "busScore": 0.8409009856074225,
+      "perzScore": 0.8409009856074225,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6109,8 +6015,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4,
       "numberOfReviews": "0",
-      "busScore": 0.71681343182495,
-      "perzScore": 0.71681343182495,
+      "busScore": 0.7155450674365141,
+      "perzScore": 0.7155450674365141,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -6223,8 +6129,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "0",
-      "busScore": 0.6908776617321913,
-      "perzScore": 0.6908776617321913,
+      "busScore": 0.6934304813005209,
+      "perzScore": 0.6934304813005209,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -6243,6 +6149,100 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "2:-1:0:0",
+          "serviceStartTime": "2026-11-30 19:45:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 59518391,
+      "operatorId": 37865,
+      "travelsName": "Vayuputra Travels",
+      "routeId": 59518391,
+      "serviceId": "6",
+      "serviceName": "KAVITI - HYDERABAD",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/37865.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 19:45:00",
+      "arrivalTime": "2026-12-01 05:00:00",
+      "journeyDurationMin": 555,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 19:45:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Malakpet",
+      "droppingPointId": 70639,
+      "boardingPointCount": 1,
+      "droppingPointCount": 21,
+      "fareList": [
+        1299,
+        1999,
+        2199,
+        2299
+      ],
+      "minFare": 1299,
+      "maxFare": 2299,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 1299,
+            "count": 15
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1999,
+            "count": 12
+          }
+        ]
+      },
+      "availableSeats": 27,
+      "totalSeats": 41,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 27,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.1,
+      "numberOfReviews": "0",
+      "busScore": 0.5978334930728935,
+      "perzScore": 0.5978334930728935,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": null,
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Bachupally",
+        "bpId": 29975347,
+        "dpId": 29975369
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 19:45:00"
         }
       ],
@@ -6321,8 +6321,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "22",
-      "busScore": 1.3199546690303658,
-      "perzScore": 1.3199546690303658,
+      "busScore": 1.3005470330042264,
+      "perzScore": 1.3005470330042264,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6417,8 +6417,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "140",
-      "busScore": 2.138503044817391,
-      "perzScore": 2.138503044817391,
+      "busScore": 2.137227543435275,
+      "perzScore": 2.137227543435275,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -6515,8 +6515,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.7,
       "numberOfReviews": "151",
-      "busScore": 1.7435345227591923,
-      "perzScore": 1.7435345227591923,
+      "busScore": 1.74377362546196,
+      "perzScore": 1.74377362546196,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -6606,8 +6606,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "23",
-      "busScore": 1.1189770446972738,
-      "perzScore": 1.1189770446972738,
+      "busScore": 1.1187562953458692,
+      "perzScore": 1.1187562953458692,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6717,8 +6717,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.7,
       "numberOfReviews": "8",
-      "busScore": 0.9157731554541279,
-      "perzScore": 0.9157731554541279,
+      "busScore": 0.9157626309668289,
+      "perzScore": 0.9157626309668289,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6813,8 +6813,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.8,
       "numberOfReviews": "0",
-      "busScore": 0.6933987685360429,
-      "perzScore": 0.6933987685360429,
+      "busScore": 0.6934304813005209,
+      "perzScore": 0.6934304813005209,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6916,8 +6916,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "37",
-      "busScore": 1.0753301028653488,
-      "perzScore": 1.0753301028653488,
+      "busScore": 1.0751545085178638,
+      "perzScore": 1.0751545085178638,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -6933,108 +6933,6 @@
         "destinationDp": "Ramachandra Puram",
         "bpId": 21807833,
         "dpId": 21808555
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:05:00",
-      "arrivalTime": "2026-12-01 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        1799,
-        1899,
-        1990
-      ],
-      "minFare": 1799,
-      "maxFare": 1990,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 23
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1899,
-            "count": 4
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
       },
       "boReqParams": [
         {
@@ -7121,8 +7019,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -7152,6 +7050,108 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:10:0",
+          "serviceStartTime": "2026-11-30 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:05:00",
+      "arrivalTime": "2026-12-01 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        1799,
+        1899,
+        1990
+      ],
+      "minFare": 1799,
+      "maxFare": 1990,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 1799,
+            "count": 23
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 1899,
+            "count": 4
+          }
+        ]
+      },
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 20:05:00"
         }
       ],
@@ -7224,8 +7224,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 5,
       "numberOfReviews": "19",
-      "busScore": 1.44049462951862,
-      "perzScore": 1.44049462951862,
+      "busScore": 1.4965678311396324,
+      "perzScore": 1.4965678311396324,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -7334,8 +7334,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "64",
-      "busScore": 2.543294122388348,
-      "perzScore": 2.543294122388348,
+      "busScore": 2.5415998438381826,
+      "perzScore": 2.5415998438381826,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -7443,8 +7443,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "54",
-      "busScore": 1.8302807926503848,
-      "perzScore": 1.8302807926503848,
+      "busScore": 1.8293241630246975,
+      "perzScore": 1.8293241630246975,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -7542,8 +7542,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -7652,8 +7652,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": null,
@@ -7754,8 +7754,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
-      "busScore": 0.16773836544139945,
-      "perzScore": 0.16773836544139945,
+      "busScore": 0.1682121436985261,
+      "perzScore": 0.1682121436985261,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -7862,8 +7862,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.8,
       "numberOfReviews": "109",
-      "busScore": 3.2659057527651867,
-      "perzScore": 3.2659057527651867,
+      "busScore": 3.263463895355369,
+      "perzScore": 3.263463895355369,
       "isRescheduled": true,
       "rescheduleTime": 24,
       "campaignType": [
@@ -7973,8 +7973,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "6",
-      "busScore": 0.9146156706807756,
-      "perzScore": 0.9146156706807756,
+      "busScore": 0.9146063436709468,
+      "perzScore": 0.9146063436709468,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -7992,6 +7992,114 @@
       "boReqParams": [
         {
           "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-30 20:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 49826449,
+      "operatorId": 34656,
+      "travelsName": "KBS Xpress",
+      "routeId": 49826449,
+      "serviceId": "38",
+      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
+      "busType": "A/C Seater/Sleeper (2+1)",
+      "busTypeId": 1376,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:30:00",
+      "arrivalTime": "2026-12-01 05:30:00",
+      "journeyDurationMin": 540,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:30:00",
+      "boardingPoint": "Near Thandava Bridge",
+      "boardingPointId": null,
+      "droppingPoint": "Moosapet",
+      "droppingPointId": 86162,
+      "boardingPointCount": 1,
+      "droppingPointCount": 11,
+      "fareList": [
+        1390,
+        2000
+      ],
+      "minFare": 1390,
+      "maxFare": 2000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 1390,
+            "discountedPrice": 1321,
+            "count": 23
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2000,
+            "discountedPrice": 1900,
+            "count": 22
+          }
+        ]
+      },
+      "availableSeats": 45,
+      "totalSeats": 45,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 45,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.2,
+      "numberOfReviews": "0",
+      "busScore": 0.23900710840534262,
+      "perzScore": 0.23900710840534262,
+      "isRescheduled": true,
+      "rescheduleTime": 4,
+      "campaignType": [
+        999901,
+        86,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "MULC_d3408a71",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 69,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Near Thandava Bridge",
+        "destinationDp": "Miyapur",
+        "bpId": 27491975,
+        "dpId": 27929528
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "4:-1:0:0",
           "serviceStartTime": "2026-11-30 20:30:00"
         }
       ],
@@ -8079,8 +8187,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.2388300071684711,
-      "perzScore": 0.2388300071684711,
+      "busScore": 0.23900710840534262,
+      "perzScore": 0.23900710840534262,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -8108,114 +8216,6 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-11-30 20:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 49826449,
-      "operatorId": 34656,
-      "travelsName": "KBS Xpress",
-      "routeId": 49826449,
-      "serviceId": "38",
-      "serviceName": "Bhubaneswar to Hyderabad AC Seat/Sleeper",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34656.png",
-      "busType": "A/C Seater/Sleeper (2+1)",
-      "busTypeId": 1376,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:30:00",
-      "arrivalTime": "2026-12-01 05:30:00",
-      "journeyDurationMin": 540,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:30:00",
-      "boardingPoint": "Near Thandava Bridge",
-      "boardingPointId": null,
-      "droppingPoint": "Moosapet",
-      "droppingPointId": 86162,
-      "boardingPointCount": 1,
-      "droppingPointCount": 11,
-      "fareList": [
-        1390,
-        2000
-      ],
-      "minFare": 1390,
-      "maxFare": 2000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1390,
-            "discountedPrice": 1321,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2000,
-            "discountedPrice": 1900,
-            "count": 22
-          }
-        ]
-      },
-      "availableSeats": 45,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 45,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.2,
-      "numberOfReviews": "0",
-      "busScore": 0.2388300071684711,
-      "perzScore": 0.2388300071684711,
-      "isRescheduled": true,
-      "rescheduleTime": 4,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "MULC_d3408a71",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 69,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Near Thandava Bridge",
-        "destinationDp": "Miyapur",
-        "bpId": 27491975,
-        "dpId": 27929528
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "4:-1:0:0",
           "serviceStartTime": "2026-11-30 20:30:00"
         }
       ],
@@ -8304,8 +8304,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.4,
       "numberOfReviews": "124",
-      "busScore": 2.530118046576181,
-      "perzScore": 2.530118046576181,
+      "busScore": 2.528437399353435,
+      "perzScore": 2.528437399353435,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -8412,8 +8412,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.4,
       "numberOfReviews": "60",
-      "busScore": 1.8352702978441549,
-      "perzScore": 1.8352702978441549,
+      "busScore": 1.9495343068129338,
+      "perzScore": 1.9495343068129338,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -8535,8 +8535,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "28",
-      "busScore": 1.1661492222297392,
-      "perzScore": 1.1661492222297392,
+      "busScore": 1.1658796708369548,
+      "perzScore": 1.1658796708369548,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -8630,8 +8630,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "0",
-      "busScore": 0.6481501343541025,
-      "perzScore": 0.6481501343541025,
+      "busScore": 0.6482179805076564,
+      "perzScore": 0.6482179805076564,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -8739,8 +8739,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "171",
-      "busScore": 3.2462649957475773,
-      "perzScore": 3.2462649957475773,
+      "busScore": 3.2438434577100437,
+      "perzScore": 3.2438434577100437,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -8838,8 +8838,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "102",
-      "busScore": 2.628443391220475,
-      "perzScore": 2.628443391220475,
+      "busScore": 2.8160490252091948,
+      "perzScore": 2.8160490252091948,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -8871,6 +8871,99 @@
       "boReqParams": [
         {
           "serviceStartTime": "2026-11-30 20:50:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 56457310,
+      "operatorId": 30426,
+      "travelsName": "FlixBus",
+      "routeId": 56457310,
+      "serviceId": "e5ac1e2c-c892-421d-99d4-ec287e30fcb7_52",
+      "serviceName": "FlixBus India Private Limited",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30426.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        4,
+        5,
+        7,
+        9,
+        91,
+        19
+      ],
+      "isPartialCancellationAllowed": null,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 20:50:00",
+      "arrivalTime": "2026-12-01 05:10:00",
+      "journeyDurationMin": 500,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 20:50:00",
+      "boardingPoint": "Tuni - Bypass (S)",
+      "boardingPointId": null,
+      "droppingPoint": "Ramoji Film City",
+      "droppingPointId": 201481,
+      "boardingPointCount": 1,
+      "droppingPointCount": 22,
+      "fareList": [
+        770.48
+      ],
+      "minFare": 770.48,
+      "maxFare": 770.48,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 770.48
+          }
+        ]
+      },
+      "availableSeats": 34,
+      "totalSeats": 34,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": null,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.2,
+      "numberOfReviews": "20",
+      "busScore": 1.279792077135617,
+      "perzScore": 1.279792077135617,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni - Bypass (S)",
+        "destinationDp": "Kondapur",
+        "bpId": 29156532,
+        "dpId": 26321301
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": ""
         }
       ],
       "source": "Tuni",
@@ -8965,8 +9058,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.8,
       "numberOfReviews": "11",
-      "busScore": 1.1572396642095124,
-      "perzScore": 1.1572396642095124,
+      "busScore": 1.1569793302122762,
+      "perzScore": 1.1569793302122762,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -8991,99 +9084,6 @@
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:20:0",
           "serviceStartTime": "2026-11-30 20:50:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 56457310,
-      "operatorId": 30426,
-      "travelsName": "FlixBus",
-      "routeId": 56457310,
-      "serviceId": "e5ac1e2c-c892-421d-99d4-ec287e30fcb7_52",
-      "serviceName": "FlixBus India Private Limited",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30426.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        4,
-        5,
-        7,
-        9,
-        91,
-        19
-      ],
-      "isPartialCancellationAllowed": null,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 20:50:00",
-      "arrivalTime": "2026-12-01 05:10:00",
-      "journeyDurationMin": 500,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 20:50:00",
-      "boardingPoint": "Tuni - Bypass (S)",
-      "boardingPointId": null,
-      "droppingPoint": "Ramoji Film City",
-      "droppingPointId": 201481,
-      "boardingPointCount": 1,
-      "droppingPointCount": 22,
-      "fareList": [
-        770.48
-      ],
-      "minFare": 770.48,
-      "maxFare": 770.48,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 770.48
-          }
-        ]
-      },
-      "availableSeats": 34,
-      "totalSeats": 34,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.2,
-      "numberOfReviews": "20",
-      "busScore": 1.156688145306882,
-      "perzScore": 1.156688145306882,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni - Bypass (S)",
-        "destinationDp": "Kondapur",
-        "bpId": 29156532,
-        "dpId": 26321301
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": ""
         }
       ],
       "source": "Tuni",
@@ -9182,8 +9182,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "14",
-      "busScore": 0.9556856013200059,
-      "perzScore": 0.9556856013200059,
+      "busScore": 0.9556337853567438,
+      "perzScore": 0.9556337853567438,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -9283,8 +9283,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.379195941857704,
-      "perzScore": 0.379195941857704,
+      "busScore": 0.37963576129368576,
+      "perzScore": 0.37963576129368576,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -9399,8 +9399,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "316",
-      "busScore": 3.5996914888128284,
-      "perzScore": 3.5996914888128284,
+      "busScore": 3.596777236898838,
+      "perzScore": 3.596777236898838,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -9511,8 +9511,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "117",
-      "busScore": 2.0935957043740547,
-      "perzScore": 2.0935957043740547,
+      "busScore": 2.090221024493225,
+      "perzScore": 2.090221024493225,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -9624,8 +9624,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "56",
-      "busScore": 1.5472867788095668,
-      "perzScore": 1.5472867788095668,
+      "busScore": 1.5466229210315252,
+      "perzScore": 1.5466229210315252,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -9738,8 +9738,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "26",
-      "busScore": 1.1472803512167529,
-      "perzScore": 1.1472803512167529,
+      "busScore": 1.1470303206405204,
+      "perzScore": 1.1470303206405204,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -9834,8 +9834,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "16",
-      "busScore": 1.003170487936456,
-      "perzScore": 1.003170487936456,
+      "busScore": 1.0030695464182,
+      "perzScore": 1.0030695464182,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -9945,8 +9945,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.5,
       "numberOfReviews": "0",
-      "busScore": 0.16030432205598666,
-      "perzScore": 0.16030432205598666,
+      "busScore": 0.16036761026351531,
+      "perzScore": 0.16036761026351531,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10039,8 +10039,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.5,
       "numberOfReviews": "0",
-      "busScore": 0.10373971465677247,
-      "perzScore": 0.10373971465677247,
+      "busScore": 0.10379128023253074,
+      "perzScore": 0.10379128023253074,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10127,8 +10127,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "0",
-      "busScore": 0.06339530566649135,
-      "perzScore": 0.06339530566649135,
+      "busScore": 0.0633808151611161,
+      "perzScore": 0.0633808151611161,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10226,8 +10226,8 @@
       "isSeatLayoutAvailable": true,
       "rating": -1,
       "numberOfReviews": "",
-      "busScore": -1,
-      "perzScore": -1,
+      "busScore": 0.016706459985191942,
+      "perzScore": 0.016706459985191942,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -10322,8 +10322,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "9",
-      "busScore": 1.0166014308144597,
-      "perzScore": 1.0166014308144597,
+      "busScore": 1.01648659429571,
+      "perzScore": 1.01648659429571,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -10407,8 +10407,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.6260388783921819,
-      "perzScore": 0.6260388783921819,
+      "busScore": 0.6254785878299987,
+      "perzScore": 0.6254785878299987,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -10521,8 +10521,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "50",
-      "busScore": 1.8519160302807351,
-      "perzScore": 1.8519160302807351,
+      "busScore": 1.8509370178900937,
+      "perzScore": 1.8509370178900937,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10641,8 +10641,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "11",
-      "busScore": 0.7585892546308276,
-      "perzScore": 0.7585892546308276,
+      "busScore": 0.7585295516147457,
+      "perzScore": 0.7585295516147457,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10746,8 +10746,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4,
       "numberOfReviews": "11",
-      "busScore": 0.78883892045241,
-      "perzScore": 0.78883892045241,
+      "busScore": 0.7887479226027977,
+      "perzScore": 0.7887479226027977,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10779,114 +10779,6 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 21:15:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 25596832,
-      "operatorId": 16292,
-      "travelsName": "LIMOLINER",
-      "routeId": 25596832,
-      "serviceId": "70",
-      "serviceName": "VIZAG TO HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/16292.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        10,
-        26,
-        35,
-        5,
-        7,
-        86,
-        9
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 21:20:00",
-      "arrivalTime": "2026-12-01 07:00:00",
-      "journeyDurationMin": 580,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 18:30:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Ramoji Film City",
-      "droppingPointId": 201481,
-      "boardingPointCount": 1,
-      "droppingPointCount": 15,
-      "fareList": [
-        1250,
-        1599,
-        1679,
-        1759,
-        1999,
-        2159
-      ],
-      "minFare": 1250,
-      "maxFare": 2159,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1250,
-            "count": 26
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2159,
-            "count": 4
-          }
-        ]
-      },
-      "availableSeats": 30,
-      "totalSeats": 37,
-      "availableWindowSeats": 17,
-      "availableSingleSeats": 9,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 15,
-      "availableLowerSeats": 15,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.5,
-      "numberOfReviews": "114",
-      "busScore": 1.2174064377738694,
-      "perzScore": 1.2174064377738694,
-      "isRescheduled": true,
-      "rescheduleTime": 8,
-      "campaignType": [
-        37,
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Kukatpally",
-        "bpId": 18694831,
-        "dpId": 23926703
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-11-30 18:30:00"
         }
       ],
       "source": "Tuni",
@@ -10977,8 +10869,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "29",
-      "busScore": 1.1755836577362322,
-      "perzScore": 1.1755836577362322,
+      "busScore": 1.2473284928786514,
+      "perzScore": 1.2473284928786514,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -10999,6 +10891,114 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-11-30 21:20:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 25596832,
+      "operatorId": 16292,
+      "travelsName": "LIMOLINER",
+      "routeId": 25596832,
+      "serviceId": "70",
+      "serviceName": "VIZAG TO HYDERABAD",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/16292.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        10,
+        26,
+        35,
+        5,
+        7,
+        86,
+        9
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 21:20:00",
+      "arrivalTime": "2026-12-01 07:00:00",
+      "journeyDurationMin": 580,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 18:30:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Ramoji Film City",
+      "droppingPointId": 201481,
+      "boardingPointCount": 1,
+      "droppingPointCount": 15,
+      "fareList": [
+        1250,
+        1599,
+        1679,
+        1759,
+        1999,
+        2159
+      ],
+      "minFare": 1250,
+      "maxFare": 2159,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 1250,
+            "count": 26
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 2159,
+            "count": 4
+          }
+        ]
+      },
+      "availableSeats": 30,
+      "totalSeats": 37,
+      "availableWindowSeats": 17,
+      "availableSingleSeats": 9,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 15,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.5,
+      "numberOfReviews": "114",
+      "busScore": 1.2168720648076452,
+      "perzScore": 1.2168720648076452,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": [
+        37,
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Kukatpally",
+        "bpId": 18694831,
+        "dpId": 23926703
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-11-30 18:30:00"
         }
       ],
       "source": "Tuni",
@@ -11072,8 +11072,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "48",
-      "busScore": 1.5775621750986581,
-      "perzScore": 1.5775621750986581,
+      "busScore": 1.5909269589463606,
+      "perzScore": 1.5909269589463606,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -11178,8 +11178,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "11",
-      "busScore": 1.1109698485391493,
-      "perzScore": 1.1109698485391493,
+      "busScore": 1.1107573830435824,
+      "perzScore": 1.1107573830435824,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -11294,8 +11294,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "12",
-      "busScore": 0.9582050523130407,
-      "perzScore": 0.9582050523130407,
+      "busScore": 0.9581506298482761,
+      "perzScore": 0.9581506298482761,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -11396,8 +11396,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 1.9,
       "numberOfReviews": "8",
-      "busScore": 0.9081804330524744,
-      "perzScore": 0.9081804330524744,
+      "busScore": 0.9081777636266168,
+      "perzScore": 0.9081777636266168,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -11514,8 +11514,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "226",
-      "busScore": 3.138225617011922,
-      "perzScore": 3.138225617011922,
+      "busScore": 3.374872958782644,
+      "perzScore": 3.374872958782644,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -11617,8 +11617,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "10",
-      "busScore": 0.9963293831128635,
-      "perzScore": 0.9963293831128635,
+      "busScore": 0.9962355190690458,
+      "perzScore": 0.9962355190690458,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -11715,8 +11715,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.28610655510744576,
-      "perzScore": 0.28610655510744576,
+      "busScore": 0.2859620831618909,
+      "perzScore": 0.2859620831618909,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -11826,8 +11826,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "54",
-      "busScore": 1.524240287710937,
-      "perzScore": 1.524240287710937,
+      "busScore": 1.5236002727120734,
+      "perzScore": 1.5236002727120734,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -11948,8 +11948,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "16",
-      "busScore": 1.105747521855092,
-      "perzScore": 1.105747521855092,
+      "busScore": 1.105540459124805,
+      "perzScore": 1.105540459124805,
       "isRescheduled": true,
       "rescheduleTime": 24,
       "campaignType": [
@@ -12059,8 +12059,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "9",
-      "busScore": 1.0729726084498372,
-      "perzScore": 1.0729726084498372,
+      "busScore": 1.0727994530514537,
+      "perzScore": 1.0727994530514537,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -12162,8 +12162,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "13",
-      "busScore": 1.0129612214841184,
-      "perzScore": 1.0129612214841184,
+      "busScore": 1.012850150948956,
+      "perzScore": 1.012850150948956,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -12270,8 +12270,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "6",
-      "busScore": 0.9585916410868912,
-      "perzScore": 0.9585916410868912,
+      "busScore": 0.9585368186761771,
+      "perzScore": 0.9585368186761771,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -12368,8 +12368,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "0",
-      "busScore": 0.32916718769561,
-      "perzScore": 0.32916718769561,
+      "busScore": 0.32938739547953017,
+      "perzScore": 0.32938739547953017,
       "isRescheduled": true,
       "rescheduleTime": 4,
       "campaignType": [
@@ -12457,8 +12457,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 1.8,
       "numberOfReviews": "0",
-      "busScore": 0.053995391959913125,
-      "perzScore": 0.053995391959913125,
+      "busScore": 0.05393870256067566,
+      "perzScore": 0.05393870256067566,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -12559,8 +12559,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "16",
-      "busScore": 0.7633591976703874,
-      "perzScore": 0.7633591976703874,
+      "busScore": 0.7632945599031499,
+      "perzScore": 0.7632945599031499,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -12675,8 +12675,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "136",
-      "busScore": 2.7358323727281286,
-      "perzScore": 2.7358323727281286,
+      "busScore": 2.7311868297134465,
+      "perzScore": 2.7311868297134465,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -12784,8 +12784,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.3,
       "numberOfReviews": "0",
-      "busScore": 0.6481501343541025,
-      "perzScore": 0.6481501343541025,
+      "busScore": 0.6482179805076564,
+      "perzScore": 0.6482179805076564,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -12892,8 +12892,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "0",
-      "busScore": 0.8892025763979676,
-      "perzScore": 0.8892025763979676,
+      "busScore": 0.8894744132206839,
+      "perzScore": 0.8894744132206839,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13009,8 +13009,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "41",
-      "busScore": 1.2519868688851339,
-      "perzScore": 1.2519868688851339,
+      "busScore": 1.2516285140365175,
+      "perzScore": 1.2516285140365175,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -13099,8 +13099,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
-      "busScore": 0.16773836544139945,
-      "perzScore": 0.16773836544139945,
+      "busScore": 0.1682121436985261,
+      "perzScore": 0.1682121436985261,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13205,8 +13205,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "14",
-      "busScore": 1.0214978517484403,
-      "perzScore": 1.0214978517484403,
+      "busScore": 1.0433588945601318,
+      "perzScore": 1.0433588945601318,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -13339,8 +13339,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "29",
-      "busScore": 1.0853836740958813,
-      "perzScore": 1.0853836740958813,
+      "busScore": 1.0851976788124027,
+      "perzScore": 1.0851976788124027,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -13440,8 +13440,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "9",
-      "busScore": 0.9868949476063705,
-      "perzScore": 0.9868949476063705,
+      "busScore": 0.9868108439708284,
+      "perzScore": 0.9868108439708284,
       "isRescheduled": true,
       "rescheduleTime": 4,
       "campaignType": [
@@ -13550,8 +13550,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.379195941857704,
-      "perzScore": 0.379195941857704,
+      "busScore": 0.37963576129368576,
+      "perzScore": 0.37963576129368576,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13659,8 +13659,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.8,
       "numberOfReviews": "49",
-      "busScore": 2.039028407313152,
-      "perzScore": 2.039028407313152,
+      "busScore": 2.182934921017584,
+      "perzScore": 2.182934921017584,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13786,8 +13786,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "10",
-      "busScore": 0.9403425803851277,
-      "perzScore": 0.9403425803851277,
+      "busScore": 0.9403066375653526,
+      "perzScore": 0.9403066375653526,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13913,8 +13913,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "11",
-      "busScore": 0.7984888402843003,
-      "perzScore": 0.7984888402843003,
+      "busScore": 0.7983878590968058,
+      "perzScore": 0.7983878590968058,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14006,8 +14006,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.379195941857704,
-      "perzScore": 0.379195941857704,
+      "busScore": 0.37963576129368576,
+      "perzScore": 0.37963576129368576,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14114,8 +14114,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "28",
-      "busScore": 1.6200577568218641,
-      "perzScore": 1.6200577568218641,
+      "busScore": 1.6193186137280717,
+      "perzScore": 1.6193186137280717,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14214,8 +14214,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "30",
-      "busScore": 1.471943629387614,
-      "perzScore": 1.471943629387614,
+      "busScore": 1.4713577179688058,
+      "perzScore": 1.4713577179688058,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -14315,8 +14315,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3,
       "numberOfReviews": "5",
-      "busScore": 0.7124273003852073,
-      "perzScore": 0.7124273003852073,
+      "busScore": 0.712415354282609,
+      "perzScore": 0.712415354282609,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14434,8 +14434,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.6629407906235275,
-      "perzScore": 0.6629407906235275,
+      "busScore": 0.6623443228198931,
+      "perzScore": 0.6623443228198931,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14543,8 +14543,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.4,
       "numberOfReviews": "7",
-      "busScore": 1.0108683095241584,
-      "perzScore": 1.0108683095241584,
+      "busScore": 1.0107594042139534,
+      "perzScore": 1.0107594042139534,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14649,8 +14649,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "7",
-      "busScore": 0.982647746893137,
-      "perzScore": 0.982647746893137,
+      "busScore": 0.9825680372049553,
+      "perzScore": 0.9825680372049553,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -14758,8 +14758,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "5",
-      "busScore": 0.9596012557945072,
-      "perzScore": 0.9596012557945072,
+      "busScore": 0.9595453888855037,
+      "perzScore": 0.9595453888855037,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -14862,8 +14862,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -14953,8 +14953,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.28610655510744576,
-      "perzScore": 0.28610655510744576,
+      "busScore": 0.2859620831618909,
+      "perzScore": 0.2859620831618909,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -15060,8 +15060,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "35",
-      "busScore": 1.347715483251094,
-      "perzScore": 1.347715483251094,
+      "busScore": 1.4081474389224153,
+      "perzScore": 1.4081474389224153,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -15150,8 +15150,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.6260388783921819,
-      "perzScore": 0.6260388783921819,
+      "busScore": 0.6482179805076564,
+      "perzScore": 0.6482179805076564,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -15268,8 +15268,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 5,
       "numberOfReviews": "56",
-      "busScore": 2.4891712218562754,
-      "perzScore": 2.4891712218562754,
+      "busScore": 2.515846224944361,
+      "perzScore": 2.515846224944361,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -15373,8 +15373,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "30",
-      "busScore": 1.671348666020002,
-      "perzScore": 1.671348666020002,
+      "busScore": 1.6705564598452998,
+      "perzScore": 1.6705564598452998,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -15471,8 +15471,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
-      "busScore": 0.8131782767252485,
-      "perzScore": 0.8131782767252485,
+      "busScore": 0.8124767447603503,
+      "perzScore": 0.8124767447603503,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
@@ -15574,8 +15574,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "4",
-      "busScore": 0.9707476772777438,
-      "perzScore": 0.9707476772777438,
+      "busScore": 0.9706802788230092,
+      "perzScore": 0.9706802788230092,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": null,
@@ -15683,8 +15683,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "7",
-      "busScore": 0.9079761368050628,
-      "perzScore": 0.9079761368050628,
+      "busScore": 0.9079736787341697,
+      "perzScore": 0.9079736787341697,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -15778,8 +15778,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "0",
-      "busScore": 0.5058488895108052,
-      "perzScore": 0.5058488895108052,
+      "busScore": 0.505372650277633,
+      "perzScore": 0.505372650277633,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -15889,8 +15889,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.2,
       "numberOfReviews": "5",
-      "busScore": 0.9254100381583943,
-      "perzScore": 0.9254100381583943,
+      "busScore": 0.9253895438207917,
+      "perzScore": 0.9253895438207917,
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": null,
@@ -15995,8 +15995,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.1,
       "numberOfReviews": "4",
-      "busScore": 0.9189416885805856,
-      "perzScore": 0.9189416885805856,
+      "busScore": 0.9189278860829672,
+      "perzScore": 0.9189278860829672,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16100,8 +16100,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.379195941857704,
-      "perzScore": 0.379195941857704,
+      "busScore": 0.37963576129368576,
+      "perzScore": 0.37963576129368576,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16193,8 +16193,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.5,
       "numberOfReviews": "11",
-      "busScore": 0.9715500317212925,
-      "perzScore": 0.9715500317212925,
+      "busScore": 0.9714818031896606,
+      "perzScore": 0.9714818031896606,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16295,8 +16295,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4,
       "numberOfReviews": "0",
-      "busScore": 0.5489470024719433,
-      "perzScore": 0.5489470024719433,
+      "busScore": 0.5479332459709298,
+      "perzScore": 0.5479332459709298,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16405,8 +16405,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.3,
       "numberOfReviews": "0",
-      "busScore": 0.3882628726193283,
-      "perzScore": 0.3882628726193283,
+      "busScore": 0.3880811139252155,
+      "perzScore": 0.3880811139252155,
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
@@ -16494,8 +16494,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 2.9,
       "numberOfReviews": "0",
-      "busScore": 0.16773836544139945,
-      "perzScore": 0.16773836544139945,
+      "busScore": 0.1682121436985261,
+      "perzScore": 0.1682121436985261,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16613,8 +16613,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "25",
-      "busScore": 1.5431213930246572,
-      "perzScore": 1.5431213930246572,
+      "busScore": 1.5680807676108433,
+      "perzScore": 1.5680807676108433,
       "isRescheduled": true,
       "rescheduleTime": 2,
       "campaignType": null,
@@ -16701,8 +16701,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "14",
-      "busScore": 1.1679657086731172,
-      "perzScore": 1.1679657086731172,
+      "busScore": 1.1676942780317756,
+      "perzScore": 1.1676942780317756,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16795,8 +16795,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.6,
       "numberOfReviews": "0",
-      "busScore": 0.5046246060571511,
-      "perzScore": 0.5046246060571511,
+      "busScore": 0.505173211589959,
+      "perzScore": 0.505173211589959,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -16897,8 +16897,8 @@
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "13",
-      "busScore": 1.0246326896323428,
-      "perzScore": 1.0246326896323428,
+      "busScore": 1.0245095443636973,
+      "perzScore": 1.0245095443636973,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
