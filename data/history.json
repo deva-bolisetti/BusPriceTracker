@@ -246,44 +246,44 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1380,
-        1500,
-        1710,
-        1920,
-        2130,
-        2420,
-        2680
+        1340,
+        1440,
+        1610,
+        1910,
+        2100,
+        2390,
+        2650
       ],
-      "minFare": 1380,
-      "maxFare": 2680,
+      "minFare": 1340,
+      "maxFare": 2650,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1380,
-            "count": 27
+            "originalPrice": 1340,
+            "count": 28
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1920,
-            "count": 9
+            "originalPrice": 1910,
+            "count": 11
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2680,
+            "originalPrice": 2650,
             "count": 4
           }
         ]
       },
-      "availableSeats": 40,
+      "availableSeats": 43,
       "totalSeats": 54,
-      "availableWindowSeats": 21,
-      "availableSingleSeats": 11,
-      "availableAisleSeats": 14,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 27,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 15,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 28,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -834,7 +834,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 35,
       "isSeatLayoutAvailable": true,
-      "rating": 3,
+      "rating": 3.1,
       "numberOfReviews": "0",
       "busScore": 0.2992925572313598,
       "perzScore": 0.2992925572313598,
@@ -1161,6 +1161,103 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59599875,
+      "operatorId": 35061,
+      "travelsName": "Varalakshmi Tours and Travels",
+      "routeId": 59599875,
+      "serviceId": "116",
+      "serviceName": "VISAKHAPATNAM TO HYDERABAD",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35061.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-11-30 01:25:00",
+      "arrivalTime": "2026-11-30 08:45:00",
+      "journeyDurationMin": 440,
+      "dateOfJourney": "2026-11-30",
+      "firstBpTime": "2026-11-30 01:25:00",
+      "boardingPoint": "Tuni Bypas",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 17,
+      "fareList": [
+        879,
+        1231,
+        1495
+      ],
+      "minFare": 879,
+      "maxFare": 1495,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 879,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1231,
+            "count": 9
+          }
+        ]
+      },
+      "availableSeats": 19,
+      "totalSeats": 41,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 19,
+      "isSeatLayoutAvailable": true,
+      "rating": 2,
+      "numberOfReviews": "0",
+      "busScore": 0.109854528924247,
+      "perzScore": 0.109854528924247,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni Bypas",
+        "destinationDp": "Miyapur",
+        "bpId": 27830869,
+        "dpId": 28258529
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-11-30 01:25:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 56170247,
       "operatorId": 35061,
       "travelsName": "Varalakshmi Tours and Travels",
@@ -1232,103 +1329,6 @@
       "availableAisleSeats": 10,
       "availableUpperSeats": 7,
       "availableLowerSeats": 18,
-      "isSeatLayoutAvailable": true,
-      "rating": 2,
-      "numberOfReviews": "0",
-      "busScore": 0.109854528924247,
-      "perzScore": 0.109854528924247,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni Bypas",
-        "destinationDp": "Miyapur",
-        "bpId": 27830869,
-        "dpId": 28258529
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-11-30 01:25:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 59599875,
-      "operatorId": 35061,
-      "travelsName": "Varalakshmi Tours and Travels",
-      "routeId": 59599875,
-      "serviceId": "116",
-      "serviceName": "VISAKHAPATNAM TO HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35061.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-11-30 01:25:00",
-      "arrivalTime": "2026-11-30 08:45:00",
-      "journeyDurationMin": 440,
-      "dateOfJourney": "2026-11-30",
-      "firstBpTime": "2026-11-30 01:25:00",
-      "boardingPoint": "Tuni Bypas",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 17,
-      "fareList": [
-        879,
-        1231,
-        1495
-      ],
-      "minFare": 879,
-      "maxFare": 1495,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 879,
-            "count": 10
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1231,
-            "count": 9
-          }
-        ]
-      },
-      "availableSeats": 19,
-      "totalSeats": 41,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 19,
       "isSeatLayoutAvailable": true,
       "rating": 2,
       "numberOfReviews": "0",
@@ -2928,7 +2928,7 @@
       "availableUpperSeats": 13,
       "availableLowerSeats": 21,
       "isSeatLayoutAvailable": true,
-      "rating": 4.5,
+      "rating": 4.6,
       "numberOfReviews": "0",
       "busScore": 0.8894744132206839,
       "perzScore": 0.8894744132206839,
@@ -3857,7 +3857,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 31,
       "isSeatLayoutAvailable": true,
-      "rating": 3.4,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.32938739547953017,
       "perzScore": 0.32938739547953017,
