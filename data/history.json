@@ -149,15 +149,15 @@
       "droppingPointCount": 18,
       "fareList": [
         1250,
-        1310,
-        1400,
-        1840,
-        2030,
-        2310,
-        2550
+        1350,
+        1480,
+        1860,
+        2050,
+        2330,
+        2570
       ],
       "minFare": 1250,
-      "maxFare": 2550,
+      "maxFare": 2570,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -168,13 +168,13 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1840,
+            "originalPrice": 1860,
             "count": 8
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2550,
+            "originalPrice": 2570,
             "count": 4
           }
         ]
@@ -7913,105 +7913,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 58816462,
-      "operatorId": 35511,
-      "travelsName": "Bhargav sai Travels",
-      "routeId": 58816462,
-      "serviceId": "134",
-      "serviceName": "PALAKONDA TO HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35511.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 20:15:00",
-      "arrivalTime": "2026-12-02 06:30:00",
-      "journeyDurationMin": 615,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 19:15:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Miyapur",
-      "droppingPointId": 66664,
-      "boardingPointCount": 1,
-      "droppingPointCount": 18,
-      "fareList": [
-        1599,
-        1699,
-        1799,
-        1899
-      ],
-      "minFare": 1599,
-      "maxFare": 1899,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1599,
-            "count": 25
-          }
-        ]
-      },
-      "availableSeats": 25,
-      "totalSeats": 37,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": 25,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.2,
-      "numberOfReviews": "0",
-      "busScore": 0.2494435915825912,
-      "perzScore": 0.2494435915825912,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": null,
-          "description": null,
-          "type": null,
-          "discount": null,
-          "maxDiscount": null,
-          "dealType": null
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 28375875,
-        "dpId": 28062434
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 19:15:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 16944701,
       "operatorId": 20393,
       "travelsName": "BSR Tours And Travels",
@@ -8927,25 +8828,37 @@
       "boardingPointCount": 1,
       "droppingPointCount": 22,
       "fareList": [
-        703.81
+        703.81,
+        751.43,
+        846.67,
+        893.33,
+        894.29,
+        941.9
       ],
       "minFare": 703.81,
-      "maxFare": 703.81,
+      "maxFare": 941.9,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
-        "SEATER": [
+        "SLEEPER": [
           {
-            "originalPrice": 703.81
+            "originalPrice": 703.81,
+            "count": 22
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 893.33,
+            "count": 8
           }
         ]
       },
-      "availableSeats": 32,
-      "totalSeats": 32,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "availableSeats": 30,
+      "totalSeats": 36,
+      "availableWindowSeats": 20,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 16,
+      "availableLowerSeats": 14,
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "22",
@@ -15743,6 +15656,111 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 23:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 59878257,
+      "operatorId": 34825,
+      "travelsName": "Sree Veera Hanuman Travels",
+      "routeId": 59878257,
+      "serviceId": "48",
+      "serviceName": "Srikakulam - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/34825.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        7,
+        9,
+        4,
+        10
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 23:40:00",
+      "arrivalTime": "2026-12-02 09:00:00",
+      "journeyDurationMin": 560,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 23:40:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 1,
+      "fareList": [
+        3000
+      ],
+      "minFare": 3000,
+      "maxFare": 3000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 3000,
+            "discountedPrice": 3000,
+            "count": 38
+          }
+        ]
+      },
+      "availableSeats": 38,
+      "totalSeats": 40,
+      "availableWindowSeats": 22,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 23,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": -1,
+      "perzScore": -1,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        999901,
+        86,
+        7,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "ALLC_57f9badd",
+          "description": "Get 10 % Extra OFF",
+          "type": "PERCENT",
+          "discount": null,
+          "maxDiscount": 10,
+          "dealType": "FEMALE"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "LB Nagar",
+        "bpId": 30715825,
+        "dpId": 27442804
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 23:40:00"
         }
       ],
       "source": "Tuni",
