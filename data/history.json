@@ -1630,7 +1630,6 @@
         "SEATER": [
           {
             "originalPrice": 4000,
-            "discountedPrice": 3800,
             "count": 39
           }
         ]
@@ -1650,21 +1649,10 @@
       "isRescheduled": true,
       "rescheduleTime": 12,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_8b3fc542",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 200,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -2075,18 +2063,21 @@
         "SEATER": [
           {
             "originalPrice": 999,
+            "discountedPrice": 899,
             "count": 19
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1499,
+            "discountedPrice": 1349,
             "count": 8
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1599,
+            "discountedPrice": 1439,
             "count": 4
           }
         ]
@@ -2106,10 +2097,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        4,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLF_34b2e61b",
+          "description": "Get 11 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 100,
+          "maxDiscount": 10.01,
+          "dealType": "DISCOVERY"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -2176,7 +2179,7 @@
         "SLEEPER": [
           {
             "originalPrice": 3999,
-            "discountedPrice": 3799,
+            "discountedPrice": 3199,
             "count": 40
           }
         ]
@@ -2203,11 +2206,11 @@
       "programList": null,
       "offers": [
         {
-          "campaignCode": "ALLC_37a865b1",
-          "description": "Get 5 % Extra OFF",
+          "campaignCode": "ALLC_214dd41f",
+          "description": "Get 21 % Extra OFF",
           "type": "PERCENT",
-          "discount": 200,
-          "maxDiscount": 5,
+          "discount": 800,
+          "maxDiscount": 20.01,
           "dealType": "REDDEAL"
         }
       ],
@@ -3520,7 +3523,7 @@
         "SLEEPER": [
           {
             "originalPrice": 3999,
-            "discountedPrice": 3799,
+            "discountedPrice": 3199,
             "count": 40
           }
         ]
@@ -3547,11 +3550,11 @@
       "programList": null,
       "offers": [
         {
-          "campaignCode": "ALLC_37a865b1",
-          "description": "Get 5 % Extra OFF",
+          "campaignCode": "ALLC_214dd41f",
+          "description": "Get 21 % Extra OFF",
           "type": "PERCENT",
-          "discount": 200,
-          "maxDiscount": 5,
+          "discount": 800,
+          "maxDiscount": 20.01,
           "dealType": "REDDEAL"
         }
       ],
@@ -3926,21 +3929,18 @@
         "SEATER": [
           {
             "originalPrice": 1899,
-            "discountedPrice": 1709,
             "count": 18
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2499,
-            "discountedPrice": 2249,
             "count": 8
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 2899,
-            "discountedPrice": 2609,
             "count": 8
           }
         ]
@@ -3959,22 +3959,9 @@
       "perzScore": 0.34236939963230223,
       "isRescheduled": true,
       "rescheduleTime": 8,
-      "campaignType": [
-        999901,
-        4,
-        15
-      ],
+      "campaignType": null,
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLF_c654630",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 190,
-          "maxDiscount": 10.01,
-          "dealType": "DISCOVERY"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -4887,12 +4874,14 @@
         "SEATER": [
           {
             "originalPrice": 999,
+            "discountedPrice": 799,
             "count": 21
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1599,
+            "discountedPrice": 1279,
             "count": 13
           }
         ]
@@ -4912,17 +4901,19 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
       "offers": [
         {
-          "campaignCode": null,
-          "description": null,
-          "type": null,
-          "discount": null,
-          "maxDiscount": null,
-          "dealType": null
+          "campaignCode": "ALLC_6838cc19",
+          "description": "Get 21 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 200,
+          "maxDiscount": 20.02,
+          "dealType": "REDDEAL"
         }
       ],
       "busImageCount": -1,
@@ -6936,18 +6927,21 @@
         "SEATER": [
           {
             "originalPrice": 1499,
+            "discountedPrice": 1349,
             "count": 14
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2499,
+            "discountedPrice": 2249,
             "count": 8
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 2699,
+            "discountedPrice": 2429,
             "count": 8
           }
         ]
@@ -6967,11 +6961,23 @@
       "isRescheduled": true,
       "rescheduleTime": 8,
       "campaignType": [
+        999901,
+        4,
         37,
-        86
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLF_c654630",
+          "description": "Get 11 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 150,
+          "maxDiscount": 10.01,
+          "dealType": "DISCOVERY"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -7286,6 +7292,101 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 20:05:00",
+      "arrivalTime": "2026-12-02 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        2399,
+        2499
+      ],
+      "minFare": 2399,
+      "maxFare": 2499,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 2399,
+            "count": 27
+          }
+        ]
+      },
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.5057513251628198,
+      "perzScore": 0.5057513251628198,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 58653207,
       "operatorId": 20551,
       "travelsName": "Sri Keerthana Sai Travels",
@@ -7401,101 +7502,6 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:10:0",
-          "serviceStartTime": "2026-12-01 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 20:05:00",
-      "arrivalTime": "2026-12-02 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        2399,
-        2499
-      ],
-      "minFare": 2399,
-      "maxFare": 2499,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 27
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.5057513251628198,
-      "perzScore": 0.5057513251628198,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 20:05:00"
         }
       ],
@@ -15720,7 +15726,6 @@
         "SEATER": [
           {
             "originalPrice": 3000,
-            "discountedPrice": 3000,
             "count": 38
           }
         ]
@@ -15740,22 +15745,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        7,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_57f9badd",
-          "description": "Get 10 % Extra OFF",
-          "type": "PERCENT",
-          "discount": null,
-          "maxDiscount": 10,
-          "dealType": "FEMALE"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -16236,9 +16229,9 @@
       "droppingPointCount": 50,
       "fareList": [
         1855,
-        1855,
         2164,
         2183,
+        2292,
         2401,
         2546,
         2673,
@@ -16263,7 +16256,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
