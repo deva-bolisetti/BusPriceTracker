@@ -98,6 +98,104 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 52165272,
+      "operatorId": 36562,
+      "travelsName": "Greenline",
+      "routeId": 52165272,
+      "serviceId": "255",
+      "serviceName": "Bhubaneswar - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
+      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
+      "busTypeId": 1757,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        35,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": [
+        "OTG_ADDON"
+      ],
+      "departureTime": "2026-12-01 00:30:00",
+      "arrivalTime": "2026-12-01 09:05:00",
+      "journeyDurationMin": 515,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 00:30:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 15,
+      "fareList": [
+        3000,
+        3400
+      ],
+      "minFare": 3000,
+      "maxFare": 3400,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 3000,
+            "count": 38
+          }
+        ]
+      },
+      "availableSeats": 38,
+      "totalSeats": 42,
+      "availableWindowSeats": 22,
+      "availableSingleSeats": 11,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 19,
+      "availableLowerSeats": 19,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.2,
+      "numberOfReviews": "0",
+      "busScore": 0.8124831649554868,
+      "perzScore": 0.8124831649554868,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": [
+        37,
+        86,
+        555
+      ],
+      "programList": [
+        3
+      ],
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": true,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 29602224,
+        "dpId": 29568520
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-12-01 00:30:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 52066926,
       "operatorId": 34660,
       "travelsName": "KALOSONA DREAMLINE",
@@ -207,104 +305,6 @@
         "destinationDp": "Miyapur",
         "bpId": 29316347,
         "dpId": 29592866
-      },
-      "boReqParams": [
-        {
-          "isAvailReschedule": true,
-          "reschedulePolicy": "8:-1:0:0",
-          "serviceStartTime": "2026-12-01 00:30:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 52165272,
-      "operatorId": 36562,
-      "travelsName": "Greenline",
-      "routeId": 52165272,
-      "serviceId": "255",
-      "serviceName": "Bhubaneswar - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36562.png",
-      "busType": "Volvo 9600 SLX Multi-Axle AC Sleeper (2+1)",
-      "busTypeId": 1757,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        35,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": [
-        "OTG_ADDON"
-      ],
-      "departureTime": "2026-12-01 00:30:00",
-      "arrivalTime": "2026-12-01 09:05:00",
-      "journeyDurationMin": 515,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 00:30:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 15,
-      "fareList": [
-        3000,
-        3400
-      ],
-      "minFare": 3000,
-      "maxFare": 3400,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 38
-          }
-        ]
-      },
-      "availableSeats": 38,
-      "totalSeats": 42,
-      "availableWindowSeats": 22,
-      "availableSingleSeats": 11,
-      "availableAisleSeats": 14,
-      "availableUpperSeats": 19,
-      "availableLowerSeats": 19,
-      "isSeatLayoutAvailable": true,
-      "rating": 4.2,
-      "numberOfReviews": "0",
-      "busScore": 0.8124831649554868,
-      "perzScore": 0.8124831649554868,
-      "isRescheduled": true,
-      "rescheduleTime": 8,
-      "campaignType": [
-        37,
-        86,
-        555
-      ],
-      "programList": [
-        3
-      ],
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": true,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 29602224,
-        "dpId": 29568520
       },
       "boReqParams": [
         {
@@ -2063,21 +2063,18 @@
         "SEATER": [
           {
             "originalPrice": 999,
-            "discountedPrice": 899,
             "count": 19
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1499,
-            "discountedPrice": 1349,
             "count": 8
           }
         ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1599,
-            "discountedPrice": 1439,
             "count": 4
           }
         ]
@@ -2097,22 +2094,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        4,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLF_34b2e61b",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 100,
-          "maxDiscount": 10.01,
-          "dealType": "DISCOVERY"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -2179,7 +2164,7 @@
         "SLEEPER": [
           {
             "originalPrice": 3999,
-            "discountedPrice": 3199,
+            "discountedPrice": 3799,
             "count": 40
           }
         ]
@@ -2206,11 +2191,11 @@
       "programList": null,
       "offers": [
         {
-          "campaignCode": "ALLC_214dd41f",
-          "description": "Get 21 % Extra OFF",
+          "campaignCode": "ALLC_37a865b1",
+          "description": "Get 5 % Extra OFF",
           "type": "PERCENT",
-          "discount": 800,
-          "maxDiscount": 20.01,
+          "discount": 200,
+          "maxDiscount": 5,
           "dealType": "REDDEAL"
         }
       ],
@@ -3523,7 +3508,7 @@
         "SLEEPER": [
           {
             "originalPrice": 3999,
-            "discountedPrice": 3199,
+            "discountedPrice": 3799,
             "count": 40
           }
         ]
@@ -3550,11 +3535,11 @@
       "programList": null,
       "offers": [
         {
-          "campaignCode": "ALLC_214dd41f",
-          "description": "Get 21 % Extra OFF",
+          "campaignCode": "ALLC_37a865b1",
+          "description": "Get 5 % Extra OFF",
           "type": "PERCENT",
-          "discount": 800,
-          "maxDiscount": 20.01,
+          "discount": 200,
+          "maxDiscount": 5,
           "dealType": "REDDEAL"
         }
       ],
@@ -4874,14 +4859,12 @@
         "SEATER": [
           {
             "originalPrice": 999,
-            "discountedPrice": 799,
             "count": 21
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1599,
-            "discountedPrice": 1279,
             "count": 13
           }
         ]
@@ -4901,19 +4884,17 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
       "offers": [
         {
-          "campaignCode": "ALLC_6838cc19",
-          "description": "Get 21 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 200,
-          "maxDiscount": 20.02,
-          "dealType": "REDDEAL"
+          "campaignCode": null,
+          "description": null,
+          "type": null,
+          "discount": null,
+          "maxDiscount": null,
+          "dealType": null
         }
       ],
       "busImageCount": -1,
