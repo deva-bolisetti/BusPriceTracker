@@ -6182,13 +6182,13 @@
       "boardingPointCount": 1,
       "droppingPointCount": 33,
       "fareList": [
-        1099,
+        1089,
         1229,
         1309,
         1409,
         1509
       ],
-      "minFare": 1099,
+      "minFare": 1089,
       "maxFare": 1509,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
