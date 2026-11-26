@@ -234,20 +234,20 @@
       "boardingPointCount": 1,
       "droppingPointCount": 15,
       "fareList": [
-        3000,
-        3400
+        3450,
+        3910
       ],
-      "minFare": 3000,
-      "maxFare": 3400,
+      "minFare": 3450,
+      "maxFare": 3910,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 38,
+      "availableSeats": 36,
       "totalSeats": 42,
-      "availableWindowSeats": 22,
-      "availableSingleSeats": 11,
+      "availableWindowSeats": 20,
+      "availableSingleSeats": 9,
       "availableAisleSeats": 14,
-      "availableUpperSeats": 19,
-      "availableLowerSeats": 19,
+      "availableUpperSeats": 18,
+      "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "0",
@@ -257,7 +257,6 @@
       "rescheduleTime": 8,
       "campaignType": [
         37,
-        86,
         555
       ],
       "programList": [
@@ -8776,16 +8775,16 @@
       "boardingPointCount": 1,
       "droppingPointCount": 30,
       "fareList": [
-        898,
-        943,
-        1437,
-        1652,
-        1795,
-        1867,
-        2012
+        907,
+        953,
+        1452,
+        1670,
+        1815,
+        1888,
+        2033
       ],
-      "minFare": 898,
-      "maxFare": 2012,
+      "minFare": 907,
+      "maxFare": 2033,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 32,
