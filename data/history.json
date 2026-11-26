@@ -12276,6 +12276,107 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59818208,
+      "operatorId": 33145,
+      "travelsName": "SVR Tours and Travels",
+      "routeId": 59818208,
+      "serviceId": "156",
+      "serviceName": "Srikakulam - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/33145.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        9,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 22:00:00",
+      "arrivalTime": "2026-12-02 07:35:00",
+      "journeyDurationMin": 575,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 22:00:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Bachupally",
+      "droppingPointId": 91917,
+      "boardingPointCount": 1,
+      "droppingPointCount": 12,
+      "fareList": [
+        1990,
+        2090,
+        2190,
+        2290
+      ],
+      "minFare": 1990,
+      "maxFare": 2290,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 1990,
+            "count": 25
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 2190,
+            "count": 5
+          }
+        ]
+      },
+      "availableSeats": 30,
+      "totalSeats": 37,
+      "availableWindowSeats": 17,
+      "availableSingleSeats": 9,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 15,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": 0.3518078224094139,
+      "perzScore": 0.3518078224094139,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Bachupally",
+        "bpId": 26333104,
+        "dpId": 26333187
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 22:00:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 59714161,
       "operatorId": 34656,
       "travelsName": "KBS Xpress",
@@ -12725,17 +12826,17 @@
       "droppingPointCount": 21,
       "fareList": [
         1336,
-        1638,
-        1719,
-        1801,
-        2129,
-        2251,
-        2928,
-        3459,
-        3592
+        1600,
+        1680,
+        1760,
+        2080,
+        2200,
+        2861,
+        3381,
+        3512
       ],
       "minFare": 1336,
-      "maxFare": 3592,
+      "maxFare": 3512,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
@@ -12746,7 +12847,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2129,
+            "originalPrice": 2080,
             "count": 17
           }
         ]
