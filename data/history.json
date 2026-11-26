@@ -2255,14 +2255,14 @@
       },
       "inventoryTags": null,
       "departureTime": "2026-12-01 18:45:00",
-      "arrivalTime": "2026-12-02 05:00:00",
-      "journeyDurationMin": 615,
+      "arrivalTime": "2026-12-02 07:00:00",
+      "journeyDurationMin": 735,
       "dateOfJourney": "2026-12-01",
       "firstBpTime": "2026-12-01 19:00:00",
       "boardingPoint": "Tuni",
       "boardingPointId": null,
-      "droppingPoint": "Choutuppal",
-      "droppingPointId": 95358,
+      "droppingPoint": "Patancheru",
+      "droppingPointId": 68029,
       "boardingPointCount": 2,
       "droppingPointCount": 37,
       "fareList": [
@@ -6324,8 +6324,8 @@
         1719,
         1719,
         1959,
+        2029,
         2079,
-        2229,
         2309,
         2539,
         2649
@@ -7647,10 +7647,9 @@
       "boardingPointCount": 1,
       "droppingPointCount": 32,
       "fareList": [
-        1855,
-        1855,
         1964,
         2164,
+        2183,
         2291,
         2292,
         2401,
@@ -7658,13 +7657,13 @@
         2673,
         2800
       ],
-      "minFare": 1855,
+      "minFare": 1964,
       "maxFare": 2800,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1855,
+            "originalPrice": 1964,
             "count": 21
           }
         ],
@@ -7677,7 +7676,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -8730,8 +8729,8 @@
         1669,
         1767,
         1947,
-        1964,
         2061,
+        2062,
         2160,
         2291,
         2405,
@@ -9284,8 +9283,8 @@
         1909,
         1909,
         2179,
+        2249,
         2309,
-        2359,
         2559,
         2689,
         2819
@@ -11248,11 +11247,10 @@
         1189,
         1319,
         1389,
-        1909,
-        1909,
         2179,
         2249,
         2309,
+        2359,
         2559,
         2689,
         2819
@@ -11267,22 +11265,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 2179,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2249,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -12419,8 +12417,8 @@
         1909,
         1909,
         2179,
+        2249,
         2309,
-        2359,
         2559,
         2689,
         2819
@@ -14964,12 +14962,11 @@
         1319,
         1389,
         1449,
-        1909,
-        1909,
-        1909,
         2029,
         2139,
         2179,
+        2249,
+        2359,
         2429,
         2559,
         2689,
@@ -14987,7 +14984,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1909,
+            "originalPrice": 2029,
             "count": 10
           }
         ],
@@ -15000,7 +14997,7 @@
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -16327,9 +16324,9 @@
       "droppingPointCount": 50,
       "fareList": [
         1855,
+        1855,
         2164,
         2183,
-        2292,
         2401,
         2546,
         2673,
@@ -16354,7 +16351,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 20,
+      "availableWindowSeats": 19,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
