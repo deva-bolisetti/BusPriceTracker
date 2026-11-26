@@ -1065,11 +1065,11 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 59890529,
+      "id": 59893003,
       "operatorId": 35061,
       "travelsName": "Varalakshmi Tours and Travels",
-      "routeId": 59890529,
-      "serviceId": "123",
+      "routeId": 59893003,
+      "serviceId": "125",
       "serviceName": "VISAKHAPATNAM TO HYDERABAD",
       "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35061.png",
       "busType": "A/C Sleeper (2+1)",
@@ -6418,11 +6418,10 @@
         1079,
         1189,
         1309,
-        1719,
-        1719,
         1959,
         2029,
         2079,
+        2229,
         2309,
         2539,
         2649
@@ -6437,22 +6436,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1719,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 1959,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2029,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -7744,23 +7743,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 32,
       "fareList": [
+        1855,
+        1855,
         1964,
         2164,
         2183,
         2291,
-        2292,
         2401,
         2546,
         2673,
         2800
       ],
-      "minFare": 1964,
+      "minFare": 1855,
       "maxFare": 2800,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1964,
+            "originalPrice": 1855,
             "count": 21
           }
         ],
@@ -7773,7 +7773,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 20,
+      "availableWindowSeats": 19,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -8822,10 +8822,9 @@
       "boardingPointCount": 1,
       "droppingPointCount": 31,
       "fareList": [
-        1669,
-        1669,
         1767,
         1947,
+        1964,
         2061,
         2062,
         2160,
@@ -8833,13 +8832,13 @@
         2405,
         2520
       ],
-      "minFare": 1669,
+      "minFare": 1767,
       "maxFare": 2520,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SLEEPER": [
           {
-            "originalPrice": 1669,
+            "originalPrice": 1767,
             "count": 21
           }
         ],
@@ -8852,7 +8851,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -9377,11 +9376,10 @@
         1189,
         1319,
         1389,
-        1909,
-        1909,
         2179,
         2249,
         2309,
+        2359,
         2559,
         2689,
         2819
@@ -9396,22 +9394,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 2179,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2249,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -11344,8 +11342,9 @@
         1189,
         1319,
         1389,
+        1909,
+        1909,
         2179,
-        2249,
         2309,
         2359,
         2559,
@@ -11362,22 +11361,22 @@
             "count": 22
           }
         ],
-        "SINGLE_SLEEPER": [
+        "SLEEPER": [
           {
-            "originalPrice": 2179,
+            "originalPrice": 1909,
             "count": 10
           }
         ],
-        "SLEEPER": [
+        "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2249,
+            "originalPrice": 2179,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -12511,11 +12510,10 @@
         1189,
         1319,
         1389,
-        1909,
-        1909,
         2179,
         2249,
         2309,
+        2359,
         2559,
         2689,
         2819
@@ -12530,22 +12528,22 @@
             "count": 22
           }
         ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
         "SINGLE_SLEEPER": [
           {
             "originalPrice": 2179,
+            "count": 10
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 2249,
             "count": 10
           }
         ]
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -15059,8 +15057,8 @@
         1319,
         1389,
         1449,
-        2029,
-        2139,
+        1909,
+        1909,
         2179,
         2249,
         2359,
@@ -15081,7 +15079,7 @@
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2029,
+            "originalPrice": 1909,
             "count": 10
           }
         ],
@@ -15094,7 +15092,7 @@
       },
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -16421,9 +16419,9 @@
       "droppingPointCount": 50,
       "fareList": [
         1855,
-        1855,
         2164,
         2183,
+        2292,
         2401,
         2546,
         2673,
@@ -16448,7 +16446,7 @@
       },
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
