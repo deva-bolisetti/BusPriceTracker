@@ -447,11 +447,10 @@
       "amenities": [
         10,
         7,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -801,27 +800,27 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1410,
-        1500,
-        1600,
-        2060,
-        2240,
-        2370,
-        2490
+        1450,
+        1540,
+        1640,
+        2080,
+        2260,
+        2390,
+        2510
       ],
-      "minFare": 1410,
-      "maxFare": 2490,
+      "minFare": 1450,
+      "maxFare": 2510,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1410,
+            "originalPrice": 1450,
             "count": 18
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 2060,
+            "originalPrice": 2080,
             "count": 17
           }
         ]
@@ -1504,33 +1503,33 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1320,
         1360,
-        1430,
-        1930,
-        2030,
-        2230,
-        2400
+        1400,
+        1470,
+        1950,
+        2050,
+        2250,
+        2420
       ],
-      "minFare": 1320,
-      "maxFare": 2400,
+      "minFare": 1360,
+      "maxFare": 2420,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 1320,
+            "originalPrice": 1360,
             "count": 32
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1930,
+            "originalPrice": 1950,
             "count": 10
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 2400,
+            "originalPrice": 2420,
             "count": 4
           }
         ]
@@ -2741,11 +2740,10 @@
       "viaRoute": null,
       "amenities": [
         9,
-        7,
-        19
+        7
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -2938,10 +2936,11 @@
         9,
         10,
         26,
-        86
+        86,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -3575,9 +3574,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -4303,11 +4304,10 @@
         5,
         7,
         86,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -5979,11 +5979,10 @@
         5,
         7,
         9,
-        10,
-        19
+        10
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -6628,29 +6627,23 @@
         "SEATER": [
           {
             "originalPrice": 1299,
-            "count": 16
+            "count": 15
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 1999,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 6
+            "count": 12
           }
         ]
       },
-      "availableSeats": 28,
+      "availableSeats": 27,
       "totalSeats": 41,
-      "availableWindowSeats": 15,
-      "availableSingleSeats": 6,
-      "availableAisleSeats": 10,
-      "availableUpperSeats": 9,
-      "availableLowerSeats": 19,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 27,
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "0",
@@ -7012,25 +7005,44 @@
       "boardingPointCount": 1,
       "droppingPointCount": 16,
       "fareList": [
-        894.29
+        894.29,
+        988.57,
+        1036.19,
+        1598.1,
+        1693.33,
+        1788.57,
+        1883.81
       ],
       "minFare": 894.29,
-      "maxFare": 894.29,
+      "maxFare": 1883.81,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 894.29
+            "originalPrice": 894.29,
+            "count": 23
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1598.1,
+            "count": 20
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 1883.81,
+            "count": 2
           }
         ]
       },
       "availableSeats": 45,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "totalSeats": 48,
+      "availableWindowSeats": 26,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 17,
+      "availableUpperSeats": 16,
+      "availableLowerSeats": 29,
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "23",
@@ -7079,11 +7091,10 @@
         10,
         26,
         7,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7208,10 +7219,11 @@
         27,
         47,
         62,
-        86
+        86,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7331,23 +7343,23 @@
         "SEATER": [
           {
             "originalPrice": 1600,
-            "count": 22
+            "count": 18
           }
         ],
         "SLEEPER": [
           {
             "originalPrice": 2200,
-            "count": 24
+            "count": 19
           }
         ]
       },
-      "availableSeats": 46,
+      "availableSeats": 37,
       "totalSeats": 46,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 46,
+      "availableLowerSeats": 37,
       "isSeatLayoutAvailable": true,
       "rating": 4.8,
       "numberOfReviews": "0",
@@ -7940,10 +7952,11 @@
         10,
         9,
         26,
-        86
+        86,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -8355,11 +8368,10 @@
       "amenities": [
         10,
         7,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -9140,25 +9152,37 @@
       "boardingPointCount": 1,
       "droppingPointCount": 22,
       "fareList": [
-        703.81
+        703.81,
+        751.43,
+        846.67,
+        893.33,
+        894.29,
+        941.9
       ],
       "minFare": 703.81,
-      "maxFare": 703.81,
+      "maxFare": 941.9,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
-        "SEATER": [
+        "SLEEPER": [
           {
-            "originalPrice": 703.81
+            "originalPrice": 703.81,
+            "count": 19
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 893.33,
+            "count": 8
           }
         ]
       },
       "availableSeats": 27,
-      "totalSeats": 27,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "totalSeats": 36,
+      "availableWindowSeats": 19,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 8,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
       "isSeatLayoutAvailable": true,
       "rating": 4.5,
       "numberOfReviews": "22",
@@ -9873,11 +9897,10 @@
         5,
         7,
         86,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -10357,36 +10380,36 @@
       "boardingPointCount": 1,
       "droppingPointCount": 30,
       "fareList": [
-        898,
-        943,
-        1438,
-        1653,
-        1797,
-        1869,
-        2013
+        901,
+        946,
+        1442,
+        1657,
+        1802,
+        1875,
+        2019
       ],
-      "minFare": 898,
-      "maxFare": 2013,
+      "minFare": 901,
+      "maxFare": 2019,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 898,
-            "discountedPrice": 898,
+            "originalPrice": 901,
+            "discountedPrice": 901,
             "count": 15
           }
         ],
         "SLEEPER": [
           {
-            "originalPrice": 1438,
-            "discountedPrice": 1438,
+            "originalPrice": 1442,
+            "discountedPrice": 1442,
             "count": 9
           }
         ],
         "SINGLE_SLEEPER": [
           {
-            "originalPrice": 1797,
-            "discountedPrice": 1797,
+            "originalPrice": 1802,
+            "discountedPrice": 1802,
             "count": 8
           }
         ]
@@ -10555,9 +10578,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -12187,10 +12212,11 @@
         9,
         10,
         86,
-        26
+        26,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -12390,9 +12416,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -13971,10 +13999,11 @@
         5,
         7,
         86,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
