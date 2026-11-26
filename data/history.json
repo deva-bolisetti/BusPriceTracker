@@ -241,13 +241,13 @@
       "maxFare": 3910,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 36,
+      "availableSeats": 37,
       "totalSeats": 42,
-      "availableWindowSeats": 20,
-      "availableSingleSeats": 9,
+      "availableWindowSeats": 21,
+      "availableSingleSeats": 10,
       "availableAisleSeats": 14,
       "availableUpperSeats": 18,
-      "availableLowerSeats": 18,
+      "availableLowerSeats": 19,
       "isSeatLayoutAvailable": true,
       "rating": 4.1,
       "numberOfReviews": "0",
@@ -257,6 +257,7 @@
       "rescheduleTime": 8,
       "campaignType": [
         37,
+        86,
         555
       ],
       "programList": [
@@ -1986,6 +1987,7 @@
       "campaignType": [
         16,
         999901,
+        86,
         15
       ],
       "programList": null,
@@ -2721,6 +2723,103 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 38611859,
+      "operatorId": 33369,
+      "travelsName": "SRI SAI KARTHIKEYA TRAVELS",
+      "routeId": 38611859,
+      "serviceId": "SCH26899M",
+      "serviceName": "SKT-01R REG",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/33369.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        7,
+        9,
+        10,
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 19:00:00",
+      "arrivalTime": "2026-12-02 04:30:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 19:00:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Choutuppal",
+      "droppingPointId": 95358,
+      "boardingPointCount": 2,
+      "droppingPointCount": 34,
+      "fareList": [
+        2999
+      ],
+      "minFare": 2999,
+      "maxFare": 2999,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 40,
+      "totalSeats": 41,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 25,
+      "isSeatLayoutAvailable": true,
+      "rating": 4.5,
+      "numberOfReviews": "35",
+      "busScore": 1.503210572915835,
+      "perzScore": 1.503210572915835,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        999901,
+        86,
+        7,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "ALLC_ab04c4b4",
+          "description": "Get INR 100.0 Extra OFF",
+          "type": "FLAT",
+          "discount": null,
+          "maxDiscount": 100,
+          "dealType": "FEMALE"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Beeramguda",
+        "bpId": 26622669,
+        "dpId": 26628000
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 19:00:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 13995364,
       "operatorId": 19504,
       "travelsName": "KKaveri Travels",
@@ -3053,6 +3152,7 @@
       "campaignType": [
         16,
         999901,
+        86,
         15
       ],
       "programList": null,
@@ -6230,94 +6330,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 20:05:00",
-      "arrivalTime": "2026-12-02 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        2399,
-        2499
-      ],
-      "minFare": 2399,
-      "maxFare": 2499,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {},
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.505829633321565,
-      "perzScore": 0.505829633321565,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 58653207,
       "operatorId": 20551,
       "travelsName": "Sri Keerthana Sai Travels",
@@ -6414,6 +6426,94 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:10:0",
+          "serviceStartTime": "2026-12-01 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 20:05:00",
+      "arrivalTime": "2026-12-02 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        2399,
+        2499
+      ],
+      "minFare": 2399,
+      "maxFare": 2499,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.505829633321565,
+      "perzScore": 0.505829633321565,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 20:05:00"
         }
       ],
@@ -8691,16 +8791,16 @@
       "boardingPointCount": 1,
       "droppingPointCount": 30,
       "fareList": [
-        907,
-        953,
-        1452,
-        1670,
-        1815,
-        1888,
-        2033
+        829,
+        870,
+        1327,
+        1525,
+        1657,
+        1725,
+        1858
       ],
-      "minFare": 907,
-      "maxFare": 2033,
+      "minFare": 829,
+      "maxFare": 1858,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 32,
@@ -11564,24 +11664,25 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1549,
-        1689,
-        1759,
-        1909,
-        2139,
-        2299
+        1569,
+        1709,
+        1789,
+        1919,
+        1939,
+        2179,
+        2329
       ],
-      "minFare": 1549,
-      "maxFare": 2299,
+      "minFare": 1569,
+      "maxFare": 2329,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 30,
+      "availableSeats": 29,
       "totalSeats": 41,
       "availableWindowSeats": 18,
       "availableSingleSeats": 10,
-      "availableAisleSeats": 10,
+      "availableAisleSeats": 9,
       "availableUpperSeats": 15,
-      "availableLowerSeats": 15,
+      "availableLowerSeats": 14,
       "isSeatLayoutAvailable": true,
       "rating": 4.9,
       "numberOfReviews": "50",
@@ -11832,14 +11933,14 @@
       "boardingPointCount": 1,
       "droppingPointCount": 17,
       "fareList": [
-        1149,
-        1609,
-        1939,
-        2099,
-        2259
+        1049,
+        1469,
+        1769,
+        1909,
+        2059
       ],
-      "minFare": 1149,
-      "maxFare": 2259,
+      "minFare": 1049,
+      "maxFare": 2059,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 38,
@@ -13588,14 +13689,14 @@
       "boardingPointCount": 1,
       "droppingPointCount": 17,
       "fareList": [
-        1729,
-        1909,
-        2079,
-        2249,
-        2429
+        1819,
+        1999,
+        2179,
+        2369,
+        2549
       ],
-      "minFare": 1729,
-      "maxFare": 2429,
+      "minFare": 1819,
+      "maxFare": 2549,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 26,
