@@ -6882,25 +6882,44 @@
       "boardingPointCount": 1,
       "droppingPointCount": 16,
       "fareList": [
-        894.29
+        894.29,
+        988.57,
+        1036.19,
+        1598.1,
+        1693.33,
+        1788.57,
+        1883.81
       ],
       "minFare": 894.29,
-      "maxFare": 894.29,
+      "maxFare": 1883.81,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
         "SEATER": [
           {
-            "originalPrice": 894.29
+            "originalPrice": 894.29,
+            "count": 23
+          }
+        ],
+        "SLEEPER": [
+          {
+            "originalPrice": 1598.1,
+            "count": 20
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 1883.81,
+            "count": 2
           }
         ]
       },
       "availableSeats": 45,
-      "totalSeats": 45,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "totalSeats": 48,
+      "availableWindowSeats": 26,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 17,
+      "availableUpperSeats": 16,
+      "availableLowerSeats": 29,
       "isSeatLayoutAvailable": true,
       "rating": 3.9,
       "numberOfReviews": "23",
@@ -9010,25 +9029,37 @@
       "boardingPointCount": 1,
       "droppingPointCount": 22,
       "fareList": [
-        703.81
+        703.81,
+        751.43,
+        846.67,
+        893.33,
+        894.29,
+        941.9
       ],
       "minFare": 703.81,
-      "maxFare": 703.81,
+      "maxFare": 941.9,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
-        "SEATER": [
+        "SLEEPER": [
           {
-            "originalPrice": 703.81
+            "originalPrice": 703.81,
+            "count": 17
+          }
+        ],
+        "SINGLE_SLEEPER": [
+          {
+            "originalPrice": 893.33,
+            "count": 8
           }
         ]
       },
       "availableSeats": 25,
-      "totalSeats": 25,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "totalSeats": 36,
+      "availableWindowSeats": 18,
+      "availableSingleSeats": 11,
+      "availableAisleSeats": 7,
+      "availableUpperSeats": 11,
+      "availableLowerSeats": 14,
       "isSeatLayoutAvailable": true,
       "rating": 4.7,
       "numberOfReviews": "24",
