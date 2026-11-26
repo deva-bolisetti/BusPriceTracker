@@ -52,14 +52,7 @@
       "minFare": 2199,
       "maxFare": 2399,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 27
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 27,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -159,26 +152,7 @@
       "minFare": 1440,
       "maxFare": 2660,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1440,
-            "count": 29
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1950,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2660,
-            "count": 3
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 54,
       "availableWindowSeats": 22,
@@ -266,14 +240,7 @@
       "minFare": 3000,
       "maxFare": 3400,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 38
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 42,
       "availableWindowSeats": 22,
@@ -369,20 +336,7 @@
       "minFare": 1550,
       "maxFare": 2500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1550,
-            "count": 29
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2500,
-            "count": 11
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 55,
       "availableWindowSeats": 23,
@@ -479,26 +433,7 @@
       "minFare": 1649,
       "maxFare": 2549,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1649,
-            "count": 27
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2349,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2549,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 55,
       "availableWindowSeats": 25,
@@ -588,26 +523,7 @@
       "minFare": 1999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 24
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2599,
-            "count": 12
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2799,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -695,26 +611,7 @@
       "minFare": 1749,
       "maxFare": 2599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1749,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2549,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 49,
       "availableWindowSeats": 19,
@@ -811,20 +708,7 @@
       "minFare": 1460,
       "maxFare": 2570,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1460,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2130,
-            "count": 17
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 49,
       "availableWindowSeats": null,
@@ -915,26 +799,7 @@
       "minFare": 1299,
       "maxFare": 2299,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1299,
-            "count": 21
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1990,
-            "count": 9
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -1019,14 +884,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 5000,
-            "count": 24
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 40,
       "availableWindowSeats": 12,
@@ -1106,14 +964,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": null,
@@ -1198,14 +1049,7 @@
       "minFare": 2875,
       "maxFare": 2990,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2875,
-            "count": 29
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 35,
       "availableWindowSeats": 17,
@@ -1299,26 +1143,7 @@
       "minFare": 2149,
       "maxFare": 3199,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2149,
-            "count": 9
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2949,
-            "count": 16
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3149,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 43,
       "availableWindowSeats": 19,
@@ -1401,20 +1226,7 @@
       "minFare": 1600,
       "maxFare": 2500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1600,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2000,
-            "count": 22
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 45,
       "totalSeats": 45,
       "availableWindowSeats": null,
@@ -1515,26 +1327,7 @@
       "minFare": 1370,
       "maxFare": 2420,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1370,
-            "count": 32
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1950,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2420,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 46,
       "totalSeats": 54,
       "availableWindowSeats": 26,
@@ -1623,14 +1416,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 30
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 31,
       "availableWindowSeats": 17,
@@ -1713,14 +1499,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "count": 39
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 40,
       "availableWindowSeats": 23,
@@ -1810,29 +1589,7 @@
       "minFare": 1499,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1499,
-            "discountedPrice": 1349,
-            "count": 16
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "discountedPrice": 2249,
-            "count": 16
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "discountedPrice": 2699,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 44,
       "availableWindowSeats": 20,
@@ -1933,26 +1690,7 @@
       "minFare": 1499,
       "maxFare": 3099,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1499,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2899,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 48,
       "availableWindowSeats": 22,
@@ -2035,15 +1773,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 5000,
-            "discountedPrice": 4500,
-            "count": 40
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 41,
       "availableWindowSeats": null,
@@ -2146,26 +1876,7 @@
       "minFare": 999,
       "maxFare": 1599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 999,
-            "count": 19
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1499,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1599,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 46,
       "availableWindowSeats": 18,
@@ -2245,15 +1956,7 @@
       "minFare": 3999,
       "maxFare": 3999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3999,
-            "discountedPrice": 3799,
-            "count": 40
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -2349,29 +2052,7 @@
       "minFare": 1499,
       "maxFare": 1999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1499,
-            "discountedPrice": 1349,
-            "count": 19
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1888,
-            "discountedPrice": 1699,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1999,
-            "discountedPrice": 1799,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 46,
       "availableWindowSeats": 18,
@@ -2464,26 +2145,7 @@
       "minFare": 1199,
       "maxFare": 1999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1199,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1899,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 46,
       "availableWindowSeats": 16,
@@ -2565,14 +2227,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3000,
-            "count": 32
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -2662,20 +2317,7 @@
       "minFare": 1999,
       "maxFare": 3099,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2899,
-            "count": 15
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 27,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -2756,14 +2398,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3000,
-            "count": 30
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 46,
       "availableWindowSeats": 17,
@@ -2852,20 +2487,7 @@
       "minFare": 1999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 17
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "count": 18
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -2948,26 +2570,7 @@
       "minFare": 1999,
       "maxFare": 2899,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 16
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2699,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2799,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 41,
       "availableWindowSeats": 16,
@@ -3057,15 +2660,7 @@
       "minFare": 1907,
       "maxFare": 3531,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1907,
-            "discountedPrice": 1669,
-            "count": 34
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -3161,15 +2756,7 @@
       "minFare": 2999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "discountedPrice": 2999,
-            "count": 40
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 41,
       "availableWindowSeats": 23,
@@ -3268,26 +2855,7 @@
       "minFare": 1890,
       "maxFare": 2500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1890,
-            "count": 16
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2400,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2500,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 44,
       "availableWindowSeats": 21,
@@ -3376,26 +2944,7 @@
       "minFare": 990,
       "maxFare": 1550,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 990,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1440,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1550,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 45,
       "availableWindowSeats": 18,
@@ -3483,26 +3032,7 @@
       "minFare": 999,
       "maxFare": 1599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 999,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1399,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1499,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -3591,15 +3121,7 @@
       "minFare": 3999,
       "maxFare": 3999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3999,
-            "discountedPrice": 3799,
-            "count": 40
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -3696,26 +3218,7 @@
       "minFare": 2550,
       "maxFare": 2990,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2550,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2890,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2950,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 26,
       "totalSeats": 41,
       "availableWindowSeats": 15,
@@ -3799,15 +3302,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 5000,
-            "discountedPrice": 4750,
-            "count": 40
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 41,
       "availableWindowSeats": 23,
@@ -3908,26 +3403,7 @@
       "minFare": 1899,
       "maxFare": 3099,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1899,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2899,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 41,
       "availableWindowSeats": 19,
@@ -4006,15 +3482,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 5000,
-            "discountedPrice": 4750,
-            "count": 30
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -4113,20 +3581,7 @@
       "minFare": 1590,
       "maxFare": 2699,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1590,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2599,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 45,
       "availableWindowSeats": null,
@@ -4207,22 +3662,7 @@
       "minFare": 999,
       "maxFare": 1350,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 999,
-            "discountedPrice": 949,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1350,
-            "discountedPrice": 1283,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 52,
       "availableWindowSeats": 18,
@@ -4325,20 +3765,7 @@
       "minFare": 1349,
       "maxFare": 1649,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1349,
-            "count": 24
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1449,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 37,
       "availableWindowSeats": 19,
@@ -4440,20 +3867,7 @@
       "minFare": 1320,
       "maxFare": 1921,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1320,
-            "count": 30
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1784,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 37,
       "availableWindowSeats": 22,
@@ -4545,26 +3959,7 @@
       "minFare": 1080,
       "maxFare": 1860,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1080,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1630,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1750,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 49,
       "availableWindowSeats": 22,
@@ -4643,15 +4038,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "discountedPrice": 3800,
-            "count": 30
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -4748,20 +4135,7 @@
       "minFare": 1399,
       "maxFare": 2099,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1399,
-            "count": 13
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1899,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 25,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -4854,20 +4228,7 @@
       "minFare": 1899,
       "maxFare": 2599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1899,
-            "count": 9
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "count": 20
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 42,
       "availableWindowSeats": null,
@@ -4951,20 +4312,7 @@
       "minFare": 999,
       "maxFare": 1699,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 999,
-            "count": 21
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1599,
-            "count": 13
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 49,
       "availableWindowSeats": null,
@@ -5070,20 +4418,7 @@
       "minFare": 1499,
       "maxFare": 1869,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1499,
-            "count": 31
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1869,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -5172,26 +4507,7 @@
       "minFare": 1199,
       "maxFare": 1899,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1199,
-            "count": 8
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1699,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 6
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 20,
       "totalSeats": 41,
       "availableWindowSeats": 11,
@@ -5274,26 +4590,7 @@
       "minFare": 1199,
       "maxFare": 1899,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1199,
-            "count": 10
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1699,
-            "count": 4
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 18,
       "totalSeats": 41,
       "availableWindowSeats": 10,
@@ -5383,20 +4680,7 @@
       "minFare": 2200,
       "maxFare": 2500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2200,
-            "count": 20
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2500,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 38,
       "availableWindowSeats": 20,
@@ -5481,20 +4765,7 @@
       "minFare": 2999,
       "maxFare": 3666,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2999,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3500,
-            "count": 17
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 49,
       "availableWindowSeats": null,
@@ -5576,14 +4847,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 5000,
-            "count": 33
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 50,
       "availableWindowSeats": 19,
@@ -5677,26 +4941,7 @@
       "minFare": 1199,
       "maxFare": 2049,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1199,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1699,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1999,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 49,
       "availableWindowSeats": 22,
@@ -5786,20 +5031,7 @@
       "minFare": 2000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2000,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 49,
       "availableWindowSeats": 15,
@@ -5882,20 +5114,7 @@
       "minFare": 2000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2000,
-            "count": 16
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 16
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -5980,20 +5199,7 @@
       "minFare": 1599,
       "maxFare": 2900,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1599,
-            "count": 17
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2600,
-            "count": 15
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 43,
       "availableWindowSeats": null,
@@ -6083,26 +5289,7 @@
       "minFare": 1300,
       "maxFare": 2190,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1300,
-            "count": 25
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1890,
-            "count": 12
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2190,
-            "count": 6
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 43,
       "totalSeats": 49,
       "availableWindowSeats": 25,
@@ -6191,26 +5378,7 @@
       "minFare": 1199,
       "maxFare": 1999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1199,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1899,
-            "count": 6
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 26,
       "totalSeats": 41,
       "availableWindowSeats": 14,
@@ -6290,44 +5458,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 22,
       "fareList": [
-        1079,
-        1189,
-        1309,
-        1719,
-        1719,
+        1049,
+        1169,
+        1279,
         1959,
+        2029,
         2079,
         2229,
         2309,
         2539,
         2649
       ],
-      "minFare": 1079,
+      "minFare": 1049,
       "maxFare": 2649,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1079,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1719,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1959,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -6404,20 +5552,7 @@
       "minFare": 2000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2000,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 49,
       "availableWindowSeats": 13,
@@ -6500,20 +5635,7 @@
       "minFare": 1299,
       "maxFare": 2299,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1299,
-            "count": 15
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1999,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 27,
       "totalSeats": 41,
       "availableWindowSeats": null,
@@ -6601,14 +5723,7 @@
       "minFare": 5000,
       "maxFare": 5000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 5000,
-            "count": 26
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 26,
       "totalSeats": 37,
       "availableWindowSeats": 15,
@@ -6697,14 +5812,7 @@
       "minFare": 1673,
       "maxFare": 2342,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1673,
-            "count": 35
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 37,
       "availableWindowSeats": null,
@@ -6795,14 +5903,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 28
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 28,
       "totalSeats": 37,
       "availableWindowSeats": 16,
@@ -6893,26 +5994,7 @@
       "minFare": 894.29,
       "maxFare": 1883.81,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 894.29,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1598.1,
-            "count": 20
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1883.81,
-            "count": 2
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 45,
       "totalSeats": 48,
       "availableWindowSeats": 26,
@@ -7001,14 +6083,7 @@
       "minFare": 4999,
       "maxFare": 4999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4999,
-            "count": 44
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 44,
       "totalSeats": 49,
       "availableWindowSeats": 25,
@@ -7097,29 +6172,7 @@
       "minFare": 1499,
       "maxFare": 2899,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1499,
-            "discountedPrice": 1349,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "discountedPrice": 2249,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2699,
-            "discountedPrice": 2429,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -7216,20 +6269,7 @@
       "minFare": 1600,
       "maxFare": 2500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1600,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2200,
-            "count": 19
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 37,
       "totalSeats": 46,
       "availableWindowSeats": null,
@@ -7319,20 +6359,7 @@
       "minFare": 1109,
       "maxFare": 1509,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1109,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1509,
-            "count": 3
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 25,
       "totalSeats": 31,
       "availableWindowSeats": 13,
@@ -7360,101 +6387,6 @@
         "destinationDp": "Ramachandra Puram",
         "bpId": 21807833,
         "dpId": 21808555
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 20:05:00",
-      "arrivalTime": "2026-12-02 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        2399,
-        2499
-      ],
-      "minFare": 2399,
-      "maxFare": 2499,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 27
-          }
-        ]
-      },
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.505829633321565,
-      "perzScore": 0.505829633321565,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
       },
       "boReqParams": [
         {
@@ -7520,26 +6452,7 @@
       "minFare": 890,
       "maxFare": 1490,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 890,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1290,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1390,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -7581,6 +6494,94 @@
         {
           "isAvailReschedule": true,
           "reschedulePolicy": "8:-1:10:0",
+          "serviceStartTime": "2026-12-01 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 20:05:00",
+      "arrivalTime": "2026-12-02 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        2399,
+        2499
+      ],
+      "minFare": 2399,
+      "maxFare": 2499,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.505829633321565,
+      "perzScore": 0.505829633321565,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 20:05:00"
         }
       ],
@@ -7632,34 +6633,21 @@
       "boardingPointCount": 1,
       "droppingPointCount": 32,
       "fareList": [
-        1855,
-        1855,
-        1964,
+        1813,
+        1813,
+        1919,
         2164,
-        2183,
+        2239,
         2291,
-        2401,
+        2346,
         2546,
         2673,
         2800
       ],
-      "minFare": 1855,
+      "minFare": 1813,
       "maxFare": 2800,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1855,
-            "count": 21
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2164,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 34,
       "availableWindowSeats": 19,
@@ -7755,20 +6743,7 @@
       "minFare": 1249,
       "maxFare": 1799,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1249,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1686,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 37,
       "availableWindowSeats": 17,
@@ -7861,14 +6836,7 @@
       "minFare": 2399,
       "maxFare": 2499,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -7959,26 +6927,7 @@
       "minFare": 1549,
       "maxFare": 2349,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1549,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2149,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2299,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 49,
       "availableWindowSeats": 17,
@@ -8066,20 +7015,7 @@
       "minFare": 1099,
       "maxFare": 1599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1099,
-            "count": 4
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1499,
-            "count": 11
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 15,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -8174,20 +7110,7 @@
       "minFare": 1859,
       "maxFare": 2539,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1859,
-            "count": 34
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2539,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 41,
       "availableWindowSeats": 24,
@@ -8278,26 +7201,7 @@
       "minFare": 2700,
       "maxFare": 3500,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2700,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3300,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 51,
       "availableWindowSeats": 22,
@@ -8391,20 +7295,7 @@
       "minFare": 1550,
       "maxFare": 1969,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1550,
-            "count": 28
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1969,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -8497,22 +7388,7 @@
       "minFare": 2170,
       "maxFare": 3055,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2170,
-            "discountedPrice": 1899,
-            "count": 13
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2856,
-            "discountedPrice": 2499,
-            "count": 17
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 53,
       "availableWindowSeats": 18,
@@ -8615,26 +7491,7 @@
       "minFare": 1899,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1899,
-            "count": 19
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2899,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 37,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -8716,20 +7573,7 @@
       "minFare": 1999,
       "maxFare": 2499,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 12
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 30
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 42,
       "availableWindowSeats": null,
@@ -8812,36 +7656,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 31,
       "fareList": [
-        1767,
+        1631,
+        1631,
+        1727,
+        1919,
         1947,
-        1964,
         2061,
-        2062,
-        2160,
+        2110,
         2291,
         2405,
         2520
       ],
-      "minFare": 1767,
+      "minFare": 1631,
       "maxFare": 2520,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1767,
-            "count": 21
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1947,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 20,
+      "availableWindowSeats": 19,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -8929,15 +7761,7 @@
       "minFare": 1907,
       "maxFare": 3531,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1907,
-            "discountedPrice": 1669,
-            "count": 34
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -9040,20 +7864,7 @@
       "minFare": 703.81,
       "maxFare": 941.9,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 703.81,
-            "count": 17
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 893.33,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 25,
       "totalSeats": 36,
       "availableWindowSeats": 18,
@@ -9156,20 +7967,7 @@
       "minFare": 1191,
       "maxFare": 1990,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1191,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1770,
-            "count": 11
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -9274,26 +8072,7 @@
       "minFare": 2214,
       "maxFare": 4260,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2214,
-            "count": 34
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3276,
-            "count": 16
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 4096,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 57,
       "totalSeats": 59,
       "availableWindowSeats": 34,
@@ -9375,44 +8154,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 21,
       "fareList": [
-        1189,
-        1319,
-        1389,
-        1909,
-        1909,
+        1169,
+        1289,
+        1359,
         2179,
+        2249,
         2309,
         2359,
         2559,
         2689,
         2819
       ],
-      "minFare": 1189,
+      "minFare": 1169,
       "maxFare": 2819,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1189,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2179,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -9502,26 +8261,7 @@
       "minFare": 1490,
       "maxFare": 2390,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1490,
-            "count": 28
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2190,
-            "count": 9
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2390,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 41,
       "totalSeats": 52,
       "availableWindowSeats": 26,
@@ -9615,14 +8355,7 @@
       "minFare": 4999,
       "maxFare": 4999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4999,
-            "count": 48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -9705,20 +8438,7 @@
       "minFare": 3999,
       "maxFare": 4999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3999,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 4999,
-            "count": 18
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 49,
       "availableWindowSeats": 19,
@@ -9805,14 +8525,7 @@
       "minFare": 2999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -9903,14 +8616,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3000,
-            "count": 37
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 37,
       "totalSeats": 49,
       "availableWindowSeats": 21,
@@ -9998,14 +8704,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4000,
-            "count": 25
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 25,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -10083,14 +8782,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4000,
-            "count": 1
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 1,
       "totalSeats": 37,
       "availableWindowSeats": null,
@@ -10182,29 +8874,7 @@
       "minFare": 898,
       "maxFare": 2012,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 898,
-            "discountedPrice": 898,
-            "count": 15
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1437,
-            "discountedPrice": 1437,
-            "count": 9
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1795,
-            "discountedPrice": 1795,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 48,
       "availableWindowSeats": 18,
@@ -10304,20 +8974,7 @@
       "minFare": 2399,
       "maxFare": 2599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 8
-          }
-        ],
-        "SEATER": [
-          {
-            "originalPrice": 2599,
-            "count": 24
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 43,
       "availableWindowSeats": 17,
@@ -10402,29 +9059,7 @@
       "minFare": 2490,
       "maxFare": 3480,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2490,
-            "discountedPrice": 2241,
-            "count": 19
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2980,
-            "discountedPrice": 2682,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3280,
-            "discountedPrice": 2952,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 49,
       "availableWindowSeats": 23,
@@ -10528,20 +9163,7 @@
       "minFare": 1034,
       "maxFare": 2069,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1034,
-            "count": 26
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2069,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 37,
       "availableWindowSeats": 17,
@@ -10636,26 +9258,7 @@
       "minFare": 1599,
       "maxFare": 2599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1599,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 5
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 17
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 44,
       "totalSeats": 47,
       "availableWindowSeats": 24,
@@ -10738,14 +9341,7 @@
       "minFare": 2999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2999,
-            "count": 34
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 42,
       "availableWindowSeats": 22,
@@ -10835,14 +9431,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 28
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 28,
       "totalSeats": 37,
       "availableWindowSeats": 15,
@@ -10935,26 +9524,7 @@
       "minFare": 2099,
       "maxFare": 3599,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2099,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3399,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3499,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 49,
       "availableWindowSeats": 21,
@@ -11039,26 +9609,7 @@
       "minFare": 2700,
       "maxFare": 3200,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2700,
-            "count": 30
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3200,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 45,
       "totalSeats": 55,
       "availableWindowSeats": 27,
@@ -11151,26 +9702,7 @@
       "minFare": 1590,
       "maxFare": 2490,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1590,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2190,
-            "count": 11
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2390,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -11255,41 +9787,22 @@
       "boardingPointCount": 1,
       "droppingPointCount": 50,
       "fareList": [
-        1189,
-        1319,
-        1389,
+        1169,
+        1289,
+        1359,
         1909,
         1909,
         2179,
-        2249,
         2309,
+        2359,
         2559,
         2689,
         2819
       ],
-      "minFare": 1189,
+      "minFare": 1169,
       "maxFare": 2819,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1189,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2179,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
       "availableWindowSeats": 24,
@@ -11373,29 +9886,7 @@
       "minFare": 2250,
       "maxFare": 3250,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2250,
-            "discountedPrice": 2025,
-            "count": 19
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2800,
-            "discountedPrice": 2520,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2950,
-            "discountedPrice": 2655,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 49,
       "availableWindowSeats": 23,
@@ -11488,20 +9979,7 @@
       "minFare": 1799,
       "maxFare": 2499,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1799,
-            "count": 11
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 24
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 43,
       "availableWindowSeats": null,
@@ -11598,20 +10076,7 @@
       "minFare": 1460,
       "maxFare": 1909,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1460,
-            "count": 27
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 41,
       "availableWindowSeats": 18,
@@ -11706,14 +10171,7 @@
       "minFare": 1859,
       "maxFare": 1859,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1859,
-            "count": 39
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 41,
       "availableWindowSeats": 24,
@@ -11805,26 +10263,7 @@
       "minFare": 1090,
       "maxFare": 1790,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1090,
-            "count": 14
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1490,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1690,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 39,
       "availableWindowSeats": 16,
@@ -11914,20 +10353,7 @@
       "minFare": 2482,
       "maxFare": 3299,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2482,
-            "count": 29
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3099,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -12023,20 +10449,7 @@
       "minFare": 1490,
       "maxFare": 2190,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1490,
-            "count": 18
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1890,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 28,
       "totalSeats": 41,
       "availableWindowSeats": 17,
@@ -12125,20 +10538,7 @@
       "minFare": 1990,
       "maxFare": 2290,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1990,
-            "count": 25
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2190,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 37,
       "availableWindowSeats": 17,
@@ -12222,20 +10622,7 @@
       "minFare": 2390,
       "maxFare": 3690,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2390,
-            "count": 23
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3000,
-            "count": 22
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 45,
       "totalSeats": 45,
       "availableWindowSeats": null,
@@ -12316,15 +10703,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3000,
-            "discountedPrice": 2700,
-            "count": 41
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 41,
       "totalSeats": 41,
       "availableWindowSeats": 23,
@@ -12421,13 +10800,7 @@
       "minFare": 894.29,
       "maxFare": 894.29,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 894.29
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 40,
       "totalSeats": 40,
       "availableWindowSeats": null,
@@ -12510,44 +10883,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 38,
       "fareList": [
-        1189,
-        1319,
-        1389,
-        1909,
-        1909,
+        1169,
+        1289,
+        1359,
         2179,
+        2249,
         2309,
         2359,
         2559,
         2689,
         2819
       ],
-      "minFare": 1189,
+      "minFare": 1169,
       "maxFare": 2819,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1189,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2179,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -12641,20 +10994,7 @@
       "minFare": 1288,
       "maxFare": 3241,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1288,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1920,
-            "count": 17
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 49,
       "availableWindowSeats": null,
@@ -12747,20 +11087,7 @@
       "minFare": 2699,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2699,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2899,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 26,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -12846,26 +11173,7 @@
       "minFare": 1390,
       "maxFare": 2190,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1390,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2090,
-            "count": 6
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2190,
-            "count": 3
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 46,
       "availableWindowSeats": 18,
@@ -12947,15 +11255,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "discountedPrice": 3800,
-            "count": 48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -13052,15 +11352,7 @@
       "minFare": 1281,
       "maxFare": 1776,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1281,
-            "discountedPrice": 1153,
-            "count": 29
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 37,
       "availableWindowSeats": null,
@@ -13176,26 +11468,7 @@
       "minFare": 1263,
       "maxFare": 4152,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1263,
-            "count": 34
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1845,
-            "count": 16
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3998,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 57,
       "totalSeats": 59,
       "availableWindowSeats": 36,
@@ -13283,20 +11556,7 @@
       "minFare": 1700,
       "maxFare": 1900,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1700,
-            "count": 32
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1900,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 37,
       "totalSeats": 42,
       "availableWindowSeats": 23,
@@ -13389,26 +11649,7 @@
       "minFare": 1999,
       "maxFare": 2999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1999,
-            "count": 24
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2599,
-            "count": 12
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2799,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -13502,20 +11743,7 @@
       "minFare": 1549,
       "maxFare": 2299,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1549,
-            "count": 21
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2139,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 41,
       "availableWindowSeats": 18,
@@ -13597,14 +11825,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "count": 48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -13696,26 +11917,7 @@
       "minFare": 1899,
       "maxFare": 2699,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1899,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2499,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2599,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 49,
       "availableWindowSeats": 19,
@@ -13808,26 +12010,7 @@
       "minFare": 1149,
       "maxFare": 2259,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1149,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1609,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2099,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 49,
       "availableWindowSeats": 21,
@@ -13913,14 +12096,7 @@
       "minFare": 4999,
       "maxFare": 4999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4999,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -14013,20 +12189,7 @@
       "minFare": 1721,
       "maxFare": 2121,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1721,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2021,
-            "count": 11
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 41,
       "availableWindowSeats": 20,
@@ -14120,15 +12283,7 @@
       "minFare": 2512,
       "maxFare": 3055,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2512,
-            "discountedPrice": 2198,
-            "count": 25
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 25,
       "totalSeats": 42,
       "availableWindowSeats": 14,
@@ -14221,15 +12376,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4000,
-            "discountedPrice": 3800,
-            "count": 42
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 42,
       "availableWindowSeats": null,
@@ -14329,26 +12476,7 @@
       "minFare": 1299,
       "maxFare": 1990,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1299,
-            "count": 17
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1799,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1990,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 43,
       "availableWindowSeats": 17,
@@ -14438,26 +12566,7 @@
       "minFare": 1299,
       "maxFare": 2399,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1299,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2399,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 49,
       "availableWindowSeats": 21,
@@ -14550,20 +12659,7 @@
       "minFare": 1690,
       "maxFare": 2190,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1690,
-            "count": 21
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2090,
-            "count": 6
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 27,
       "totalSeats": 37,
       "availableWindowSeats": 16,
@@ -14658,20 +12754,7 @@
       "minFare": 1821,
       "maxFare": 2321,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1821,
-            "count": 22
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2221,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 32,
       "totalSeats": 41,
       "availableWindowSeats": 19,
@@ -14762,20 +12845,7 @@
       "minFare": 2249,
       "maxFare": 2499,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2249,
-            "count": 20
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2349,
-            "count": 4
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -14859,14 +12929,7 @@
       "minFare": 1800,
       "maxFare": 1900,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1800,
-            "count": 24
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -14960,20 +13023,7 @@
       "minFare": 1999,
       "maxFare": 2300,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1999,
-            "count": 25
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2200,
-            "count": 5
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 30,
       "totalSeats": 37,
       "availableWindowSeats": 17,
@@ -15062,12 +13112,11 @@
         1319,
         1389,
         1449,
-        1909,
-        1909,
-        1909,
         2029,
         2139,
         2179,
+        2249,
+        2359,
         2429,
         2559,
         2689,
@@ -15076,29 +13125,10 @@
       "minFare": 1129,
       "maxFare": 2819,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1129,
-            "count": 22
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 1909,
-            "count": 10
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2179,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 24,
+      "availableWindowSeats": 25,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -15187,20 +13217,7 @@
       "minFare": 1690,
       "maxFare": 1990,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1690,
-            "count": 20
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 1890,
-            "count": 13
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 33,
       "totalSeats": 41,
       "availableWindowSeats": 21,
@@ -15290,14 +13307,7 @@
       "minFare": 9000,
       "maxFare": 9000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 9000,
-            "count": 39
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 39,
       "totalSeats": 42,
       "availableWindowSeats": 23,
@@ -15387,20 +13397,7 @@
       "minFare": 2999,
       "maxFare": 3699,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2999,
-            "count": 20
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3499,
-            "count": 9
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 29,
       "totalSeats": 38,
       "availableWindowSeats": 20,
@@ -15490,26 +13487,7 @@
       "minFare": 2499,
       "maxFare": 3999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2499,
-            "count": 20
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3499,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3899,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -15597,14 +13575,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4000,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -15703,20 +13674,7 @@
       "minFare": 1792,
       "maxFare": 4181,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1792,
-            "count": 28
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 4033,
-            "count": 7
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 41,
       "availableWindowSeats": 21,
@@ -15807,20 +13765,7 @@
       "minFare": 1729,
       "maxFare": 2429,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1729,
-            "count": 23
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2429,
-            "count": 3
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 26,
       "totalSeats": 37,
       "availableWindowSeats": 14,
@@ -15905,15 +13850,7 @@
       "minFare": 3000,
       "maxFare": 3000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 3000,
-            "discountedPrice": 3000,
-            "count": 38
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 38,
       "totalSeats": 40,
       "availableWindowSeats": 22,
@@ -16012,13 +13949,7 @@
       "minFare": 770.48,
       "maxFare": 770.48,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 770.48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 34,
       "availableWindowSeats": null,
@@ -16112,26 +14043,7 @@
       "minFare": 2490,
       "maxFare": 3490,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 2490,
-            "count": 24
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 3190,
-            "count": 12
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 3390,
-            "count": 12
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -16218,26 +14130,7 @@
       "minFare": 1549,
       "maxFare": 2299,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 1549,
-            "count": 18
-          }
-        ],
-        "SLEEPER": [
-          {
-            "originalPrice": 2199,
-            "count": 8
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2299,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 34,
       "totalSeats": 49,
       "availableWindowSeats": 19,
@@ -16318,15 +14211,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "discountedPrice": 3600,
-            "count": 48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -16421,8 +14306,8 @@
       "droppingPointCount": 50,
       "fareList": [
         1855,
-        1855,
         2164,
+        2183,
         2292,
         2401,
         2546,
@@ -16432,23 +14317,10 @@
       "minFare": 1855,
       "maxFare": 2800,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 1855,
-            "count": 21
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2164,
-            "count": 10
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 19,
+      "availableWindowSeats": 20,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -16526,14 +14398,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "count": 35
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 35,
       "totalSeats": 49,
       "availableWindowSeats": 20,
@@ -16613,14 +14478,7 @@
       "minFare": 4000,
       "maxFare": 4000,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SEATER": [
-          {
-            "originalPrice": 4000,
-            "count": 48
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 48,
       "totalSeats": 49,
       "availableWindowSeats": 28,
@@ -16707,14 +14565,7 @@
       "minFare": 4999,
       "maxFare": 4999,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 4999,
-            "count": 36
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 36,
       "totalSeats": 37,
       "availableWindowSeats": 21,
@@ -16803,20 +14654,7 @@
       "minFare": 2450,
       "maxFare": 2650,
       "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {
-        "SLEEPER": [
-          {
-            "originalPrice": 2450,
-            "count": 16
-          }
-        ],
-        "SINGLE_SLEEPER": [
-          {
-            "originalPrice": 2650,
-            "count": 8
-          }
-        ]
-      },
+      "fareDetailsBySeatType": {},
       "availableSeats": 24,
       "totalSeats": 38,
       "availableWindowSeats": 16,
