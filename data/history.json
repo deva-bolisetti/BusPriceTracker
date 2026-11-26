@@ -1065,6 +1065,93 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59890529,
+      "operatorId": 35061,
+      "travelsName": "Varalakshmi Tours and Travels",
+      "routeId": 59890529,
+      "serviceId": "123",
+      "serviceName": "VISAKHAPATNAM TO HYDERABAD",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/35061.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 01:25:00",
+      "arrivalTime": "2026-12-01 08:45:00",
+      "journeyDurationMin": 440,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 01:25:00",
+      "boardingPoint": "Tuni Bypas",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 17,
+      "fareList": [
+        3000
+      ],
+      "minFare": 3000,
+      "maxFare": 3000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {
+        "SLEEPER": [
+          {
+            "originalPrice": 3000,
+            "count": 36
+          }
+        ]
+      },
+      "availableSeats": 36,
+      "totalSeats": 37,
+      "availableWindowSeats": null,
+      "availableSingleSeats": null,
+      "availableAisleSeats": null,
+      "availableUpperSeats": null,
+      "availableLowerSeats": 36,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": -1,
+      "perzScore": -1,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni Bypas",
+        "destinationDp": "Miyapur",
+        "bpId": 27830869,
+        "dpId": 28258529
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 01:25:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 55253194,
       "operatorId": 36562,
       "travelsName": "Greenline",
@@ -4029,16 +4116,26 @@
       "boardingPointCount": 1,
       "droppingPointCount": 19,
       "fareList": [
-        3000
+        1590,
+        1649,
+        1699,
+        2599,
+        2699
       ],
-      "minFare": 3000,
-      "maxFare": 3000,
+      "minFare": 1590,
+      "maxFare": 2699,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {
+        "SEATER": [
+          {
+            "originalPrice": 1590,
+            "count": 22
+          }
+        ],
         "SLEEPER": [
           {
-            "originalPrice": 3000,
-            "count": 31
+            "originalPrice": 2599,
+            "count": 9
           }
         ]
       },
