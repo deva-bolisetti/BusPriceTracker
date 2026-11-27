@@ -708,16 +708,16 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1410,
-        1500,
-        1580,
-        2190,
-        2380,
-        2510,
-        2630
+        1370,
+        1450,
+        1530,
+        2160,
+        2350,
+        2480,
+        2600
       ],
-      "minFare": 1410,
-      "maxFare": 2630,
+      "minFare": 1370,
+      "maxFare": 2600,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 34,
@@ -3387,97 +3387,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 57569643,
-      "operatorId": 36475,
-      "travelsName": "Sri Bhavani Tours and Travels",
-      "routeId": 57569643,
-      "serviceId": "11",
-      "serviceName": "Rayagada - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 19:00:00",
-      "arrivalTime": "2026-12-02 07:30:00",
-      "journeyDurationMin": 750,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 19:00:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Bharat Nagar",
-      "droppingPointId": 79228,
-      "boardingPointCount": 1,
-      "droppingPointCount": 20,
-      "fareList": [
-        5000
-      ],
-      "minFare": 5000,
-      "maxFare": 5000,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {},
-      "availableSeats": 40,
-      "totalSeats": 41,
-      "availableWindowSeats": 23,
-      "availableSingleSeats": 10,
-      "availableAisleSeats": 14,
-      "availableUpperSeats": 15,
-      "availableLowerSeats": 25,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.4,
-      "numberOfReviews": "0",
-      "busScore": 0.31857967367076795,
-      "perzScore": 0.31857967367076795,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_8544942a",
-          "description": "Get 5 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 250,
-          "maxDiscount": 5,
-          "dealType": "REDDEAL"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 29141806,
-        "dpId": 29141658
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 19:00:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 54054732,
       "operatorId": 36475,
       "travelsName": "Sri Bhavani Tours and Travels",
@@ -3527,6 +3436,97 @@
       "availableAisleSeats": 10,
       "availableUpperSeats": 12,
       "availableLowerSeats": 18,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.4,
+      "numberOfReviews": "0",
+      "busScore": 0.31857967367076795,
+      "perzScore": 0.31857967367076795,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        999901,
+        86,
+        15
+      ],
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": "ALLC_8544942a",
+          "description": "Get 5 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 250,
+          "maxDiscount": 5,
+          "dealType": "REDDEAL"
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 29141806,
+        "dpId": 29141658
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 19:00:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 57569643,
+      "operatorId": 36475,
+      "travelsName": "Sri Bhavani Tours and Travels",
+      "routeId": 57569643,
+      "serviceId": "11",
+      "serviceName": "Rayagada - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/36475.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 19:00:00",
+      "arrivalTime": "2026-12-02 07:30:00",
+      "journeyDurationMin": 750,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 19:00:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Bharat Nagar",
+      "droppingPointId": 79228,
+      "boardingPointCount": 1,
+      "droppingPointCount": 20,
+      "fareList": [
+        5000
+      ],
+      "minFare": 5000,
+      "maxFare": 5000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 40,
+      "totalSeats": 41,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 25,
       "isSeatLayoutAvailable": true,
       "rating": 3.4,
       "numberOfReviews": "0",
@@ -4415,91 +4415,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 35195266,
-      "operatorId": 31549,
-      "travelsName": "KTR TRAVELS",
-      "routeId": 35195266,
-      "serviceId": "6",
-      "serviceName": "Hadubhangi - Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/31549.png",
-      "busType": "Non A/C Seater / Sleeper (2+1)",
-      "busTypeId": 94,
-      "isAc": false,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 19:25:00",
-      "arrivalTime": "2026-12-02 05:00:00",
-      "journeyDurationMin": 575,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 20:50:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "Ramoji Film City",
-      "droppingPointId": 201481,
-      "boardingPointCount": 1,
-      "droppingPointCount": 20,
-      "fareList": [
-        1199,
-        1699,
-        1799,
-        1899
-      ],
-      "minFare": 1199,
-      "maxFare": 1899,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {},
-      "availableSeats": 20,
-      "totalSeats": 41,
-      "availableWindowSeats": 11,
-      "availableSingleSeats": 6,
-      "availableAisleSeats": 6,
-      "availableUpperSeats": 9,
-      "availableLowerSeats": 11,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.8,
-      "numberOfReviews": "0",
-      "busScore": 0.6224150901263283,
-      "perzScore": 0.6224150901263283,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 25471457,
-        "dpId": 25471484
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 20:50:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 33560338,
       "operatorId": 31549,
       "travelsName": "KTR TRAVELS",
@@ -4579,6 +4494,91 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 19:00:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 35195266,
+      "operatorId": 31549,
+      "travelsName": "KTR TRAVELS",
+      "routeId": 35195266,
+      "serviceId": "6",
+      "serviceName": "Hadubhangi - Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/31549.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        19
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": true,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 19:25:00",
+      "arrivalTime": "2026-12-02 05:00:00",
+      "journeyDurationMin": 575,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 20:50:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "Ramoji Film City",
+      "droppingPointId": 201481,
+      "boardingPointCount": 1,
+      "droppingPointCount": 20,
+      "fareList": [
+        1199,
+        1699,
+        1799,
+        1899
+      ],
+      "minFare": 1199,
+      "maxFare": 1899,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 20,
+      "totalSeats": 41,
+      "availableWindowSeats": 11,
+      "availableSingleSeats": 6,
+      "availableAisleSeats": 6,
+      "availableUpperSeats": 9,
+      "availableLowerSeats": 11,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.8,
+      "numberOfReviews": "0",
+      "busScore": 0.6224150901263283,
+      "perzScore": 0.6224150901263283,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Tuni",
+        "destinationDp": "Miyapur",
+        "bpId": 25471457,
+        "dpId": 25471484
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 20:50:00"
         }
       ],
       "source": "Tuni",
@@ -7156,10 +7156,10 @@
       "fareList": [
         1550,
         1619,
-        1729
+        1689
       ],
       "minFare": 1550,
-      "maxFare": 1729,
+      "maxFare": 1689,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 33,
@@ -8737,13 +8737,13 @@
       "fareList": [
         800,
         1200,
-        1358,
-        1476,
-        1535,
-        1652
+        1301,
+        1414,
+        1471,
+        1584
       ],
       "minFare": 800,
-      "maxFare": 1652,
+      "maxFare": 1584,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 32,
@@ -10037,12 +10037,14 @@
       "boardingPointCount": 1,
       "droppingPointCount": 28,
       "fareList": [
-        1689,
-        1739,
-        1859
+        1509,
+        1549,
+        1619,
+        1719,
+        1839
       ],
-      "minFare": 1689,
-      "maxFare": 1859,
+      "minFare": 1509,
+      "maxFare": 1839,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 39,
@@ -10854,18 +10856,18 @@
       "boardingPointCount": 2,
       "droppingPointCount": 21,
       "fareList": [
-        1288,
-        1398,
-        1456,
-        1524,
-        1818,
-        1906,
-        2479,
-        2928,
-        3042
+        1256,
+        1308,
+        1362,
+        1426,
+        1701,
+        1783,
+        2319,
+        2741,
+        2846
       ],
-      "minFare": 1288,
-      "maxFare": 3042,
+      "minFare": 1256,
+      "maxFare": 2846,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 35,
