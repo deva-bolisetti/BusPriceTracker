@@ -539,10 +539,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 11 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 200,
+          "maxDiscount": 10.01,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -717,7 +729,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 35,
       "isSeatLayoutAvailable": true,
-      "rating": 3.2,
+      "rating": 3.1,
       "numberOfReviews": "0",
       "busScore": 0.297665815143144,
       "perzScore": 0.297665815143144,
@@ -2514,7 +2526,7 @@
       "availableUpperSeats": 13,
       "availableLowerSeats": 22,
       "isSeatLayoutAvailable": true,
-      "rating": 4.6,
+      "rating": 4.5,
       "numberOfReviews": "0",
       "busScore": 0.882150073071865,
       "perzScore": 0.882150073071865,
@@ -3424,7 +3436,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 31,
       "isSeatLayoutAvailable": true,
-      "rating": 3.1,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -4813,10 +4825,21 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLC_7af6dcb",
+          "description": "Get 11 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 300,
+          "maxDiscount": 10.01,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -4991,10 +5014,21 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLC_7af6dcb",
+          "description": "Get 11 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 120,
+          "maxDiscount": 10.01,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -6054,10 +6088,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 10 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 500,
+          "maxDiscount": 10,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -6341,6 +6387,94 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 35347178,
+      "operatorId": 30499,
+      "travelsName": "Ranadeep Travels",
+      "routeId": 35347178,
+      "serviceId": "12",
+      "serviceName": "Visakhapatnam to Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
+      "busType": "A/C Sleeper (2+1)",
+      "busTypeId": 54,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        5,
+        7,
+        10,
+        9,
+        26,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 20:05:00",
+      "arrivalTime": "2026-12-02 05:35:00",
+      "journeyDurationMin": 570,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 20:05:00",
+      "boardingPoint": "TUNI BYPASS",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 38,
+      "fareList": [
+        2399,
+        2499
+      ],
+      "minFare": 2399,
+      "maxFare": 2499,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 27,
+      "totalSeats": 37,
+      "availableWindowSeats": 14,
+      "availableSingleSeats": 7,
+      "availableAisleSeats": 9,
+      "availableUpperSeats": 13,
+      "availableLowerSeats": 14,
+      "isSeatLayoutAvailable": true,
+      "rating": 3.9,
+      "numberOfReviews": "0",
+      "busScore": 0.5053111872556065,
+      "perzScore": 0.5053111872556065,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "TUNI BYPASS",
+        "destinationDp": "Tolichowki",
+        "bpId": 25636289,
+        "dpId": 30501506
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 20:05:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 58653207,
       "operatorId": 20551,
       "travelsName": "Sri Keerthana Sai Travels",
@@ -6444,94 +6578,6 @@
       "destination": "Hyderabad"
     },
     {
-      "id": 35347178,
-      "operatorId": 30499,
-      "travelsName": "Ranadeep Travels",
-      "routeId": 35347178,
-      "serviceId": "12",
-      "serviceName": "Visakhapatnam to Hyderabad",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/30499.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        5,
-        7,
-        10,
-        9,
-        26,
-        86
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "3,2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 20:05:00",
-      "arrivalTime": "2026-12-02 05:35:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 20:05:00",
-      "boardingPoint": "TUNI BYPASS",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 38,
-      "fareList": [
-        2399,
-        2499
-      ],
-      "minFare": 2399,
-      "maxFare": 2499,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {},
-      "availableSeats": 27,
-      "totalSeats": 37,
-      "availableWindowSeats": 14,
-      "availableSingleSeats": 7,
-      "availableAisleSeats": 9,
-      "availableUpperSeats": 13,
-      "availableLowerSeats": 14,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.9,
-      "numberOfReviews": "0",
-      "busScore": 0.5053111872556065,
-      "perzScore": 0.5053111872556065,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        86
-      ],
-      "programList": null,
-      "offers": [],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "TUNI BYPASS",
-        "destinationDp": "Tolichowki",
-        "bpId": 25636289,
-        "dpId": 30501506
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 20:05:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
       "id": 17749248,
       "operatorId": 20437,
       "travelsName": "IntrCity SmartBus",
@@ -6576,8 +6622,9 @@
       "boardingPointCount": 1,
       "droppingPointCount": 32,
       "fareList": [
+        1241,
+        1241,
         1314,
-        1460,
         1473,
         1533,
         1559,
@@ -6586,13 +6633,13 @@
         1819,
         1906
       ],
-      "minFare": 1314,
+      "minFare": 1241,
       "maxFare": 1906,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 31,
       "totalSeats": 34,
-      "availableWindowSeats": 20,
+      "availableWindowSeats": 19,
       "availableSingleSeats": 10,
       "availableAisleSeats": 10,
       "availableUpperSeats": 14,
@@ -7515,8 +7562,8 @@
         1241,
         1241,
         1314,
+        1460,
         1473,
-        1533,
         1559,
         1606,
         1733,
@@ -8008,20 +8055,20 @@
       "boardingPointCount": 1,
       "droppingPointCount": 21,
       "fareList": [
-        919,
-        1019,
-        1069,
+        849,
+        949,
+        989,
+        1279,
+        1279,
         1489,
-        1489,
-        1729,
+        1509,
+        1569,
+        1749,
         1829,
-        1839,
-        2029,
-        2129,
-        2229
+        1919
       ],
-      "minFare": 919,
-      "maxFare": 2229,
+      "minFare": 849,
+      "maxFare": 1919,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 42,
@@ -8226,10 +8273,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 10 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 500,
+          "maxDiscount": 10,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -10023,10 +10082,12 @@
       "boardingPointCount": 1,
       "droppingPointCount": 28,
       "fareList": [
-        1859
+        1859,
+        1909,
+        2029
       ],
       "minFare": 1859,
-      "maxFare": 1859,
+      "maxFare": 2029,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 39,
@@ -10740,24 +10801,25 @@
       "boardingPointCount": 1,
       "droppingPointCount": 38,
       "fareList": [
-        919,
-        1019,
-        1069,
-        1729,
+        849,
+        949,
+        989,
+        1279,
+        1279,
+        1489,
+        1569,
+        1579,
         1749,
         1829,
-        1839,
-        2029,
-        2129,
-        2229
+        1919
       ],
-      "minFare": 919,
-      "maxFare": 2229,
+      "minFare": 849,
+      "maxFare": 1919,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 42,
       "totalSeats": 46,
-      "availableWindowSeats": 25,
+      "availableWindowSeats": 24,
       "availableSingleSeats": 10,
       "availableAisleSeats": 16,
       "availableUpperSeats": 15,
@@ -10860,7 +10922,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 35,
       "isSeatLayoutAvailable": true,
-      "rating": 4.3,
+      "rating": 3.9,
       "numberOfReviews": "0",
       "busScore": 0.5053111872556065,
       "perzScore": 0.5053111872556065,
@@ -11521,10 +11583,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 11 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 200,
+          "maxDiscount": 10.01,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -11968,10 +12042,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 10 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 500,
+          "maxDiscount": 10,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -13448,10 +13534,21 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLC_7af6dcb",
+          "description": "Get 10 % Extra OFF",
+          "type": "PERCENT",
+          "discount": 400,
+          "maxDiscount": 10,
+          "dealType": "REDDEAL"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -13716,8 +13813,8 @@
       "availableUpperSeats": 15,
       "availableLowerSeats": 23,
       "isSeatLayoutAvailable": true,
-      "rating": -1,
-      "numberOfReviews": "",
+      "rating": 3.7,
+      "numberOfReviews": "0",
       "busScore": 0.42565951103821237,
       "perzScore": 0.42565951103821237,
       "isRescheduled": null,
@@ -14444,10 +14541,22 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        86
+        999901,
+        3,
+        86,
+        15
       ],
       "programList": null,
-      "offers": [],
+      "offers": [
+        {
+          "campaignCode": "ALLE_e5082e99",
+          "description": "Get 10 % Extra OFF",
+          "type": "EARLYBIRD",
+          "discount": 500,
+          "maxDiscount": 10,
+          "dealType": "EARLYBIRD"
+        }
+      ],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
