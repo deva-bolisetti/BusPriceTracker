@@ -142,8 +142,8 @@
       "droppingPointCount": 18,
       "fareList": [
         1370,
-        1530,
-        1630,
+        1510,
+        1600,
         2120,
         2310,
         2590,
@@ -632,7 +632,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 22,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -712,22 +712,22 @@
         1460,
         1550,
         1630,
-        2090,
-        2260,
-        2390,
-        2510
+        2140,
+        2320,
+        2450,
+        2570
       ],
       "minFare": 1460,
-      "maxFare": 2510,
+      "maxFare": 2570,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 35,
+      "availableSeats": 34,
       "totalSeats": 49,
       "availableWindowSeats": null,
       "availableSingleSeats": null,
       "availableAisleSeats": null,
       "availableUpperSeats": null,
-      "availableLowerSeats": 35,
+      "availableLowerSeats": 34,
       "isSeatLayoutAvailable": true,
       "rating": 3.1,
       "numberOfReviews": "0",
@@ -1165,7 +1165,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 17,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -1992,7 +1992,7 @@
       "availableUpperSeats": null,
       "availableLowerSeats": 40,
       "isSeatLayoutAvailable": true,
-      "rating": 2.2,
+      "rating": 1.8,
       "numberOfReviews": "0",
       "busScore": 0.03543090735440767,
       "perzScore": 0.03543090735440767,
@@ -3799,13 +3799,13 @@
       "droppingPointCount": 32,
       "fareList": [
         1200,
-        1309,
-        1359,
-        1409,
-        1649
+        1459,
+        1509,
+        1559,
+        1799
       ],
       "minFare": 1200,
-      "maxFare": 1649,
+      "maxFare": 1799,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 32,
@@ -4825,21 +4825,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_7af6dcb",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 300,
-          "maxDiscount": 10.01,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -5014,21 +5003,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_7af6dcb",
-          "description": "Get 11 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 120,
-          "maxDiscount": 10.01,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -6333,14 +6311,14 @@
       "boardingPointCount": 1,
       "droppingPointCount": 33,
       "fareList": [
-        1079,
-        1229,
-        1309,
-        1409,
-        1509
+        929,
+        1039,
+        1139,
+        1239,
+        1339
       ],
-      "minFare": 1079,
-      "maxFare": 1509,
+      "minFare": 929,
+      "maxFare": 1339,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 25,
@@ -6918,7 +6896,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -6995,15 +6973,15 @@
       "boardingPointCount": 2,
       "droppingPointCount": 28,
       "fareList": [
-        1859,
-        1909,
-        1969,
-        2039,
-        2239,
-        2539
+        1489,
+        1539,
+        1599,
+        1669,
+        1869,
+        2169
       ],
-      "minFare": 1859,
-      "maxFare": 2539,
+      "minFare": 1489,
+      "maxFare": 2169,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 39,
@@ -12778,7 +12756,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 12,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -12862,7 +12840,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 12,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.25168901319641074,
       "perzScore": 0.25168901319641074,
@@ -13516,21 +13494,10 @@
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
-        999901,
-        86,
-        15
+        86
       ],
       "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLC_7af6dcb",
-          "description": "Get 10 % Extra OFF",
-          "type": "PERCENT",
-          "discount": 400,
-          "maxDiscount": 10,
-          "dealType": "REDDEAL"
-        }
-      ],
+      "offers": [],
       "busImageCount": -1,
       "rs555": null,
       "locationSearchParams": {
@@ -14077,7 +14044,7 @@
       "availableUpperSeats": 12,
       "availableLowerSeats": 22,
       "isSeatLayoutAvailable": true,
-      "rating": 3.3,
+      "rating": 3.2,
       "numberOfReviews": "0",
       "busScore": 0.3451163908744711,
       "perzScore": 0.3451163908744711,
@@ -14247,8 +14214,8 @@
         1089,
         1162,
         1379,
+        1453,
         1465,
-        1525,
         1598,
         1724,
         1810,
