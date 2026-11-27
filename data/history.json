@@ -767,10 +767,11 @@
         9,
         86,
         26,
-        10
+        10,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -1657,10 +1658,11 @@
         10,
         26,
         7,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -2299,10 +2301,11 @@
         7,
         10,
         86,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -2383,10 +2386,11 @@
       "viaRoute": null,
       "amenities": [
         9,
-        7
+        7,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -2551,11 +2555,9 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [
-        19
-      ],
+      "amenities": [],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -3286,11 +3288,9 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [
-        19
-      ],
+      "amenities": [],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -3659,10 +3659,11 @@
       "isDirectBus": null,
       "viaRoute": null,
       "amenities": [
-        7
+        7,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -3758,10 +3759,11 @@
         5,
         7,
         86,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -4587,9 +4589,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -5285,10 +5289,11 @@
         5,
         7,
         9,
-        10
+        10,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -6004,11 +6009,10 @@
         27,
         47,
         62,
-        86,
-        19
+        86
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -6745,11 +6749,10 @@
         10,
         9,
         26,
-        86,
-        19
+        86
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7109,10 +7112,11 @@
       "amenities": [
         10,
         7,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7226,13 +7230,14 @@
       "droppingPointCount": 28,
       "fareList": [
         1550,
-        1579,
-        1679,
-        1779,
-        1899
+        1569,
+        1619,
+        1719,
+        1819,
+        1939
       ],
       "minFare": 1550,
-      "maxFare": 1899,
+      "maxFare": 1939,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 33,
@@ -9886,9 +9891,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -11366,11 +11373,10 @@
         7,
         86,
         9,
-        91,
-        19
+        91
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -11916,11 +11922,10 @@
         5,
         7,
         86,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -13952,9 +13957,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -14392,9 +14399,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
