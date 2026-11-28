@@ -91,6 +91,103 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59994520,
+      "operatorId": 22309,
+      "travelsName": "Sai Ganesh Travels",
+      "routeId": 59994520,
+      "serviceId": "264",
+      "serviceName": "Visakhapatnam To Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/22309.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        10,
+        26,
+        7,
+        9,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 00:10:00",
+      "arrivalTime": "2026-12-01 09:10:00",
+      "journeyDurationMin": 540,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 00:10:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 2,
+      "droppingPointCount": 6,
+      "fareList": [
+        1899,
+        2799,
+        2899,
+        2999
+      ],
+      "minFare": 1899,
+      "maxFare": 2999,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 40,
+      "totalSeats": 41,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 25,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": -1,
+      "perzScore": -1,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": null,
+      "programList": null,
+      "offers": [
+        {
+          "campaignCode": null,
+          "description": null,
+          "type": null,
+          "discount": null,
+          "maxDiscount": null,
+          "dealType": null
+        }
+      ],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Payakaraopeta Bypass",
+        "destinationDp": "LB Nagar",
+        "bpId": 30252563,
+        "dpId": 23051678
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-12-01 00:10:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 52066926,
       "operatorId": 34660,
       "travelsName": "KALOSONA DREAMLINE",
@@ -400,10 +497,11 @@
       "amenities": [
         10,
         7,
-        9
+        9,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -935,6 +1033,94 @@
       "destination": "Hyderabad"
     },
     {
+      "id": 59994763,
+      "operatorId": 22309,
+      "travelsName": "Sai Ganesh Travels",
+      "routeId": 59994763,
+      "serviceId": "265",
+      "serviceName": "Visakhapatnam To Hyderabad",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/22309.png",
+      "busType": "Non A/C Seater / Sleeper (2+1)",
+      "busTypeId": 94,
+      "isAc": false,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [
+        10,
+        26,
+        7,
+        9,
+        86
+      ],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "3,2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 01:10:00",
+      "arrivalTime": "2026-12-01 10:10:00",
+      "journeyDurationMin": 540,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 01:10:00",
+      "boardingPoint": "Tuni",
+      "boardingPointId": null,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 2,
+      "droppingPointCount": 6,
+      "fareList": [
+        1899,
+        2799,
+        2899,
+        2999
+      ],
+      "minFare": 1899,
+      "maxFare": 2999,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 40,
+      "totalSeats": 41,
+      "availableWindowSeats": 23,
+      "availableSingleSeats": 10,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 15,
+      "availableLowerSeats": 25,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": -1,
+      "perzScore": -1,
+      "isRescheduled": true,
+      "rescheduleTime": 8,
+      "campaignType": null,
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Payakaraopeta Bypass",
+        "destinationDp": "LB Nagar",
+        "bpId": 30252563,
+        "dpId": 23051678
+      },
+      "boReqParams": [
+        {
+          "isAvailReschedule": true,
+          "reschedulePolicy": "8:-1:0:0",
+          "serviceStartTime": "2026-12-01 01:10:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
       "id": 59971651,
       "operatorId": 38158,
       "travelsName": "Sreehan Travels",
@@ -1151,11 +1337,11 @@
       "boardingPointCount": 1,
       "droppingPointCount": 5,
       "fareList": [
-        2750,
-        3000
+        2530,
+        2760
       ],
-      "minFare": 2750,
-      "maxFare": 3000,
+      "minFare": 2530,
+      "maxFare": 2760,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 29,
@@ -1426,21 +1612,21 @@
         1530,
         1590,
         1640,
-        2040,
-        2140,
-        2330,
-        2510
+        2090,
+        2190,
+        2390,
+        2570
       ],
       "minFare": 1530,
-      "maxFare": 2510,
+      "maxFare": 2570,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 41,
+      "availableSeats": 40,
       "totalSeats": 54,
-      "availableWindowSeats": 22,
-      "availableSingleSeats": 9,
+      "availableWindowSeats": 21,
+      "availableSingleSeats": 8,
       "availableAisleSeats": 14,
-      "availableUpperSeats": 13,
+      "availableUpperSeats": 12,
       "availableLowerSeats": 28,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
@@ -1578,11 +1764,10 @@
         10,
         26,
         7,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -1964,9 +2149,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -2407,11 +2594,10 @@
       "viaRoute": null,
       "amenities": [
         9,
-        7,
-        19
+        7
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -3310,9 +3496,11 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [],
+      "amenities": [
+        19
+      ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -5130,11 +5318,10 @@
         5,
         7,
         9,
-        10,
-        19
+        10
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -6179,10 +6366,11 @@
         27,
         47,
         62,
-        86
+        86,
+        19
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": null,
+      "isLiveTrackingAvailable": true,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7029,11 +7217,10 @@
         5,
         10,
         86,
-        4,
-        19
+        4
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -7218,11 +7405,10 @@
       "amenities": [
         10,
         7,
-        9,
-        19
+        9
       ],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -10070,11 +10256,9 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [
-        19
-      ],
+      "amenities": [],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
@@ -10289,22 +10473,23 @@
       "boardingPointCount": 1,
       "droppingPointCount": 28,
       "fareList": [
-        1479,
-        1529,
-        1599,
-        1699,
-        1819
+        1460,
+        1499,
+        1549,
+        1619,
+        1719,
+        1839
       ],
-      "minFare": 1479,
-      "maxFare": 1819,
+      "minFare": 1460,
+      "maxFare": 1839,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 37,
+      "availableSeats": 36,
       "totalSeats": 41,
       "availableWindowSeats": 23,
       "availableSingleSeats": 13,
-      "availableAisleSeats": 12,
-      "availableUpperSeats": 21,
+      "availableAisleSeats": 11,
+      "availableUpperSeats": 20,
       "availableLowerSeats": 16,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
@@ -12147,14 +12332,14 @@
       "boardingPointCount": 1,
       "droppingPointCount": 17,
       "fareList": [
-        949,
-        1329,
-        1599,
-        1729,
-        1869
+        959,
+        1349,
+        1609,
+        1749,
+        1879
       ],
-      "minFare": 949,
-      "maxFare": 1869,
+      "minFare": 959,
+      "maxFare": 1879,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 34,
@@ -12169,6 +12354,86 @@
       "numberOfReviews": "10",
       "busScore": 0.727810791371856,
       "perzScore": 0.727810791371856,
+      "isRescheduled": null,
+      "rescheduleTime": null,
+      "campaignType": [
+        86
+      ],
+      "programList": null,
+      "offers": [],
+      "busImageCount": -1,
+      "rs555": null,
+      "locationSearchParams": {
+        "isExactMatch": true,
+        "sourceBp": "Bus Stand",
+        "destinationDp": "Miyapur",
+        "bpId": 19821815,
+        "dpId": 28072245
+      },
+      "boReqParams": [
+        {
+          "reschedulePolicy": "",
+          "serviceStartTime": "2026-12-01 22:45:00"
+        }
+      ],
+      "source": "Tuni",
+      "destination": "Hyderabad"
+    },
+    {
+      "id": 59994674,
+      "operatorId": 19085,
+      "travelsName": "Vikram Travels",
+      "routeId": 59994674,
+      "serviceId": "SCH168F44C",
+      "serviceName": "444 SPL No Dinner Break",
+      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/19085.png",
+      "busType": "A/C Seater / Sleeper (2+1)",
+      "busTypeId": 4,
+      "isAc": true,
+      "isSleeper": true,
+      "isDirectBus": null,
+      "viaRoute": null,
+      "amenities": [],
+      "isPartialCancellationAllowed": true,
+      "isLiveTrackingAvailable": null,
+      "isMTicketEnabled": true,
+      "maxSeatsPerTransaction": 6,
+      "serviceNotes": {
+        "PETS": "1",
+        "CHILD": "1",
+        "LUG": "2,1"
+      },
+      "inventoryTags": null,
+      "departureTime": "2026-12-01 22:45:00",
+      "arrivalTime": "2026-12-02 07:20:00",
+      "journeyDurationMin": 515,
+      "dateOfJourney": "2026-12-01",
+      "firstBpTime": "2026-12-01 22:45:00",
+      "boardingPoint": "Bus Stand",
+      "boardingPointId": 66355,
+      "droppingPoint": "LB Nagar",
+      "droppingPointId": 79232,
+      "boardingPointCount": 1,
+      "droppingPointCount": 17,
+      "fareList": [
+        3000
+      ],
+      "minFare": 3000,
+      "maxFare": 3000,
+      "vendorCurrency": "INR",
+      "fareDetailsBySeatType": {},
+      "availableSeats": 48,
+      "totalSeats": 49,
+      "availableWindowSeats": 28,
+      "availableSingleSeats": 12,
+      "availableAisleSeats": 17,
+      "availableUpperSeats": 18,
+      "availableLowerSeats": 30,
+      "isSeatLayoutAvailable": true,
+      "rating": -1,
+      "numberOfReviews": "",
+      "busScore": -1,
+      "perzScore": -1,
       "isRescheduled": null,
       "rescheduleTime": null,
       "campaignType": [
@@ -13824,13 +14089,13 @@
       "droppingPointCount": 17,
       "fareList": [
         1209,
-        1239,
-        1349,
-        1469,
-        1579
+        1309,
+        1419,
+        1539,
+        1659
       ],
       "minFare": 1209,
-      "maxFare": 1579,
+      "maxFare": 1659,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 24,
@@ -14067,11 +14332,9 @@
       "isSleeper": true,
       "isDirectBus": null,
       "viaRoute": null,
-      "amenities": [
-        19
-      ],
+      "amenities": [],
       "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
+      "isLiveTrackingAvailable": null,
       "isMTicketEnabled": true,
       "maxSeatsPerTransaction": 6,
       "serviceNotes": {
