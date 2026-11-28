@@ -1527,25 +1527,24 @@
       "boardingPointCount": 1,
       "droppingPointCount": 18,
       "fareList": [
-        1570,
         1620,
         1670,
-        2030,
+        1720,
         2130,
         2330,
         2510
       ],
-      "minFare": 1570,
+      "minFare": 1620,
       "maxFare": 2510,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 39,
+      "availableSeats": 38,
       "totalSeats": 54,
       "availableWindowSeats": 21,
       "availableSingleSeats": 9,
-      "availableAisleSeats": 13,
-      "availableUpperSeats": 14,
-      "availableLowerSeats": 25,
+      "availableAisleSeats": 14,
+      "availableUpperSeats": 12,
+      "availableLowerSeats": 26,
       "isSeatLayoutAvailable": true,
       "rating": 4.2,
       "numberOfReviews": "0",
@@ -6388,10 +6387,12 @@
       "boardingPointCount": 1,
       "droppingPointCount": 20,
       "fareList": [
-        4999
+        1999,
+        2899,
+        2999
       ],
-      "minFare": 4999,
-      "maxFare": 4999,
+      "minFare": 1999,
+      "maxFare": 2999,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 44,
@@ -6418,10 +6419,10 @@
       "offers": [
         {
           "campaignCode": "ALLE_e5082e99",
-          "description": "Get 10 % Extra OFF",
+          "description": "Get 11 % Extra OFF",
           "type": "EARLYBIRD",
-          "discount": 500,
-          "maxDiscount": 10,
+          "discount": 200,
+          "maxDiscount": 10.01,
           "dealType": "EARLYBIRD"
         }
       ],
@@ -8670,10 +8671,12 @@
       "boardingPointCount": 1,
       "droppingPointCount": 14,
       "fareList": [
-        4999
+        1999,
+        2899,
+        2999
       ],
-      "minFare": 4999,
-      "maxFare": 4999,
+      "minFare": 1999,
+      "maxFare": 2999,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 48,
@@ -8703,10 +8706,10 @@
       "offers": [
         {
           "campaignCode": "ALLE_e5082e99",
-          "description": "Get 10 % Extra OFF",
+          "description": "Get 11 % Extra OFF",
           "type": "EARLYBIRD",
-          "discount": 500,
-          "maxDiscount": 10,
+          "discount": 200,
+          "maxDiscount": 10.01,
           "dealType": "EARLYBIRD"
         }
       ],
@@ -9377,22 +9380,22 @@
       "fareList": [
         800,
         1200,
-        1343,
-        1459,
-        1518,
+        1342,
+        1458,
+        1517,
         1634
       ],
       "minFare": 800,
       "maxFare": 1634,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 32,
+      "availableSeats": 31,
       "totalSeats": 48,
       "availableWindowSeats": 18,
       "availableSingleSeats": 8,
-      "availableAisleSeats": 12,
+      "availableAisleSeats": 11,
       "availableUpperSeats": 13,
-      "availableLowerSeats": 19,
+      "availableLowerSeats": 18,
       "isSeatLayoutAvailable": true,
       "rating": 4.6,
       "numberOfReviews": "50",
@@ -10555,12 +10558,12 @@
       "droppingPointCount": 22,
       "fareList": [
         1460,
-        1539,
-        1689,
-        1889
+        1499,
+        1649,
+        1849
       ],
       "minFare": 1460,
-      "maxFare": 1889,
+      "maxFare": 1849,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
       "availableSeats": 29,
@@ -14441,19 +14444,28 @@
       "boardingPointCount": 1,
       "droppingPointCount": 16,
       "fareList": [
-        770.48
+        770.48,
+        799.05,
+        827.62,
+        999.05,
+        1056.19,
+        1245.71,
+        1340.95,
+        1436.19,
+        1531.43,
+        1626.67
       ],
       "minFare": 770.48,
-      "maxFare": 770.48,
+      "maxFare": 1626.67,
       "vendorCurrency": "INR",
       "fareDetailsBySeatType": {},
-      "availableSeats": 27,
-      "totalSeats": 27,
-      "availableWindowSeats": null,
-      "availableSingleSeats": null,
-      "availableAisleSeats": null,
-      "availableUpperSeats": null,
-      "availableLowerSeats": null,
+      "availableSeats": 24,
+      "totalSeats": 36,
+      "availableWindowSeats": 16,
+      "availableSingleSeats": 11,
+      "availableAisleSeats": 8,
+      "availableUpperSeats": 9,
+      "availableLowerSeats": 15,
       "isSeatLayoutAvailable": true,
       "rating": 3.8,
       "numberOfReviews": "12",
@@ -15012,105 +15024,6 @@
         {
           "reschedulePolicy": "",
           "serviceStartTime": "2026-12-01 23:50:00"
-        }
-      ],
-      "source": "Tuni",
-      "destination": "Hyderabad"
-    },
-    {
-      "id": 53877759,
-      "operatorId": 29308,
-      "travelsName": "Shree Manikanta Travels",
-      "routeId": 53877759,
-      "serviceId": "181",
-      "serviceName": "VISAKHAPATNAM TO  HYDERABAD",
-      "operatorLogoUrl": "https://s3.rdbuz.com/images/ind/logo/29308.png",
-      "busType": "A/C Sleeper (2+1)",
-      "busTypeId": 54,
-      "isAc": true,
-      "isSleeper": true,
-      "isDirectBus": null,
-      "viaRoute": null,
-      "amenities": [
-        10,
-        26,
-        5,
-        9,
-        86,
-        19
-      ],
-      "isPartialCancellationAllowed": true,
-      "isLiveTrackingAvailable": true,
-      "isMTicketEnabled": true,
-      "maxSeatsPerTransaction": 6,
-      "serviceNotes": {
-        "PETS": "1",
-        "CHILD": "1",
-        "LUG": "2,1"
-      },
-      "inventoryTags": null,
-      "departureTime": "2026-12-01 23:50:00",
-      "arrivalTime": "2026-12-02 09:20:00",
-      "journeyDurationMin": 570,
-      "dateOfJourney": "2026-12-01",
-      "firstBpTime": "2026-12-01 21:00:00",
-      "boardingPoint": "Tuni",
-      "boardingPointId": null,
-      "droppingPoint": "LB Nagar",
-      "droppingPointId": 79232,
-      "boardingPointCount": 1,
-      "droppingPointCount": 14,
-      "fareList": [
-        4999
-      ],
-      "minFare": 4999,
-      "maxFare": 4999,
-      "vendorCurrency": "INR",
-      "fareDetailsBySeatType": {},
-      "availableSeats": 36,
-      "totalSeats": 37,
-      "availableWindowSeats": 21,
-      "availableSingleSeats": 11,
-      "availableAisleSeats": 11,
-      "availableUpperSeats": 18,
-      "availableLowerSeats": 18,
-      "isSeatLayoutAvailable": true,
-      "rating": 3.8,
-      "numberOfReviews": "0",
-      "busScore": 0.6213184197459357,
-      "perzScore": 0.6213184197459357,
-      "isRescheduled": null,
-      "rescheduleTime": null,
-      "campaignType": [
-        999901,
-        3,
-        86,
-        15
-      ],
-      "programList": null,
-      "offers": [
-        {
-          "campaignCode": "ALLE_e5082e99",
-          "description": "Get 10 % Extra OFF",
-          "type": "EARLYBIRD",
-          "discount": 500,
-          "maxDiscount": 10,
-          "dealType": "EARLYBIRD"
-        }
-      ],
-      "busImageCount": -1,
-      "rs555": null,
-      "locationSearchParams": {
-        "isExactMatch": true,
-        "sourceBp": "Tuni",
-        "destinationDp": "Miyapur",
-        "bpId": 24456485,
-        "dpId": 24456778
-      },
-      "boReqParams": [
-        {
-          "reschedulePolicy": "",
-          "serviceStartTime": "2026-12-01 21:00:00"
         }
       ],
       "source": "Tuni",
